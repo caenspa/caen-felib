@@ -1,0 +1,4 @@
+<map id="has_data" name="has_data">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_HasData()" alt="" coords="5,29,108,56"/>
+<area shape="rect" id="node2" href="$a00092.html#ga1b02c21c94c3206194ff5741e85eb6ef" title="Check if an endpoint node has data to be read with a subsequent call to CAEN_FELib_ReadData()." alt="" coords="156,29,359,56"/>
+</map>

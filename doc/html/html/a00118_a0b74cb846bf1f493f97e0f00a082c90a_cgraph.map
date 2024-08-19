@@ -1,0 +1,4 @@
+<map id="get_value_with_arg" name="get_value_with_arg">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_GetValue()" alt="" coords="5,29,208,56"/>
+<area shape="rect" id="node2" href="$a00092.html#gab185d86b3a52a45fcc23d58f61c2a457" title="Get the value of a readable node." alt="" coords="256,29,468,56"/>
+</map>

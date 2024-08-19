@@ -1,0 +1,6 @@
+<map id="CAEN_FELib_GetChildHandles" name="CAEN_FELib_GetChildHandles">
+<area shape="rect" id="node1" title="Get handles that represent nodes of the tree." alt="" coords="1037,37,1320,63"/>
+<area shape="rect" id="node2" href="$a00118.html#a7aa9c6de2f6259fcc67f346e744ea8af" title="Wrapper to CAEN_FELib_GetChildHandles()" alt="" coords="707,29,989,71"/>
+<area shape="rect" id="node3" href="$a00118.html#a97bc987c78a57409e1972473bdc0befb" title="List of child nodes." alt="" coords="356,29,659,71"/>
+<area shape="rect" id="node4" href="$a00118.html#a44c1c6b558a3bb1e5f628f5999b0ba46" title=" " alt="" coords="5,37,308,63"/>
+</map>

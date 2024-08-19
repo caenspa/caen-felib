@@ -1,0 +1,5 @@
+<map id="path" name="path">
+<area shape="rect" id="node1" title="Node absolute path." alt="" coords="5,29,68,56"/>
+<area shape="rect" id="node2" href="$a00118.html#aa71a67fa5e66158c8d03b25aa9dec9e6" title="Wrapper to CAEN_FELib_GetPath()" alt="" coords="116,29,219,56"/>
+<area shape="rect" id="node3" href="$a00092.html#gacf9d43143f79079c83ff5c37c27cd1a3" title="Get the absolute path of a node." alt="" coords="267,29,469,56"/>
+</map>

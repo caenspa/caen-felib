@@ -1,0 +1,3 @@
+<map id="lru_cache_method" name="lru_cache_method">
+<area shape="rect" id="node1" title="LRU cache decorator that keeps a weak reference to self." alt="" coords="5,29,188,56"/>
+</map>

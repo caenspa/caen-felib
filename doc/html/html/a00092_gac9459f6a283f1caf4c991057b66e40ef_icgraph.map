@@ -1,0 +1,5 @@
+<map id="CAEN_FELib_GetParentHandle" name="CAEN_FELib_GetParentHandle">
+<area shape="rect" id="node1" title="Get the parent handle of a node." alt="" coords="747,37,1029,63"/>
+<area shape="rect" id="node2" href="$a00118.html#a1ff942b5fadf7fcc3cb91f8323b8497a" title="Wrapper to CAEN_FELib_GetParentHandle()" alt="" coords="416,29,699,71"/>
+<area shape="rect" id="node3" href="$a00118.html#a6d10ab1e9b6a00bb00122421cd922b7c" title="Parent node." alt="" coords="5,37,368,63"/>
+</map>

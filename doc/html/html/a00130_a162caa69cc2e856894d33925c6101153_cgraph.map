@@ -1,0 +1,4 @@
+<map id="get_error_name" name="get_error_name">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_GetErrorName()" alt="" coords="5,29,168,56"/>
+<area shape="rect" id="node2" href="$a00092.html#ga1f2a4c6b10c677e05c5b47f1c43534cd" title="Get the short name of an error code." alt="" coords="216,29,468,56"/>
+</map>

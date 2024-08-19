@@ -1,0 +1,4 @@
+<map id="get_value" name="get_value">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_GetValue()" alt="" coords="125,29,237,56"/>
+<area shape="rect" id="node2" href="$a00118.html#ab641d2363302f9d39887ef556a621b7a" title="Current value." alt="" coords="5,29,77,56"/>
+</map>

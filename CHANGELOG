@@ -1,0 +1,186 @@
+-----------------------------------------------------------------------------
+
+                    --- CAEN SpA - Software Division ---
+
+-----------------------------------------------------------------------------
+
+    CAEN FE Library
+
+    Changelog.
+
+-----------------------------------------------------------------------------
+
+
+v1.3.1 (10/06/2024)
+-------------------
+
+New features:
+- Add LabView wrapper.
+- Windows build environment updated: MSVC2019 16.11.35.
+- Add build tests for GCC 14 and Clang 18.
+
+
+v1.3.0 (21/12/2023)
+-------------------
+
+New features:
+- New CAEN_FELib_GetImplLibVersion to get the version of the implementation
+    library.
+- Add CAEN_FELib_HV_RANGE to CAEN_FELib_NodeType_t.
+- Add an example on how to write a read data loop.
+- Add build tests for Clang 15, 16 and 17, and for GCC 13.
+- Update documentation of Python wrapper (aligned to v1.1.0).
+
+
+v1.2.5 (31/07/2023)
+-------------------
+
+New features:
+- Add documentation to docdir on Linux package. When using the default
+    Autoconf prefix, it can be found on /usr/local/share/doc/caen_felib.
+- Update documentation of Python wrapper (aligned to v1.0.5).
+- Windows port of POSIX dirent.h updated.
+
+
+v1.2.4 (16/03/2023)
+-------------------
+
+New features:
+- Binaries for aarch64 architecture are now provided by CAEN to help deploy
+    on OpenARM.
+- Windows build environment updated: MSVC2019 16.11.23.
+- Add documentation for Dig1.
+- Update documentation of Python wrapper (aligned to v1.0.4).
+
+
+v1.2.3 (22/12/2022)
+-------------------
+
+New features:
+- Add preliminary documentation of Python wrapper (aligned to v1.0.0).
+- Add more values on CAEN_FELib_NodeType_t.
+- Add more examples to show advanced use of CAEN_FELib_ReadData with list
+    of variadic arguments set at runtime.
+- Windows build environment updated: MSVC2019 16.11.17.
+
+Fixes:
+- Copyright notice updated.
+
+
+v1.2.2 (14/06/2022)
+-------------------
+
+New features:
+- Added build tests for Clang 12, 13 and 14, and for GCC 12.
+
+Fixes:
+- Application crashed when calling CAEN_FELib_Open to open a second device
+    on the same implementation library (bug introduced on v1.2.1).
+
+
+v1.2.1 (18/05/2022)
+-------------------
+
+New features:
+- Windows build environment updated: MSVC2019 16.11.14, Inno Setup 6.2.1.
+
+Fixes:
+- CAEN_FELib_HasData was not loaded from underlying library.
+- Documentation fixes.
+
+
+v1.2.0 (28/03/2022)
+-------------------
+
+New features:
+- New CAEN_FELib_HasData that checks if an endpoint node has data to be read
+    with a subsequent call to CAEN_FELib_ReadData.
+
+Changes:
+- CAEN_FELib_nodeType_t removed (deprecated since v1.1.4).
+
+Fixes:
+- Resource version properly set for Windows DLL, setting both file version and
+    product version fields to the library version.
+- Removed static library generation from autoconf since currently the library
+    requires the constructor and descructors to be invoked at load.
+- Removed useless includes.
+- Fix CAEN_FELib_Open failure on macOS due to different shared library file
+    extensions.
+- Removed workaround for libstdc++ bug 67791 when compiling for macOS because
+    it was not working. Actually, it is not required on that target OS.
+
+
+v1.1.5 (10/11/2021)
+-------------------
+
+Fixes:
+- Fix installer filename, introduced in v1.1.4.
+- Improve documentation.
+- Proper cleanup when library is unloaded.
+
+
+v1.1.4 (28/10/2021)
+-------------------
+
+New features:
+- Resource version properly set for Windows DLL.
+- New style for Doxygen documentation.
+- New enumerator CAEN_FELib_NodeType_t with safer values, that have a CAEN_FELib
+    as prefix (e.g. DIGITIZER must be replaced with CAEN_FELib_DIGITIZER).
+    CAEN_FELib_nodeType_t is now marked deprecated and will be removed in the
+    next minor version.
+
+Fixes:
+- Set last error in case of CAEN_FELib_BadLibraryVersion.
+
+
+v1.1.3 (14/09/2021)
+-------------------
+
+New features:
+- Support for CAEN_FELib_CommunicationError error code.
+- Support for HV_CHANNEL and MONOUT node types.
+
+Fixes:
+- Linux and Windows packages improved.
+
+Changes:
+- Windows setup install DLL to %ProgramFiles%\CAEN\Digitizers\CAEN FELib\bin
+    folder instead of [...]\lib.
+
+
+v1.1.2 (03/05/2021)
+-------------------
+
+Fixes:
+- Mitigation of libstdc++ bug that produces a SIGSEGV when invoking Open
+    on a dig2 device from a C++ executable not linked against libpthread.
+- Linux package improved.
+
+
+v1.1.1 (01/04/2021)
+-------------------
+
+New features:
+- Resources added to Windows DLL.
+- VGA added to CAEN_FELib_nodeType_t.
+
+Fixes:
+- Linux and Windows packages improved.
+- Documentation improved.
+
+
+v1.1.0 (03/03/2021)
+-------------------
+
+New features:
+- Open URL is conformant to the standard scheme://[host][/path][?query][#fragment].
+- URL without // are supported as legacy.
+- Documentation improved.
+
+
+v1.0.3 (21/01/2021)
+-------------------
+
+First public release.

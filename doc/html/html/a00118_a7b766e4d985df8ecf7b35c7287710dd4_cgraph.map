@@ -1,0 +1,4 @@
+<map id="send_command" name="send_command">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_SendCommand()" alt="" coords="5,29,148,56"/>
+<area shape="rect" id="node2" href="$a00092.html#ga21ec1b970adad5267b722e50c058c8c5" title="Send a command specified by a node." alt="" coords="196,29,439,56"/>
+</map>

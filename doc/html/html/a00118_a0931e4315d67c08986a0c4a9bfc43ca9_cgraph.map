@@ -1,0 +1,4 @@
+<map id="close" name="close">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_Close()" alt="" coords="5,29,77,56"/>
+<area shape="rect" id="node2" href="$a00092.html#ga920585fb5cbd9faf8c83e80be736f7c6" title="Close the connection with device." alt="" coords="125,29,308,56"/>
+</map>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="82.800446"
+   height="94.372375"
+   viewBox="0 0 21.907618 24.969357"
+   version="1.1"
+   id="svg4745"
+   sodipodi:docname="caen_logo.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <title
+     id="title4971">CAEN SpA Logo</title>
+  <defs
+     id="defs4739">
+    <clipPath
+       id="clipPath4763"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4761"
+         d="M 0,841.89 H 1190.55 V 0 H 0 Z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="-2.6731543"
+     inkscape:cy="65.058345"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="4"
+     fit-margin-left="4"
+     fit-margin-right="4"
+     fit-margin-bottom="4"
+     units="px" />
+  <metadata
+     id="metadata4742">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>CAEN SpA Logo</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>CAEN SpA</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Copyright © 2020, CAEN SpA.</dc:title>
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-58.209607,-134.54583)">
+    <g
+       transform="matrix(0.08190195,0,0,-0.08190195,58.219579,188.72057)"
+       inkscape:label="exa_CAEN_Tools_CMYK"
+       id="g4755">
+      <g
+         id="g4757">
+        <g
+           clip-path="url(#clipPath4763)"
+           id="g4759">
+          <g
+             transform="translate(72.7402,439.6455)"
+             id="g4765">
+            <path
+               inkscape:connector-curvature="0"
+               id="path4767"
+               style="fill:#e20025;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 0,0 h 34.551 v 79.686 c 0,3.903 0.277,8.082 1.395,11.147 3.618,10.31 13.095,20.059 26.745,20.059 18.67,0 25.913,-14.766 25.913,-34.271 V 0 h 34.271 v 80.524 c 0,42.906 -24.517,58.231 -48.202,58.231 -22.567,0 -37.337,-12.817 -43.187,-23.403 h -0.837 l -1.671,20.339 H -1.114 C -0.277,123.992 0,110.892 0,95.289 Z m -59.94,-0.378 v 139.514 l 120.822,69.755 120.82,-69.757 V -0.378 L 60.882,-70.134 Z" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

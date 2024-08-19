@@ -1,0 +1,4 @@
+<map id="CAEN_FELib_SetUserRegister" name="CAEN_FELib_SetUserRegister">
+<area shape="rect" id="node1" title="Set the value of a user register." alt="" coords="336,37,619,63"/>
+<area shape="rect" id="node2" href="$a00118.html#a175895cb1546a39f1c64ade946a7f277" title="Wrapper to CAEN_FELib_SetUserRegister()" alt="" coords="5,29,288,71"/>
+</map>

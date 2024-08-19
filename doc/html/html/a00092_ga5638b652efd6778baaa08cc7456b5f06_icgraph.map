@@ -1,0 +1,5 @@
+<map id="CAEN_FELib_GetLibInfo" name="CAEN_FELib_GetLibInfo">
+<area shape="rect" id="node1" title="Get a JSON string that contains informations about this library, like version, supported devices,..." alt="" coords="616,37,848,63"/>
+<area shape="rect" id="node2" href="$a00130.html#a9a3955f7fd19a8bf80b6594ed7f0cd9a" title="Wrapper to CAEN_FELib_GetLibInfo()" alt="" coords="316,29,568,71"/>
+<area shape="rect" id="node3" href="$a00130.html#a22e9bd4746ccfb2f993ae33be877c7ad" title="Get library info." alt="" coords="5,37,268,63"/>
+</map>

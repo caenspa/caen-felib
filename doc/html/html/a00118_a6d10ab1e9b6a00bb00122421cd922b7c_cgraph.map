@@ -1,0 +1,9 @@
+<map id="parent_node" name="parent_node">
+<area shape="rect" id="node1" title="Parent node." alt="" coords="5,56,137,83"/>
+<area shape="rect" id="node2" href="$a00118.html#a1ff942b5fadf7fcc3cb91f8323b8497a" title="Wrapper to CAEN_FELib_GetParentHandle()" alt="" coords="185,56,357,83"/>
+<area shape="rect" id="node3" href="$a00118.html#" title=" " alt="" coords="481,5,613,32"/>
+<area shape="rect" id="node4" href="$a00092.html#gac9459f6a283f1caf4c991057b66e40ef" title="Get the parent handle of a node." alt="" coords="405,56,688,83"/>
+<area shape="rect" id="node5" href="$a00118.html#ab640bd6bd3ecc06e6a89e62ac1961696" title="Node type." alt="" coords="515,131,578,157"/>
+<area shape="rect" id="node6" href="$a00118.html#a628025186cdf85cf7459c5b3972172ac" title="Wrapper to CAEN_FELib_GetNodeProperties()" alt="" coords="736,131,948,157"/>
+<area shape="rect" id="node7" href="$a00092.html#ga0c5b9e819cdb1f50c760866f0cf763bd" title="Get the name and type of a node." alt="" coords="996,131,1299,157"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="value" name="value">
+<area shape="rect" id="node1" title=" " alt="" coords="5,274,77,301"/>
+<area shape="rect" id="node2" href="$a00118.html#" title=" " alt="" coords="682,61,814,88"/>
+<area shape="rect" id="node3" href="$a00118.html#a97bc987c78a57409e1972473bdc0befb" title="List of child nodes." alt="" coords="131,112,263,138"/>
+<area shape="rect" id="node9" href="$a00118.html#a0931e4315d67c08986a0c4a9bfc43ca9" title="Wrapper to CAEN_FELib_Close()" alt="" coords="161,237,233,264"/>
+<area shape="rect" id="node11" href="$a00118.html#afd75849228bcddd607859a36d8347ed5" title="Wrapper to CAEN_FELib_GetHandle()" alt="" coords="386,186,489,213"/>
+<area shape="rect" id="node13" href="$a00118.html#ab73e6efc52ce7a21b22cbf9f3465df91" title="Node absolute path." alt="" coords="165,312,228,338"/>
+<area shape="rect" id="node16" href="$a00118.html#a7b766e4d985df8ecf7b35c7287710dd4" title="Wrapper to CAEN_FELib_SendCommand()" alt="" coords="125,386,268,413"/>
+<area shape="rect" id="node18" href="$a00118.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a" title="Wrapper to CAEN_FELib_SetValue()" alt="" coords="141,461,253,488"/>
+<area shape="rect" id="node20" href="$a00118.html#ab641d2363302f9d39887ef556a621b7a" title="Current value." alt="" coords="161,536,233,562"/>
+<area shape="rect" id="node4" href="$a00118.html#a7aa9c6de2f6259fcc67f346e744ea8af" title="Wrapper to CAEN_FELib_GetChildHandles()" alt="" coords="351,112,523,138"/>
+<area shape="rect" id="node5" href="$a00092.html#ga1d99692257fe29f36cca78b6b58dc28c" title="Get handles that represent nodes of the tree." alt="" coords="607,112,889,138"/>
+<area shape="rect" id="node6" href="$a00118.html#ab640bd6bd3ecc06e6a89e62ac1961696" title="Node type." alt="" coords="717,186,779,213"/>
+<area shape="rect" id="node7" href="$a00118.html#a628025186cdf85cf7459c5b3972172ac" title="Wrapper to CAEN_FELib_GetNodeProperties()" alt="" coords="937,186,1149,213"/>
+<area shape="rect" id="node8" href="$a00092.html#ga0c5b9e819cdb1f50c760866f0cf763bd" title="Get the name and type of a node." alt="" coords="1197,186,1500,213"/>
+<area shape="rect" id="node10" href="$a00092.html#ga920585fb5cbd9faf8c83e80be736f7c6" title="Close the connection with device." alt="" coords="346,237,529,264"/>
+<area shape="rect" id="node12" href="$a00092.html#gaa6f146f6a1e6f98416ee35fba5edfffc" title="Get the handle of a node." alt="" coords="637,237,859,264"/>
+<area shape="rect" id="node14" href="$a00118.html#aa71a67fa5e66158c8d03b25aa9dec9e6" title="Wrapper to CAEN_FELib_GetPath()" alt="" coords="386,312,489,338"/>
+<area shape="rect" id="node15" href="$a00092.html#gacf9d43143f79079c83ff5c37c27cd1a3" title="Get the absolute path of a node." alt="" coords="647,312,849,338"/>
+<area shape="rect" id="node17" href="$a00092.html#ga21ec1b970adad5267b722e50c058c8c5" title="Send a command specified by a node." alt="" coords="316,386,559,413"/>
+<area shape="rect" id="node19" href="$a00092.html#gafb0504a48713f8fb9e4f6602eeacf99c" title="Set the value of a writable node." alt="" coords="331,461,543,488"/>
+<area shape="rect" id="node21" href="$a00118.html#a83080f6dc5715a81005bba6ad907da59" title="Wrapper to CAEN_FELib_GetValue()" alt="" coords="381,536,493,562"/>
+<area shape="rect" id="node22" href="$a00092.html#gab185d86b3a52a45fcc23d58f61c2a457" title="Get the value of a readable node." alt="" coords="642,536,854,562"/>
+</map>

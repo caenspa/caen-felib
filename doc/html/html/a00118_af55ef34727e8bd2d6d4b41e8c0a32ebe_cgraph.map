@@ -1,0 +1,6 @@
+<map id="set_read_data_format" name="set_read_data_format">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_SetReadDataFormat()" alt="" coords="5,80,228,107"/>
+<area shape="rect" id="node2" href="$a00092.html#gaf8d7562389a677f080d566da093cf062" title="Set the format for the ReadData function to a endpoint node." alt="" coords="276,5,579,32"/>
+<area shape="rect" id="node3" href="$a00118.html#aca96c568506870ce155c05e5a9b01b11" title="Wrapper to CAEN_FELib_ReadData()" alt="" coords="371,80,483,107"/>
+<area shape="rect" id="node4" href="$a00092.html#ga3513d9316bfabd58fd9680f76c07985c" title="Read the data provided by an endpoint node." alt="" coords="627,80,839,107"/>
+</map>

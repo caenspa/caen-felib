@@ -1,0 +1,4 @@
+<map id="get_node_properties" name="get_node_properties">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_GetNodeProperties()" alt="" coords="5,29,217,56"/>
+<area shape="rect" id="node2" href="$a00092.html#ga0c5b9e819cdb1f50c760866f0cf763bd" title="Get the name and type of a node." alt="" coords="265,29,568,56"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CAEN_FELib_GetLastError" name="CAEN_FELib_GetLastError">
+<area shape="rect" id="node1" title="Get the detailed description of the last error occurred on the current thread for a device." alt="" coords="616,37,868,63"/>
+<area shape="rect" id="node2" href="$a00130.html#ab3e42e4f90f4ab300c74adb950cfa477" title="Wrapper to CAEN_FELib_GetLastError()" alt="" coords="316,29,568,71"/>
+<area shape="rect" id="node3" href="$a00130.html#a773932634d1145aa71c5943a5ff10129" title="Get last error." alt="" coords="5,29,268,71"/>
+</map>

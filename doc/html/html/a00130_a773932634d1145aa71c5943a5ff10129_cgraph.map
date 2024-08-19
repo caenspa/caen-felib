@@ -1,0 +1,8 @@
+<map id="last_error" name="last_error">
+<area shape="rect" id="node1" title="Get last error." alt="" coords="5,67,128,93"/>
+<area shape="rect" id="node2" href="$a00130.html#ab3e42e4f90f4ab300c74adb950cfa477" title="Wrapper to CAEN_FELib_GetLastError()" alt="" coords="241,29,403,56"/>
+<area shape="rect" id="node4" href="$a00118.html#ab73e6efc52ce7a21b22cbf9f3465df91" title="Node absolute path." alt="" coords="176,104,468,131"/>
+<area shape="rect" id="node3" href="$a00092.html#ga47f4413870b3b50523ba02405860dda9" title="Get the detailed description of the last error occurred on the current thread for a device." alt="" coords="556,29,808,56"/>
+<area shape="rect" id="node5" href="$a00118.html#aa71a67fa5e66158c8d03b25aa9dec9e6" title="Wrapper to CAEN_FELib_GetPath()" alt="" coords="516,104,848,131"/>
+<area shape="rect" id="node6" href="$a00092.html#gacf9d43143f79079c83ff5c37c27cd1a3" title="Get the absolute path of a node." alt="" coords="896,104,1099,131"/>
+</map>

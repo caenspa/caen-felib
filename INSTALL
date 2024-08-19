@@ -1,0 +1,31 @@
+-----------------------------------------------------------------------------
+
+                    --- CAEN SpA - Software Division ---
+
+-----------------------------------------------------------------------------
+
+    CAEN FE Library
+
+    Install procedure on Linux.
+
+-----------------------------------------------------------------------------
+
+
+Prerequisites
+-------------
+
+- A compiler supporting C99 or C11/C17.
+  The following compiler versions have been tested on x86_64:
+  - GCC >= 4.9 (up to version 14)
+  - clang >= 3.0 (up to version 18)
+
+
+Install
+-------
+
+In the extracted folder run
+
+    $ ./configure --disable-assert
+    $ make
+    $ sudo make install
+    $ sudo ldconfig

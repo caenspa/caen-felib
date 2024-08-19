@@ -1,0 +1,4 @@
+<map id="get_impl_lib_version" name="get_impl_lib_version">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_GetImplLibVersion()" alt="" coords="5,29,228,56"/>
+<area shape="rect" id="node2" href="$a00092.html#ga9d94cc1b9d54447f0a8bf7a431e4110f" title="Get the version of the implementation library used by an handle." alt="" coords="276,29,579,56"/>
+</map>

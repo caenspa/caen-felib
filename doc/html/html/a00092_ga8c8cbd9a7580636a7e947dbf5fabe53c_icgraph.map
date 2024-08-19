@@ -1,0 +1,4 @@
+<map id="CAEN_FELib_GetUserRegister" name="CAEN_FELib_GetUserRegister">
+<area shape="rect" id="node1" title="Get the value of a user register." alt="" coords="336,37,619,63"/>
+<area shape="rect" id="node2" href="$a00118.html#a128f277b4a4bd234dfd3aa99269ac36f" title="Wrapper to CAEN_FELib_GetUserRegister()" alt="" coords="5,29,288,71"/>
+</map>

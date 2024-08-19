@@ -1,0 +1,3 @@
+<map id="get_device_tree" name="get_device_tree">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_GetDeviceTree()" alt="" coords="5,29,177,56"/>
+</map>

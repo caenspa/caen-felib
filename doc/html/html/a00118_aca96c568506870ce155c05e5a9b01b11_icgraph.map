@@ -1,0 +1,4 @@
+<map id="read_data" name="read_data">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_ReadData()" alt="" coords="276,29,388,56"/>
+<area shape="rect" id="node2" href="$a00118.html#af55ef34727e8bd2d6d4b41e8c0a32ebe" title="Wrapper to CAEN_FELib_SetReadDataFormat()" alt="" coords="5,29,228,56"/>
+</map>

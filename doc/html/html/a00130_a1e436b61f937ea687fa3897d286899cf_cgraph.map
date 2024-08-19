@@ -1,0 +1,5 @@
+<map id="version" name="version">
+<area shape="rect" id="node1" title="Get library version." alt="" coords="5,29,97,56"/>
+<area shape="rect" id="node2" href="$a00130.html#ac4b444d707c39df22a09750d9c04b584" title="Wrapper to CAEN_FELib_GetLibVersion()" alt="" coords="145,29,317,56"/>
+<area shape="rect" id="node3" href="$a00092.html#gaf3e0696280953f837bcddedc39e81dd2" title="Get the value of CAEN_FELIB_VERSION_STRING used to compile the library." alt="" coords="365,29,628,56"/>
+</map>

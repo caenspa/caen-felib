@@ -1,0 +1,5 @@
+<map id="CAEN_FELib_GetHandle" name="CAEN_FELib_GetHandle">
+<area shape="rect" id="node1" title="Get the handle of a node." alt="" coords="736,29,959,56"/>
+<area shape="rect" id="node2" href="$a00118.html#afd75849228bcddd607859a36d8347ed5" title="Wrapper to CAEN_FELib_GetHandle()" alt="" coords="356,29,688,56"/>
+<area shape="rect" id="node3" href="$a00118.html#a44c1c6b558a3bb1e5f628f5999b0ba46" title=" " alt="" coords="5,29,308,56"/>
+</map>

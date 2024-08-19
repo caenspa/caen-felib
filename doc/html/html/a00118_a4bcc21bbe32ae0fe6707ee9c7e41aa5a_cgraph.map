@@ -1,0 +1,4 @@
+<map id="set_value" name="set_value">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_SetValue()" alt="" coords="5,29,117,56"/>
+<area shape="rect" id="node2" href="$a00092.html#gafb0504a48713f8fb9e4f6602eeacf99c" title="Set the value of a writable node." alt="" coords="165,29,377,56"/>
+</map>

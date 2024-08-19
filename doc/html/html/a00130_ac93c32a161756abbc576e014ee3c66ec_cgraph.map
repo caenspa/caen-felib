@@ -1,0 +1,4 @@
+<map id="get_error_description" name="get_error_description">
+<area shape="rect" id="node1" title="Wrapper to CAEN_FELib_GetErrorDescription()" alt="" coords="5,29,237,56"/>
+<area shape="rect" id="node2" href="$a00092.html#gad9bf7ecf9a1cf9258d720c53b9386364" title="Get the detailed description of an error code." alt="" coords="285,29,608,56"/>
+</map>
