@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CAEN FE Library: error.py Source File</title>
+<title>CAEN FE Library: dig1_types.py Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="caen_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.1</span>
+   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.2</span>
    </div>
    <div id="projectbrief">SDK for new generation digitizers</div>
   </td>
@@ -85,71 +85,118 @@ $(document).ready(function(){initNavTree('a00074_source.html',''); initResizable
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">error.py</div></div>
+  <div class="headertitle"><div class="title">dig1_types.py</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="a00074.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="a00097.html">    1</a></span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<a href="a00074.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="a00107.html">    1</a></span><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="stringliteral">@ingroup Python</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>__author__ = <span class="stringliteral">&#39;Giovanni Cerretani&#39;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>__copyright__ = <span class="stringliteral">&#39;Copyright (C) 2023 CAEN SpA&#39;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>__license__ = <span class="stringliteral">&#39;LGPL-3.0-or-later&#39;</span>  <span class="comment"># SPDX-License-Identifier</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">from</span> enum <span class="keyword">import</span> IntEnum, unique</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>__copyright__ = <span class="stringliteral">&#39;Copyright (C) 2024 CAEN SpA&#39;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>__license__ = <span class="stringliteral">&#39;LGPL-3.0-or-later&#39;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"># SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">from</span> enum <span class="keyword">import</span> IntFlag, IntEnum, unique</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">@unique</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="a00122.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="a00122.html">ErrorCode</a>(IntEnum):</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="stringliteral">    Wrapper to ::CAEN_FELib_ErrorCode</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="a00122.html#aa8c597b681569696addf7b2ff1d6392c">   17</a></span><span class="stringliteral">    SUCCESS = 0</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="a00122.html#ab1243bff380c18cb10df9143736f6cfc">   18</a></span><span class="stringliteral">    GENERIC_ERROR = -1</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="a00122.html#aab42444cf50063f9d2eab60ab161ccb4">   19</a></span><span class="stringliteral">    INVALID_PARAM = -2</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="a00122.html#add6bdb672a4379c0c3b3c599d810705e">   20</a></span><span class="stringliteral">    DEVICE_ALREADY_OPEN = -3</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="a00122.html#aace6635ccf78c292f80fae3a9eb03ae5">   21</a></span><span class="stringliteral">    DEVICE_NOT_FOUND = -4</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="a00122.html#a49225012d229c1df90fa804d9e471d51">   22</a></span><span class="stringliteral">    MAX_DEVICES_ERROR = -5</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="a00122.html#a02b3552f22966b69731df9acddf94c22">   23</a></span><span class="stringliteral">    COMMAND_ERROR = -6</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="a00122.html#a6346e633fda37c1503450b5a6d2ff2ed">   24</a></span><span class="stringliteral">    INTERNAL_ERROR = -7</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="a00122.html#ad4e53c49669fd57751feaca0730e1314">   25</a></span><span class="stringliteral">    NOT_IMPLEMENTED = -8</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="a00122.html#a21d2f176f2adcc0d2428876264b3d04c">   26</a></span><span class="stringliteral">    INVALID_HANDLE = -9</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="a00122.html#a5188066b07f07e1fab81786b07e9e6a5">   27</a></span><span class="stringliteral">    DEVICE_LIBRARY_NOT_AVAILABLE = -10</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="a00122.html#acb1703e795b348cfb0d1efae78314f83">   28</a></span><span class="stringliteral">    TIMEOUT = -11</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="a00122.html#a8cd8eb3f406d3006eb6e54de792a3728">   29</a></span><span class="stringliteral">    STOP = -12</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="a00122.html#a511a02294152ca837e677530984a07ff">   30</a></span><span class="stringliteral">    DISABLED = -13</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="a00122.html#af59fc228d24f9b70905db4420a4317b3">   31</a></span><span class="stringliteral">    BAD_LIBRARY_VERSION = -14</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="a00122.html#a13ad2efeb64b4ba345119ae7ae5f0d03">   32</a></span><span class="stringliteral">    COMMUNICATION_ERROR = -15</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a00126.html">   35</a></span><span class="stringliteral"></span><span class="keyword">class </span><a class="code hl_class" href="a00126.html">Error</a>(RuntimeError):</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="stringliteral">    Raised when a wrapped C API function returns</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="stringliteral">    negative values.</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="stringliteral">    code: ErrorCode</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral">    func: str</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral">    </span><span class="keyword">def </span>__init__(self, message: str, res: int, func: str) -&gt; <span class="keywordtype">None</span>:</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        super().__init__(message)</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="a00126.html#afb9ed1b8a27eb20854efe6e23e297683">   48</a></span>        self.<a class="code hl_variable" href="a00126.html#afb9ed1b8a27eb20854efe6e23e297683">code</a>code = <a class="code hl_class" href="a00122.html">ErrorCode</a>(res)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="a00126.html#a3699148440db7bdde6e95e16092363d1">   51</a></span>        self.<a class="code hl_variable" href="a00126.html#a3699148440db7bdde6e95e16092363d1">func</a>func = func</div>
-<div class="ttc" id="aa00122_html"><div class="ttname"><a href="a00122.html">caen_felib.error.ErrorCode</a></div><div class="ttdoc">Wrapper to CAEN_FELib_ErrorCode.</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00013">error.py:13</a></div></div>
-<div class="ttc" id="aa00126_html"><div class="ttname"><a href="a00126.html">caen_felib.error.Error</a></div><div class="ttdoc">Raised when a wrapped C API function returns negative values.</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00035">error.py:35</a></div></div>
-<div class="ttc" id="aa00126_html_a3699148440db7bdde6e95e16092363d1"><div class="ttname"><a href="a00126.html#a3699148440db7bdde6e95e16092363d1">caen_felib.error.Error.func</a></div><div class="ttdeci">func</div><div class="ttdoc">Name of failed function.</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00051">error.py:51</a></div></div>
-<div class="ttc" id="aa00126_html_afb9ed1b8a27eb20854efe6e23e297683"><div class="ttname"><a href="a00126.html#afb9ed1b8a27eb20854efe6e23e297683">caen_felib.error.Error.code</a></div><div class="ttdeci">code</div><div class="ttdoc">Error code as instance of ErrorCode.</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00048">error.py:48</a></div></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">@unique</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00134.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="a00134.html">DppProbeType</a>(IntEnum):</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="stringliteral">    Probe types </span><span class="keywordflow">for</span> Dig1 DPP events</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="a00134.html#a83fa1fe98001b8a7f779c2d0d4090451">   18</a></span><span class="stringliteral">    INVALID         = -1</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="a00134.html#a8da3a66cae7ac2c40966de471684f3fb">   19</a></span><span class="stringliteral">    NONE            = 0</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="a00134.html#a9006d39605353e9030b9e943834a762c">   20</a></span><span class="stringliteral">    INPUT           = 1</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="a00134.html#a4dc1dc65750ded2342bb4aef5a4b9326">   21</a></span><span class="stringliteral">    DELTA           = 2</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="a00134.html#a49ad9c789b333a23e88b859022e5b8b2">   22</a></span><span class="stringliteral">    DELTA2          = 3</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="a00134.html#a025883a8fc17c5d02abd19363d1f3811">   23</a></span><span class="stringliteral">    TRAPEZOID       = 4</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="a00134.html#a777c7eda37acaf42855a75898d216f7f">   24</a></span><span class="stringliteral">    BASELINE        = 5</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="a00134.html#adceb947873623dd2a87f7f69e81fbd38">   25</a></span><span class="stringliteral">    THRESHOLD       = 6</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="a00134.html#a5cc15d5eba0c37c548dde2d6034b91c7">   26</a></span><span class="stringliteral">    CFD             = 7</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="a00134.html#a2b0b38130bf56f35e088b088868d4841">   27</a></span><span class="stringliteral">    TRAPCORRECTED   = 8</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="a00134.html#a67803d2c058c380754932c67b5af48c3">   28</a></span><span class="stringliteral">    RTDISCWID       = 9</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="a00134.html#a783b6a7f5dae44cb3055266a3f2b7ea3">   29</a></span><span class="stringliteral">    ARMED           = 10</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="a00134.html#a255761b014230cac5914644fbb56ba4c">   30</a></span><span class="stringliteral">    PKRUN           = 11</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="a00134.html#a5e56378a2e8da2f796228113823a5710">   31</a></span><span class="stringliteral">    PEAKING         = 12</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="a00134.html#a8f79fe17915a16b0c5f048099e11087a">   32</a></span><span class="stringliteral">    TRGVALWIN       = 13</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="a00134.html#a274d0466e11b698aeb41c741dcb16f84">   33</a></span><span class="stringliteral">    BLHOLDOFF       = 14</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a00134.html#a49533b5f0e94be727b70ccaaa2ba3df5">   34</a></span><span class="stringliteral">    TRGHOLDOFF      = 15</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a00134.html#a979c978d5947f9dccfa038e3629fa86b">   35</a></span><span class="stringliteral">    TRGVAL          = 16</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="a00134.html#a1f89d27ad3cc8586e58a62f2e9c162b2">   36</a></span><span class="stringliteral">    ACQVETO         = 17</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="a00134.html#a6bd328d19247372f29fe7b7d608180cb">   37</a></span><span class="stringliteral">    BFMVETO         = 18</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="a00134.html#a7cefb669e0eb5e6b74a9e9e512152c3a">   38</a></span><span class="stringliteral">    EXTTRG          = 19</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="a00134.html#ab370f33645a9d6e12109879b6a9c05f2">   39</a></span><span class="stringliteral">    OVERTHRESHOLD   = 20</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="a00134.html#a7f125d943042a84653a1fa77c9ee613e">   40</a></span><span class="stringliteral">    TRGOUT          = 21</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="a00134.html#a1db785ef4d1a71cdc6f789fb69c254c9">   41</a></span><span class="stringliteral">    COINCIDENCE     = 22</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="a00134.html#ade6834d808abcf7eddc73547b3f80084">   42</a></span><span class="stringliteral">    PILEUP          = 23</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="a00134.html#a9da116f6d9b4aec47d4d6a35fea64bf8">   43</a></span><span class="stringliteral">    GATE            = 24</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="a00134.html#a874230e673536312cad3dcae984ce228">   44</a></span><span class="stringliteral">    GATESHORT       = 25</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="a00134.html#a7e4b08b55fa07bfe78d3f62918df74df">   45</a></span><span class="stringliteral">    TRIGGER         = 26</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="a00134.html#ac43e46bfd2bf80e7bab4a50c0e442582">   46</a></span><span class="stringliteral">    BUSY            = 27</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="a00134.html#a446280517b0b9aab634212e84c7a6f74">   47</a></span><span class="stringliteral">    PILEUPTRIG      = 28</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="a00134.html#ab6b5718f700b17fcb8f6b0cde3d58b72">   48</a></span><span class="stringliteral">    ISNEUTRON       = 29</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="a00134.html#a3f6e16f6d8a42cda41ea171e4361d345">   49</a></span><span class="stringliteral">    TRIGGER_ACCEPT  = 30</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="a00134.html#a8752b1925304dd08fcbbc0725c3b0f74">   50</a></span><span class="stringliteral">    TRGWIN          = 31</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="a00134.html#ad41cfa185d10d50956ac21e336380378">   51</a></span><span class="stringliteral">    COINCWIN        = 32</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="a00134.html#a8656f8bf1735179c439680bc46bbf16c">   52</a></span><span class="stringliteral">    FAST_TRIANG     = 33</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="a00134.html#a73e9c705b5bbe1bf1ec243dbd08495b0">   53</a></span><span class="stringliteral">    SLOW_TRIANG     = 34</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="a00134.html#ae1a6442fb88558cda1648920fc42596d">   54</a></span><span class="stringliteral">    BSL_FREEZE      = 35</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="a00134.html#ae464646f54b14861bc5b03e23ebe7c52">   55</a></span><span class="stringliteral">    INHIBIT_FLAG    = 36</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="a00134.html#a6b56bab5ecf6504c5f27d43c98f3816f">   56</a></span><span class="stringliteral">    PEAK_READY      = 37</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="a00134.html#a9f1016ffa6ce8e635881361376d5ac56">   57</a></span><span class="stringliteral">    ARMED_ST        = 38</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="a00134.html#a40817b567ba058ccb4e11bc443026c4e">   58</a></span><span class="stringliteral">    GATE_INH        = 39</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="a00134.html#a4fdb9f6eb866fd907cef8a941922cc20">   59</a></span><span class="stringliteral">    TEST_WAVE       = 40</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="a00134.html#a68e33ef1895bf3132fc419f6f40272d4">   60</a></span><span class="stringliteral">    SMOOTHINPUT     = 41</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="a00134.html#a7548c2cda914984e4748be1ab385da09">   61</a></span><span class="stringliteral">    ADCSAT          = 42</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="a00134.html#a0e915d9bae886ff6c41435930e37102e">   62</a></span><span class="stringliteral">    ADCSAT_PROTECT  = 43</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="a00134.html#a194d6069ae132162d1c616f6dfc237ff">   63</a></span><span class="stringliteral">    POSTSAT         = 44</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="a00134.html#aec2efb07638e1c42ac0a2c891c7bdd11">   64</a></span><span class="stringliteral">    ENERGYSAT       = 45</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="a00134.html#ac9fa677b3f4e04a8d53412118f32b9d2">   65</a></span><span class="stringliteral">    PILEUPGUARD     = 46</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="a00134.html#aa1b6f229861efe0ec93a36e02f06da2d">   66</a></span><span class="stringliteral">    CRG_READY       = 47</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="a00134.html#a51c67cdf02ff2218add5f55b64e286c7">   67</a></span><span class="stringliteral">    CHARGESAT       = 48</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="a00134.html#a6736bb3cb0ba4d2dd09e5174cb609b07">   68</a></span><span class="stringliteral">    NEG_OVERTHR     = 49</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="a00134.html#a1d20b7618d9c2b94032aa63e98ab4108">   69</a></span><span class="stringliteral">    TRAPBASELINE    = 50</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="a00138.html">   72</a></span><span class="stringliteral"></span><span class="keyword">class </span><a class="code hl_class" href="a00138.html">DppFlags</a>(IntFlag):</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="stringliteral">    Flags on Dig1 DPP events</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="a00138.html#ad770c3b669df4735e800d04d8c3dad6e">   76</a></span><span class="stringliteral">    DEADTIME    = 0x0000001  </span><span class="comment"># Identifies the first event after a dead time.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="a00138.html#a63799ecd33fcf105937a043ee4f5e435">   77</a></span>    TTROLLOVER  = 0x0000002  <span class="comment"># Identifies a trigger time stamp roll-over that occurred before this event.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="a00138.html#aa4b195869df29129beb74617722c3aca">   78</a></span>    TTRESET     = 0x0000004  <span class="comment"># Identifies a trigger time stamp reset forced from external signals in S-IN (GPI for Desktop).</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="a00138.html#ac19d813974f77d92b7f0e680f8ce8cba">   79</a></span>    EVTFAKE     = 0x0000008  <span class="comment"># Identifies a fake event (which does not correspond to any physical event).</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="a00138.html#a4fdbaa914d3770218c23f8b52ec6cd68">   80</a></span>    MEMFULL     = 0x0000010  <span class="comment"># Reading memory full.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="a00138.html#a7114e9cba88a559d50fd7bfe6c6b315c">   81</a></span>    TRGLOST     = 0x0000020  <span class="comment"># Identifies the first event after a trigger lost.</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="a00138.html#a0cd3fa201ef5cb2c5bf8a18edf38e0ec">   82</a></span>    NTRGLOST    = 0x0000040  <span class="comment"># Every N lost events this flag is high (see board documentation to set N).</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="a00138.html#acade5cbe0b09611def5bddc77efa18d9">   83</a></span>    OVERRNG     = 0x0000080  <span class="comment"># Energy overranged.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="a00138.html#a0b226cc1d89787bb0f068d75220344a1">   84</a></span>    F1024TRG    = 0x0000100  <span class="comment"># 1024 triggers counted (every 1024 counted events this flag is high).</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="a00138.html#ae375be96410405c5b3d873c22d2abd98">   85</a></span>    LOSTEVT     = 0x0000200  <span class="comment"># Identifies the first event after when one or more events is lost due to a memory board FULL. The memory can be FULL due to a write event.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="a00138.html#a0b63134b18e349aebef36bad6a04789e">   86</a></span>    INPUTSAT    = 0x0000400  <span class="comment"># Identifies an event saturating the input dynamics (clipping).</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="a00138.html#a500acce01bf7cd8dbfd298b8796e0d58">   87</a></span>    NTRGTOT     = 0x0000800  <span class="comment"># Every N total events this flag is high (see board documentation to set N).</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="a00138.html#a92b89954800ec20bd39d64f3905734b5">   88</a></span>    OLDSORT     = 0x0001000  <span class="comment"># Identifies an event not sorted but sent for waveform.</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="a00138.html#aed94e589fba7545c69e0d44c91370911">   89</a></span>    EOR         = 0x0002000  <span class="comment"># Identifies a fake event occurring at the end of run.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="a00138.html#ad9e296e4f0384a510eaae66c6dcbfd66">   90</a></span>    FINETT      = 0x0004000  <span class="comment"># Identifies an event with fine time stamp.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="a00138.html#ade6834d808abcf7eddc73547b3f80084">   91</a></span>    PILEUP      = 0x0008000  <span class="comment"># Identifies a pile up event.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="a00138.html#a525c3061735b2f7680c5ff3f492c3ef8">   92</a></span>    TIMEVALUE   = 0x0010000  <span class="comment"># Identifies a fake event occurring on a time stamp roll-over.</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="a00138.html#a2acc07a4bf6c607c1db62fdd97e5f98a">   93</a></span>    ENERGY_SKIM = 0x0020000  <span class="comment"># Energy skimming.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="a00138.html#a0217fc1f0161254f640bd05a0c394cb5">   94</a></span>    SATREJ      = 0x0040000  <span class="comment"># Identifies an event occurred when detector was inibited due to saturation.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="a00138.html#a78e3258d9b917aeaa4ef8d9aa28a9a29">   95</a></span>    PLLLOCKLOSS = 0x0080000  <span class="comment"># Identifies a fake event sent to report a PLL lock loss.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="a00138.html#a97ec6a832f99fb4a06cae21dfc1fa1a4">   96</a></span>    OVERTEMP    = 0x0100000  <span class="comment"># Identifies a fake event sent to report an over temperature condition.</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="a00138.html#a2ba75f540cb0141317788e8ab4caae75">   97</a></span>    SHUTDOWN    = 0x0200000  <span class="comment"># Identifies a fake event sent to report an ADC shutdown.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="a00138.html#aad3b91fab2dfbd9455c001b807d1dac7">   98</a></span>    MEMORYSORT  = 0x0400000  <span class="comment"># Identifies a fake event sent to report a memory overload during data sorting.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="a00138.html#a8f0e220291750a2c76db08bf745762b3">   99</a></span>    MCS         = 0x0800000  <span class="comment"># Identifies a MCS event</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="a00138.html#adde072a399ca9cf93fffd637734b3b40">  100</a></span>    STOPCOND    = 0x1000000  <span class="comment"># Identifies the first event after a stop condition has been met.</span></div>
+<div class="ttc" id="aa00134_html"><div class="ttname"><a href="a00134.html">caen_felib.dig1_types.DppProbeType</a></div><div class="ttdoc">Probe types for Dig1 DPP events.</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00014">dig1_types.py:14</a></div></div>
+<div class="ttc" id="aa00138_html"><div class="ttname"><a href="a00138.html">caen_felib.dig1_types.DppFlags</a></div><div class="ttdoc">Flags on Dig1 DPP events.</div><div class="ttdef"><b>Definition:</b> <a href="a00074_source.html#l00072">dig1_types.py:72</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7837fde3ab9c1fb2fc5be7b717af8d79.html">python</a></li><li class="navelem"><a class="el" href="dir_f5914bd29df15049ae416e8a0eac21ca.html">src</a></li><li class="navelem"><a class="el" href="dir_1f04b0c7dbcbdfa0d557cad2fafc7927.html">caen_felib</a></li><li class="navelem"><a class="el" href="a00074.html">error.py</a></li>
-    <li class="footer">Generated on Wed Jun 12 2024 09:31:11 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_7837fde3ab9c1fb2fc5be7b717af8d79.html">python</a></li><li class="navelem"><a class="el" href="dir_f5914bd29df15049ae416e8a0eac21ca.html">src</a></li><li class="navelem"><a class="el" href="dir_1f04b0c7dbcbdfa0d557cad2fafc7927.html">caen_felib</a></li><li class="navelem"><a class="el" href="a00074.html">dig1_types.py</a></li>
+    <li class="footer">Generated on Mon May 5 2025 09:55:00 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

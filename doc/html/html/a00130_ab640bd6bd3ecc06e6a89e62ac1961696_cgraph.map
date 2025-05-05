@@ -1,0 +1,5 @@
+<map id="type" name="type">
+<area shape="rect" id="node1" title="Node type." alt="" coords="9,29,72,56"/>
+<area shape="rect" id="node2" href="$a00130.html#ac66c129d35ca5141d65af51b78df2c1f" title="Binding of CAEN_FELib_GetNodeProperties()" alt="" coords="120,29,332,56"/>
+<area shape="rect" id="node3" href="$a00101.html#ga0c5b9e819cdb1f50c760866f0cf763bd" title="Get the name and type of a node." alt="" coords="380,29,682,56"/>
+</map>

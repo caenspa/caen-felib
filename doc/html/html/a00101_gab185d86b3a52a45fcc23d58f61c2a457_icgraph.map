@@ -1,0 +1,7 @@
+<map id="CAEN_FELib_GetValue" name="CAEN_FELib_GetValue">
+<area shape="rect" id="node1" title="Get the value of a readable node." alt="" coords="1017,82,1229,109"/>
+<area shape="rect" id="node2" href="$a00130.html#a83080f6dc5715a81005bba6ad907da59" title="Binding of CAEN_FELib_GetValue()" alt="" coords="687,29,969,71"/>
+<area shape="rect" id="node5" href="$a00130.html#a0b74cb846bf1f493f97e0f00a082c90a" title="Binding of CAEN_FELib_GetValue()" alt="" coords="687,119,969,160"/>
+<area shape="rect" id="node3" href="$a00130.html#ab641d2363302f9d39887ef556a621b7a" title="Current value." alt="" coords="336,37,639,63"/>
+<area shape="rect" id="node4" href="$a00122.html#a11d17bccc3fcffb16d4d73169dfb4287" title="ctypes pointer to Data.value that is used within Node.read_data" alt="" coords="5,37,288,63"/>
+</map>

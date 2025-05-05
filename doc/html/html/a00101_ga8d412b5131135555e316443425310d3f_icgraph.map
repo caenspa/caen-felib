@@ -1,0 +1,4 @@
+<map id="CAEN_FELib_GetDeviceTree" name="CAEN_FELib_GetDeviceTree">
+<area shape="rect" id="node1" title="Get the tree that describe all the structure of the device in JSON format." alt="" coords="336,37,599,63"/>
+<area shape="rect" id="node2" href="$a00130.html#adbcdf8c51d007c78933c8ef62b8694e3" title="Binding of CAEN_FELib_GetDeviceTree()" alt="" coords="5,29,288,71"/>
+</map>

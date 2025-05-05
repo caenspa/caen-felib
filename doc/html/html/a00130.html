@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CAEN FE Library: _Lib Class Reference</title>
+<title>CAEN FE Library: Node Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="caen_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.1</span>
+   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.2</span>
    </div>
    <div id="projectbrief">SDK for new generation digitizers</div>
   </td>
@@ -89,106 +89,548 @@ $(document).ready(function(){initNavTree('a00130.html',''); initResizable(); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a>  </div>
-  <div class="headertitle"><div class="title">_Lib Class Reference</div></div>
+  <div class="headertitle"><div class="title">Node Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This class loads the CAEN_FELib shared library and exposes its functions on its public attributes using ctypes.  
+<p>Class representing a node.  
  <a href="a00130.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for _Lib:</div>
+Collaboration diagram for Node:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00128.svg" width="283" height="352"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00128.svg" width="274" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a3955f7fd19a8bf80b6594ed7f0cd9a"><td class="memItemLeft" align="right" valign="top">Dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a9a3955f7fd19a8bf80b6594ed7f0cd9a">get_lib_info</a> (self, int initial_size=2 **22)</td></tr>
-<tr class="memdesc:a9a3955f7fd19a8bf80b6594ed7f0cd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to <a class="el" href="a00092.html#ga5638b652efd6778baaa08cc7456b5f06" title="Get a JSON string that contains informations about this library, like version, supported devices,...">CAEN_FELib_GetLibInfo()</a>  <a href="a00130.html#a9a3955f7fd19a8bf80b6594ed7f0cd9a">More...</a><br /></td></tr>
-<tr class="separator:a9a3955f7fd19a8bf80b6594ed7f0cd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b444d707c39df22a09750d9c04b584"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ac4b444d707c39df22a09750d9c04b584">get_lib_version</a> (self)</td></tr>
-<tr class="memdesc:ac4b444d707c39df22a09750d9c04b584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to <a class="el" href="a00092.html#gaf3e0696280953f837bcddedc39e81dd2" title="Get the value of CAEN_FELIB_VERSION_STRING used to compile the library.">CAEN_FELib_GetLibVersion()</a>  <a href="a00130.html#ac4b444d707c39df22a09750d9c04b584">More...</a><br /></td></tr>
-<tr class="separator:ac4b444d707c39df22a09750d9c04b584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162caa69cc2e856894d33925c6101153"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a162caa69cc2e856894d33925c6101153">get_error_name</a> (self, int error_code)</td></tr>
-<tr class="memdesc:a162caa69cc2e856894d33925c6101153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to <a class="el" href="a00092.html#ga1f2a4c6b10c677e05c5b47f1c43534cd" title="Get the short name of an error code.">CAEN_FELib_GetErrorName()</a>  <a href="a00130.html#a162caa69cc2e856894d33925c6101153">More...</a><br /></td></tr>
-<tr class="separator:a162caa69cc2e856894d33925c6101153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93c32a161756abbc576e014ee3c66ec"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ac93c32a161756abbc576e014ee3c66ec">get_error_description</a> (self, int error_code)</td></tr>
-<tr class="memdesc:ac93c32a161756abbc576e014ee3c66ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to <a class="el" href="a00092.html#gad9bf7ecf9a1cf9258d720c53b9386364" title="Get the detailed description of an error code.">CAEN_FELib_GetErrorDescription()</a>  <a href="a00130.html#ac93c32a161756abbc576e014ee3c66ec">More...</a><br /></td></tr>
-<tr class="separator:ac93c32a161756abbc576e014ee3c66ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e42e4f90f4ab300c74adb950cfa477"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab3e42e4f90f4ab300c74adb950cfa477">get_last_error</a> (self)</td></tr>
-<tr class="memdesc:ab3e42e4f90f4ab300c74adb950cfa477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper to <a class="el" href="a00092.html#ga47f4413870b3b50523ba02405860dda9" title="Get the detailed description of the last error occurred on the current thread for a device.">CAEN_FELib_GetLastError()</a>  <a href="a00130.html#ab3e42e4f90f4ab300c74adb950cfa477">More...</a><br /></td></tr>
-<tr class="separator:ab3e42e4f90f4ab300c74adb950cfa477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22e9bd4746ccfb2f993ae33be877c7ad"><td class="memItemLeft" align="right" valign="top">Dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a22e9bd4746ccfb2f993ae33be877c7ad">info</a> (self)</td></tr>
-<tr class="memdesc:a22e9bd4746ccfb2f993ae33be877c7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get library info.  <a href="a00130.html#a22e9bd4746ccfb2f993ae33be877c7ad">More...</a><br /></td></tr>
-<tr class="separator:a22e9bd4746ccfb2f993ae33be877c7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e436b61f937ea687fa3897d286899cf"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a1e436b61f937ea687fa3897d286899cf">version</a> (self)</td></tr>
-<tr class="memdesc:a1e436b61f937ea687fa3897d286899cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get library version.  <a href="a00130.html#a1e436b61f937ea687fa3897d286899cf">More...</a><br /></td></tr>
-<tr class="separator:a1e436b61f937ea687fa3897d286899cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a773932634d1145aa71c5943a5ff10129"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a773932634d1145aa71c5943a5ff10129">last_error</a> (self)</td></tr>
-<tr class="memdesc:a773932634d1145aa71c5943a5ff10129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get last error.  <a href="a00130.html#a773932634d1145aa71c5943a5ff10129">More...</a><br /></td></tr>
-<tr class="separator:a773932634d1145aa71c5943a5ff10129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba232c43a4acabd3b2ddca8eaf07348"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#afba232c43a4acabd3b2ddca8eaf07348">open</a> (<a class="el" href="a00130.html#ab640bd6bd3ecc06e6a89e62ac1961696">type</a>[Self] cls, str url)</td></tr>
+<tr class="memdesc:afba232c43a4acabd3b2ddca8eaf07348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gaa3d6bda34a3c77848b1b1db4529cc047" title="Connect to a device.">CAEN_FELib_Open()</a>  <a href="a00130.html#afba232c43a4acabd3b2ddca8eaf07348">More...</a><br /></td></tr>
+<tr class="separator:afba232c43a4acabd3b2ddca8eaf07348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0931e4315d67c08986a0c4a9bfc43ca9"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a0931e4315d67c08986a0c4a9bfc43ca9">close</a> (self)</td></tr>
+<tr class="memdesc:a0931e4315d67c08986a0c4a9bfc43ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga920585fb5cbd9faf8c83e80be736f7c6" title="Close the connection with device.">CAEN_FELib_Close()</a>  <a href="a00130.html#a0931e4315d67c08986a0c4a9bfc43ca9">More...</a><br /></td></tr>
+<tr class="separator:a0931e4315d67c08986a0c4a9bfc43ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e860f2460259f007251aacca86545e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a35e860f2460259f007251aacca86545e">get_impl_lib_version</a> (self)</td></tr>
+<tr class="memdesc:a35e860f2460259f007251aacca86545e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga9d94cc1b9d54447f0a8bf7a431e4110f" title="Get the version of the implementation library used by an handle.">CAEN_FELib_GetImplLibVersion()</a>  <a href="a00130.html#a35e860f2460259f007251aacca86545e">More...</a><br /></td></tr>
+<tr class="separator:a35e860f2460259f007251aacca86545e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad645831e4f5a0ee1885a7e87ad8c5df0"><td class="memItemLeft" align="right" valign="top">tuple[Self,...]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ad645831e4f5a0ee1885a7e87ad8c5df0">get_child_nodes</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>=None, int initial_size=2 **6)</td></tr>
+<tr class="memdesc:ad645831e4f5a0ee1885a7e87ad8c5df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga1d99692257fe29f36cca78b6b58dc28c" title="Get handles that represent nodes of the tree.">CAEN_FELib_GetChildHandles()</a>  <a href="a00130.html#ad645831e4f5a0ee1885a7e87ad8c5df0">More...</a><br /></td></tr>
+<tr class="separator:ad645831e4f5a0ee1885a7e87ad8c5df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff942b5fadf7fcc3cb91f8323b8497a"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a1ff942b5fadf7fcc3cb91f8323b8497a">get_parent_node</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>=None)</td></tr>
+<tr class="memdesc:a1ff942b5fadf7fcc3cb91f8323b8497a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gac9459f6a283f1caf4c991057b66e40ef" title="Get the parent handle of a node.">CAEN_FELib_GetParentHandle()</a>  <a href="a00130.html#a1ff942b5fadf7fcc3cb91f8323b8497a">More...</a><br /></td></tr>
+<tr class="separator:a1ff942b5fadf7fcc3cb91f8323b8497a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd75849228bcddd607859a36d8347ed5"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#afd75849228bcddd607859a36d8347ed5">get_node</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>=None)</td></tr>
+<tr class="memdesc:afd75849228bcddd607859a36d8347ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gaa6f146f6a1e6f98416ee35fba5edfffc" title="Get the handle of a node.">CAEN_FELib_GetHandle()</a>  <a href="a00130.html#afd75849228bcddd607859a36d8347ed5">More...</a><br /></td></tr>
+<tr class="separator:afd75849228bcddd607859a36d8347ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71a67fa5e66158c8d03b25aa9dec9e6"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#aa71a67fa5e66158c8d03b25aa9dec9e6">get_path</a> (self)</td></tr>
+<tr class="memdesc:aa71a67fa5e66158c8d03b25aa9dec9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gacf9d43143f79079c83ff5c37c27cd1a3" title="Get the absolute path of a node.">CAEN_FELib_GetPath()</a>  <a href="a00130.html#aa71a67fa5e66158c8d03b25aa9dec9e6">More...</a><br /></td></tr>
+<tr class="separator:aa71a67fa5e66158c8d03b25aa9dec9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66c129d35ca5141d65af51b78df2c1f"><td class="memItemLeft" align="right" valign="top">tuple[str, <a class="el" href="a00126.html">NodeType</a>]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ac66c129d35ca5141d65af51b78df2c1f">get_node_properties</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>=None)</td></tr>
+<tr class="memdesc:ac66c129d35ca5141d65af51b78df2c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga0c5b9e819cdb1f50c760866f0cf763bd" title="Get the name and type of a node.">CAEN_FELib_GetNodeProperties()</a>  <a href="a00130.html#ac66c129d35ca5141d65af51b78df2c1f">More...</a><br /></td></tr>
+<tr class="separator:ac66c129d35ca5141d65af51b78df2c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbcdf8c51d007c78933c8ef62b8694e3"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#adbcdf8c51d007c78933c8ef62b8694e3">get_device_tree</a> (self, int initial_size=2 **22)</td></tr>
+<tr class="memdesc:adbcdf8c51d007c78933c8ef62b8694e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga8d412b5131135555e316443425310d3f" title="Get the tree that describe all the structure of the device in JSON format.">CAEN_FELib_GetDeviceTree()</a>  <a href="a00130.html#adbcdf8c51d007c78933c8ef62b8694e3">More...</a><br /></td></tr>
+<tr class="separator:adbcdf8c51d007c78933c8ef62b8694e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83080f6dc5715a81005bba6ad907da59"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a83080f6dc5715a81005bba6ad907da59">get_value</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>=None)</td></tr>
+<tr class="memdesc:a83080f6dc5715a81005bba6ad907da59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gab185d86b3a52a45fcc23d58f61c2a457" title="Get the value of a readable node.">CAEN_FELib_GetValue()</a>  <a href="a00130.html#a83080f6dc5715a81005bba6ad907da59">More...</a><br /></td></tr>
+<tr class="separator:a83080f6dc5715a81005bba6ad907da59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b74cb846bf1f493f97e0f00a082c90a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a0b74cb846bf1f493f97e0f00a082c90a">get_value_with_arg</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>, str arg)</td></tr>
+<tr class="memdesc:a0b74cb846bf1f493f97e0f00a082c90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gab185d86b3a52a45fcc23d58f61c2a457" title="Get the value of a readable node.">CAEN_FELib_GetValue()</a>  <a href="a00130.html#a0b74cb846bf1f493f97e0f00a082c90a">More...</a><br /></td></tr>
+<tr class="separator:a0b74cb846bf1f493f97e0f00a082c90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcc21bbe32ae0fe6707ee9c7e41aa5a"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a">set_value</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>, str <a class="el" href="a00130.html#ab641d2363302f9d39887ef556a621b7a">value</a>)</td></tr>
+<tr class="memdesc:a4bcc21bbe32ae0fe6707ee9c7e41aa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gafb0504a48713f8fb9e4f6602eeacf99c" title="Set the value of a writable node.">CAEN_FELib_SetValue()</a>  <a href="a00130.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a">More...</a><br /></td></tr>
+<tr class="separator:a4bcc21bbe32ae0fe6707ee9c7e41aa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128f277b4a4bd234dfd3aa99269ac36f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a128f277b4a4bd234dfd3aa99269ac36f">get_user_register</a> (self, int address)</td></tr>
+<tr class="memdesc:a128f277b4a4bd234dfd3aa99269ac36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga8c8cbd9a7580636a7e947dbf5fabe53c" title="Get the value of a user register.">CAEN_FELib_GetUserRegister()</a>  <a href="a00130.html#a128f277b4a4bd234dfd3aa99269ac36f">More...</a><br /></td></tr>
+<tr class="separator:a128f277b4a4bd234dfd3aa99269ac36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175895cb1546a39f1c64ade946a7f277"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a175895cb1546a39f1c64ade946a7f277">set_user_register</a> (self, int address, int <a class="el" href="a00130.html#ab641d2363302f9d39887ef556a621b7a">value</a>)</td></tr>
+<tr class="memdesc:a175895cb1546a39f1c64ade946a7f277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga6c46799bef8df672599585cabedf6810" title="Set the value of a user register.">CAEN_FELib_SetUserRegister()</a>  <a href="a00130.html#a175895cb1546a39f1c64ade946a7f277">More...</a><br /></td></tr>
+<tr class="separator:a175895cb1546a39f1c64ade946a7f277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b766e4d985df8ecf7b35c7287710dd4"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a7b766e4d985df8ecf7b35c7287710dd4">send_command</a> (self, Optional[str] <a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a>=None)</td></tr>
+<tr class="memdesc:a7b766e4d985df8ecf7b35c7287710dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga21ec1b970adad5267b722e50c058c8c5" title="Send a command specified by a node.">CAEN_FELib_SendCommand()</a>  <a href="a00130.html#a7b766e4d985df8ecf7b35c7287710dd4">More...</a><br /></td></tr>
+<tr class="separator:a7b766e4d985df8ecf7b35c7287710dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8094882d3456d624ea2d8ec103480c8e"><td class="memItemLeft" align="right" valign="top">tuple[<a class="el" href="a00122.html">Data</a>,...]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a8094882d3456d624ea2d8ec103480c8e">set_read_data_format</a> (self, Sequence[Union[Mapping[str, Any]]] fmt)</td></tr>
+<tr class="memdesc:a8094882d3456d624ea2d8ec103480c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#gaf8d7562389a677f080d566da093cf062" title="Set the format for the ReadData function to a endpoint node.">CAEN_FELib_SetReadDataFormat()</a>  <a href="a00130.html#a8094882d3456d624ea2d8ec103480c8e">More...</a><br /></td></tr>
+<tr class="separator:a8094882d3456d624ea2d8ec103480c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb0f2403d58a5d29ac3be8e7e7d282d"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a6bb0f2403d58a5d29ac3be8e7e7d282d">read_data</a> (self, int timeout, Sequence[<a class="el" href="a00122.html">Data</a>] data)</td></tr>
+<tr class="memdesc:a6bb0f2403d58a5d29ac3be8e7e7d282d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga3513d9316bfabd58fd9680f76c07985c" title="Read the data provided by an endpoint node.">CAEN_FELib_ReadData()</a>  <a href="a00130.html#a6bb0f2403d58a5d29ac3be8e7e7d282d">More...</a><br /></td></tr>
+<tr class="separator:a6bb0f2403d58a5d29ac3be8e7e7d282d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9fc47798df8b680b4a7d6ac9fe970e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#aaf9fc47798df8b680b4a7d6ac9fe970e">has_data</a> (self, int timeout)</td></tr>
+<tr class="memdesc:aaf9fc47798df8b680b4a7d6ac9fe970e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding of <a class="el" href="a00101.html#ga1b02c21c94c3206194ff5741e85eb6ef" title="Check if an endpoint node has data to be read with a subsequent call to CAEN_FELib_ReadData().">CAEN_FELib_HasData()</a>  <a href="a00130.html#aaf9fc47798df8b680b4a7d6ac9fe970e">More...</a><br /></td></tr>
+<tr class="separator:aaf9fc47798df8b680b4a7d6ac9fe970e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc5beb95fb74f4be44c04f84ed66a82"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a3cc5beb95fb74f4be44c04f84ed66a82">name</a> (self)</td></tr>
+<tr class="memdesc:a3cc5beb95fb74f4be44c04f84ed66a82"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00130.html" title="Class representing a node.">Node</a> name.  <a href="a00130.html#a3cc5beb95fb74f4be44c04f84ed66a82">More...</a><br /></td></tr>
+<tr class="separator:a3cc5beb95fb74f4be44c04f84ed66a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab640bd6bd3ecc06e6a89e62ac1961696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00126.html">NodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab640bd6bd3ecc06e6a89e62ac1961696">type</a> (self)</td></tr>
+<tr class="memdesc:ab640bd6bd3ecc06e6a89e62ac1961696"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00130.html" title="Class representing a node.">Node</a> type.  <a href="a00130.html#ab640bd6bd3ecc06e6a89e62ac1961696">More...</a><br /></td></tr>
+<tr class="separator:ab640bd6bd3ecc06e6a89e62ac1961696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73e6efc52ce7a21b22cbf9f3465df91"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">path</a> (self)</td></tr>
+<tr class="memdesc:ab73e6efc52ce7a21b22cbf9f3465df91"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00130.html" title="Class representing a node.">Node</a> absolute path.  <a href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91">More...</a><br /></td></tr>
+<tr class="separator:ab73e6efc52ce7a21b22cbf9f3465df91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d10ab1e9b6a00bb00122421cd922b7c"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a6d10ab1e9b6a00bb00122421cd922b7c">parent_node</a> (self)</td></tr>
+<tr class="memdesc:a6d10ab1e9b6a00bb00122421cd922b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent node.  <a href="a00130.html#a6d10ab1e9b6a00bb00122421cd922b7c">More...</a><br /></td></tr>
+<tr class="separator:a6d10ab1e9b6a00bb00122421cd922b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115a035b01242507c03c95139f16f6ed"><td class="memItemLeft" align="right" valign="top">tuple[Self,...]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a115a035b01242507c03c95139f16f6ed">child_nodes</a> (self)</td></tr>
+<tr class="memdesc:a115a035b01242507c03c95139f16f6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of child nodes  <a href="a00130.html#a115a035b01242507c03c95139f16f6ed">More...</a><br /></td></tr>
+<tr class="separator:a115a035b01242507c03c95139f16f6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab641d2363302f9d39887ef556a621b7a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab641d2363302f9d39887ef556a621b7a">value</a> (self)</td></tr>
+<tr class="memdesc:ab641d2363302f9d39887ef556a621b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current value.  <a href="a00130.html#ab641d2363302f9d39887ef556a621b7a">More...</a><br /></td></tr>
+<tr class="separator:ab641d2363302f9d39887ef556a621b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c1c6b558a3bb1e5f628f5999b0ba46"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a44c1c6b558a3bb1e5f628f5999b0ba46">value</a> (self, str value)</td></tr>
+<tr class="separator:a44c1c6b558a3bb1e5f628f5999b0ba46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ab74e6bf80237ddc4109968cedc58c151"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab74e6bf80237ddc4109968cedc58c151">name</a></td></tr>
-<tr class="separator:ab74e6bf80237ddc4109968cedc58c151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa28dc103258589d9cb421197fe2de90b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#aa28dc103258589d9cb421197fe2de90b">path</a></td></tr>
-<tr class="memdesc:aa28dc103258589d9cb421197fe2de90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library path on the filesystem.  <a href="a00130.html#aa28dc103258589d9cb421197fe2de90b">More...</a><br /></td></tr>
-<tr class="separator:aa28dc103258589d9cb421197fe2de90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8ef7bba54ee37a8beab56f5091c552f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#aa8ef7bba54ee37a8beab56f5091c552f">open</a></td></tr>
-<tr class="separator:aa8ef7bba54ee37a8beab56f5091c552f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12e1f53c847d07ce9e58df470087c0fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a12e1f53c847d07ce9e58df470087c0fa">close</a></td></tr>
-<tr class="separator:a12e1f53c847d07ce9e58df470087c0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4230bcc678c79b1a80bfd4d1e467ce1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#af4230bcc678c79b1a80bfd4d1e467ce1">get_impl_lib_version</a></td></tr>
-<tr class="separator:af4230bcc678c79b1a80bfd4d1e467ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5daa0f68383696cc750dfbed6ab5a69b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a5daa0f68383696cc750dfbed6ab5a69b">get_device_tree</a></td></tr>
-<tr class="separator:a5daa0f68383696cc750dfbed6ab5a69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8860c3da2622018f1d1a94abdb1e280"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ad8860c3da2622018f1d1a94abdb1e280">get_child_handles</a></td></tr>
-<tr class="separator:ad8860c3da2622018f1d1a94abdb1e280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec2b246ec023da74413c45840a52776f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#aec2b246ec023da74413c45840a52776f">get_parent_handle</a></td></tr>
-<tr class="separator:aec2b246ec023da74413c45840a52776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab390dbe0dd8c4afe80bae731708001df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab390dbe0dd8c4afe80bae731708001df">get_handle</a></td></tr>
-<tr class="separator:ab390dbe0dd8c4afe80bae731708001df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59bc7fe1ba58a5ee993a400549878e70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a59bc7fe1ba58a5ee993a400549878e70">get_path</a></td></tr>
-<tr class="separator:a59bc7fe1ba58a5ee993a400549878e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef74ce79dbf8eea217d48ac1896d0ace"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#aef74ce79dbf8eea217d48ac1896d0ace">get_node_properties</a></td></tr>
-<tr class="separator:aef74ce79dbf8eea217d48ac1896d0ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a779abe7c7a754cd03837f28d7fcd02e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a779abe7c7a754cd03837f28d7fcd02e6">get_value</a></td></tr>
-<tr class="separator:a779abe7c7a754cd03837f28d7fcd02e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2fb6353a9e8c8705649b1aa70182641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ad2fb6353a9e8c8705649b1aa70182641">set_value</a></td></tr>
-<tr class="separator:ad2fb6353a9e8c8705649b1aa70182641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6664d56dea1a53aaaf62ccb17d3c81d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#aa6664d56dea1a53aaaf62ccb17d3c81d">get_user_register</a></td></tr>
-<tr class="separator:aa6664d56dea1a53aaaf62ccb17d3c81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3287ec0a5ada14613d9762a79ce2d37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ac3287ec0a5ada14613d9762a79ce2d37">set_user_register</a></td></tr>
-<tr class="separator:ac3287ec0a5ada14613d9762a79ce2d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d920b12b71b772592c906904cf8efcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a4d920b12b71b772592c906904cf8efcb">send_command</a></td></tr>
-<tr class="separator:a4d920b12b71b772592c906904cf8efcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0da00addc7053435098d498efac760b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ae0da00addc7053435098d498efac760b">set_read_data_format</a></td></tr>
-<tr class="separator:ae0da00addc7053435098d498efac760b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda5ab4784a991370d2b3bc9dbc6d9d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#afda5ab4784a991370d2b3bc9dbc6d9d0">has_data</a></td></tr>
-<tr class="separator:afda5ab4784a991370d2b3bc9dbc6d9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97205d1bc1fb4f98316c51a6269ea44e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a97205d1bc1fb4f98316c51a6269ea44e">read_data</a></td></tr>
-<tr class="separator:a97205d1bc1fb4f98316c51a6269ea44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643699f14a4a669b38e41baeb9bb28dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a643699f14a4a669b38e41baeb9bb28dc">handle</a></td></tr>
+<tr class="separator:a643699f14a4a669b38e41baeb9bb28dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a29e9feb3c43f689a578959453e3699fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a29e9feb3c43f689a578959453e3699fd">TypeAlias</a></td></tr>
-<tr class="separator:a29e9feb3c43f689a578959453e3699fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a258d8f3ee5206d682d799316314b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td></tr>
+<tr class="memdesc:af6a258d8f3ee5206d682d799316314b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle representing the node on the C library.  <a href="a00130.html#af6a258d8f3ee5206d682d799316314b1">More...</a><br /></td></tr>
+<tr class="separator:af6a258d8f3ee5206d682d799316314b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978c1602c1c480e86c09f3c3a1b8cc98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a978c1602c1c480e86c09f3c3a1b8cc98">init</a></td></tr>
+<tr class="separator:a978c1602c1c480e86c09f3c3a1b8cc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cde68b055f3f2ee671020af4ccf4e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a></td></tr>
+<tr class="separator:a36cde68b055f3f2ee671020af4ccf4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914bcf2a712c706cb7d3cff9e6604761"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a914bcf2a712c706cb7d3cff9e6604761">repr</a></td></tr>
+<tr class="separator:a914bcf2a712c706cb7d3cff9e6604761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This class loads the CAEN_FELib shared library and exposes its functions on its public attributes using ctypes. </p>
+<div class="textblock"><p >Class representing a node. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00022">22</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00135">135</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9a3955f7fd19a8bf80b6594ed7f0cd9a" name="a9a3955f7fd19a8bf80b6594ed7f0cd9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a3955f7fd19a8bf80b6594ed7f0cd9a">&#9670;&nbsp;</a></span>get_lib_info()</h2>
+<a id="afba232c43a4acabd3b2ddca8eaf07348" name="afba232c43a4acabd3b2ddca8eaf07348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba232c43a4acabd3b2ddca8eaf07348">&#9670;&nbsp;</a></span>open()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> Dict get_lib_info </td>
+          <td class="memname"> Self open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00130.html#ab640bd6bd3ecc06e6a89e62ac1961696">type</a>[Self]&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>url</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#gaa3d6bda34a3c77848b1b1db4529cc047" title="Connect to a device.">CAEN_FELib_Open()</a> </p>
+<p >Example: </p><div class="fragment"><div class="line"><span class="keyword">with</span> device.connect(<span class="stringliteral">&quot;dig2://&lt;host&gt;&quot;</span>) <span class="keyword">as</span> dig:</div>
+<div class="line">    <span class="comment"># Do stuff here...</span></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="a00106.html#ab693e09013cedfe39a10f370449d9925" title="Binding of Node.open.">device.connect()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of device to connect (a string, with format <code>scheme://[host][/path][?query][#fragment]</code>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the digitizer node </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00160">160</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_afba232c43a4acabd3b2ddca8eaf07348_cgraph.svg" width="294" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_afba232c43a4acabd3b2ddca8eaf07348_icgraph.svg" width="74" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a0931e4315d67c08986a0c4a9bfc43ca9" name="a0931e4315d67c08986a0c4a9bfc43ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0931e4315d67c08986a0c4a9bfc43ca9">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None close </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga920585fb5cbd9faf8c83e80be736f7c6" title="Close the connection with device.">CAEN_FELib_Close()</a> </p>
+<p >This will also clear class cache to remove all references to child nodes. It will impact also nodes of other digitizer, but is required to allow garbage collection of unused nodes.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00180">180</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a0931e4315d67c08986a0c4a9bfc43ca9_cgraph.svg" width="314" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a0931e4315d67c08986a0c4a9bfc43ca9_icgraph.svg" width="534" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a35e860f2460259f007251aacca86545e" name="a35e860f2460259f007251aacca86545e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e860f2460259f007251aacca86545e">&#9670;&nbsp;</a></span>get_impl_lib_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str get_impl_lib_version </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga9d94cc1b9d54447f0a8bf7a431e4110f" title="Get the version of the implementation library used by an handle.">CAEN_FELib_GetImplLibVersion()</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>version (a string) </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00193">193</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a35e860f2460259f007251aacca86545e_cgraph.svg" width="584" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a35e860f2460259f007251aacca86545e_icgraph.svg" width="234" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad645831e4f5a0ee1885a7e87ad8c5df0" name="ad645831e4f5a0ee1885a7e87ad8c5df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad645831e4f5a0ee1885a7e87ad8c5df0">&#9670;&nbsp;</a></span>get_child_nodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> tuple[Self, ...] get_child_nodes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[str] &#160;</td>
+          <td class="paramname"><em>path</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &#160;</td>
+          <td class="paramname"><em>initial_size</em> = <code>2**6</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga1d99692257fe29f36cca78b6b58dc28c" title="Get handles that represent nodes of the tree.">CAEN_FELib_GetChildHandles()</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#a115a035b01242507c03c95139f16f6ed" title="list of child nodes">child_nodes</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initial_size</td><td>inizial size to allocate for the first iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>child nodes (a list) </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00205">205</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ad645831e4f5a0ee1885a7e87ad8c5df0_cgraph.svg" width="514" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ad645831e4f5a0ee1885a7e87ad8c5df0_icgraph.svg" width="814" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a1ff942b5fadf7fcc3cb91f8323b8497a" name="a1ff942b5fadf7fcc3cb91f8323b8497a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff942b5fadf7fcc3cb91f8323b8497a">&#9670;&nbsp;</a></span>get_parent_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self get_parent_node </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[str] &#160;</td>
+          <td class="paramname"><em>path</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#gac9459f6a283f1caf4c991057b66e40ef" title="Get the parent handle of a node.">CAEN_FELib_GetParentHandle()</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#a6d10ab1e9b6a00bb00122421cd922b7c" title="Parent node.">parent_node</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>parent node </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00225">225</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a1ff942b5fadf7fcc3cb91f8323b8497a_cgraph.svg" width="514" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a1ff942b5fadf7fcc3cb91f8323b8497a_icgraph.svg" width="363" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="afd75849228bcddd607859a36d8347ed5" name="afd75849228bcddd607859a36d8347ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd75849228bcddd607859a36d8347ed5">&#9670;&nbsp;</a></span>get_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self get_node </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[str] &#160;</td>
+          <td class="paramname"><em>path</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#gaa6f146f6a1e6f98416ee35fba5edfffc" title="Get the handle of a node.">CAEN_FELib_GetHandle()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>node at the provided path </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00239">239</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_afd75849228bcddd607859a36d8347ed5_cgraph.svg" width="384" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_afd75849228bcddd607859a36d8347ed5_icgraph.svg" width="564" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aa71a67fa5e66158c8d03b25aa9dec9e6" name="aa71a67fa5e66158c8d03b25aa9dec9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71a67fa5e66158c8d03b25aa9dec9e6">&#9670;&nbsp;</a></span>get_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str get_path </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#gacf9d43143f79079c83ff5c37c27cd1a3" title="Get the absolute path of a node.">CAEN_FELib_GetPath()</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91" title="Node absolute path.">path</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>absolute path of the provided handle (a string) </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00252">252</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_aa71a67fa5e66158c8d03b25aa9dec9e6_cgraph.svg" width="364" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_aa71a67fa5e66158c8d03b25aa9dec9e6_icgraph.svg" width="544" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ac66c129d35ca5141d65af51b78df2c1f" name="ac66c129d35ca5141d65af51b78df2c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66c129d35ca5141d65af51b78df2c1f">&#9670;&nbsp;</a></span>get_node_properties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> tuple[str, <a class="el" href="a00126.html">NodeType</a>] get_node_properties </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[str] &#160;</td>
+          <td class="paramname"><em>path</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga0c5b9e819cdb1f50c760866f0cf763bd" title="Get the name and type of a node.">CAEN_FELib_GetNodeProperties()</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#a3cc5beb95fb74f4be44c04f84ed66a82" title="Node name.">name</a> and <a class="el" href="a00130.html#ab640bd6bd3ecc06e6a89e62ac1961696" title="Node type.">Node.type</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>tuple containing node name (a string) and the node type (a <a class="el" href="a00126.html" title="Binding of CAEN_FELib_NodeType_t.">NodeType</a>) </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00265">265</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ac66c129d35ca5141d65af51b78df2c1f_cgraph.svg" width="574" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ac66c129d35ca5141d65af51b78df2c1f_icgraph.svg" width="664" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="adbcdf8c51d007c78933c8ef62b8694e3" name="adbcdf8c51d007c78933c8ef62b8694e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbcdf8c51d007c78933c8ef62b8694e3">&#9670;&nbsp;</a></span>get_device_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict get_device_tree </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -207,82 +649,45 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Wrapper to <a class="el" href="a00092.html#ga5638b652efd6778baaa08cc7456b5f06" title="Get a JSON string that contains informations about this library, like version, supported devices,...">CAEN_FELib_GetLibInfo()</a> </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#a22e9bd4746ccfb2f993ae33be877c7ad" title="Get library info.">info</a> </dd></dl>
+<p>Binding of <a class="el" href="a00101.html#ga8d412b5131135555e316443425310d3f" title="Get the tree that describe all the structure of the device in JSON format.">CAEN_FELib_GetDeviceTree()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">initial_size</td><td>initial size to be allocated for the first iteration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initial_size</td><td>inizial size to allocate for the first iteration </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON representation of the library info (a dictionary) </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00164">164</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a9a3955f7fd19a8bf80b6594ed7f0cd9a_cgraph.svg" width="434" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a9a3955f7fd19a8bf80b6594ed7f0cd9a_icgraph.svg" width="264" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ac4b444d707c39df22a09750d9c04b584" name="ac4b444d707c39df22a09750d9c04b584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4b444d707c39df22a09750d9c04b584">&#9670;&nbsp;</a></span>get_lib_version()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> str get_lib_version </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wrapper to <a class="el" href="a00092.html#gaf3e0696280953f837bcddedc39e81dd2" title="Get the value of CAEN_FELIB_VERSION_STRING used to compile the library.">CAEN_FELib_GetLibVersion()</a> </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#a1e436b61f937ea687fa3897d286899cf" title="Get library version.">version</a> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>version (a string) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON representation of the node structure (a dictionary) </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a00126.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00179">179</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00279">279</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ac4b444d707c39df22a09750d9c04b584_cgraph.svg" width="494" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_adbcdf8c51d007c78933c8ef62b8694e3_cgraph.svg" width="494" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ac4b444d707c39df22a09750d9c04b584_icgraph.svg" width="323" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_adbcdf8c51d007c78933c8ef62b8694e3_icgraph.svg" width="183" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a162caa69cc2e856894d33925c6101153" name="a162caa69cc2e856894d33925c6101153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a162caa69cc2e856894d33925c6101153">&#9670;&nbsp;</a></span>get_error_name()</h2>
+<a id="a83080f6dc5715a81005bba6ad907da59" name="a83080f6dc5715a81005bba6ad907da59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83080f6dc5715a81005bba6ad907da59">&#9670;&nbsp;</a></span>get_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> str get_error_name </td>
+          <td class="memname"> str get_value </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -290,8 +695,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>error_code</em>&#160;</td>
+          <td class="paramtype">Optional[str] &#160;</td>
+          <td class="paramname"><em>path</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,45 +706,46 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Wrapper to <a class="el" href="a00092.html#ga1f2a4c6b10c677e05c5b47f1c43534cd" title="Get the short name of an error code.">CAEN_FELib_GetErrorName()</a> </p>
+<p>Binding of <a class="el" href="a00101.html#gab185d86b3a52a45fcc23d58f61c2a457" title="Get the value of a readable node.">CAEN_FELib_GetValue()</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#ab641d2363302f9d39887ef556a621b7a" title="Current value.">value</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">error_code</td><td>error code returned by library functions </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>error name (a string) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>value of the node (a string) </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a00126.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00191">191</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00294">294</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a162caa69cc2e856894d33925c6101153_cgraph.svg" width="474" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a83080f6dc5715a81005bba6ad907da59_cgraph.svg" width="383" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a162caa69cc2e856894d33925c6101153_icgraph.svg" width="174" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a83080f6dc5715a81005bba6ad907da59_icgraph.svg" width="574" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ac93c32a161756abbc576e014ee3c66ec" name="ac93c32a161756abbc576e014ee3c66ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac93c32a161756abbc576e014ee3c66ec">&#9670;&nbsp;</a></span>get_error_description()</h2>
+<a id="a0b74cb846bf1f493f97e0f00a082c90a" name="a0b74cb846bf1f493f97e0f00a082c90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b74cb846bf1f493f97e0f00a082c90a">&#9670;&nbsp;</a></span>get_value_with_arg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> str get_error_description </td>
+          <td class="memname"> str get_value_with_arg </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -347,8 +753,14 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>error_code</em>&#160;</td>
+          <td class="paramtype">Optional[str]&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -358,87 +770,497 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Wrapper to <a class="el" href="a00092.html#gad9bf7ecf9a1cf9258d720c53b9386364" title="Get the detailed description of an error code.">CAEN_FELib_GetErrorDescription()</a> </p>
+<p>Binding of <a class="el" href="a00101.html#gab185d86b3a52a45fcc23d58f61c2a457" title="Get the value of a readable node.">CAEN_FELib_GetValue()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">error_code</td><td>error code returned by library functions </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>optional argument (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>error description (a string) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>value of the node (a string) </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a00126.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00203">203</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00307">307</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ac93c32a161756abbc576e014ee3c66ec_cgraph.svg" width="614" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a0b74cb846bf1f493f97e0f00a082c90a_cgraph.svg" width="474" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ac93c32a161756abbc576e014ee3c66ec_icgraph.svg" width="243" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a0b74cb846bf1f493f97e0f00a082c90a_icgraph.svg" width="214" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ab3e42e4f90f4ab300c74adb950cfa477" name="ab3e42e4f90f4ab300c74adb950cfa477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3e42e4f90f4ab300c74adb950cfa477">&#9670;&nbsp;</a></span>get_last_error()</h2>
+<a id="a4bcc21bbe32ae0fe6707ee9c7e41aa5a" name="a4bcc21bbe32ae0fe6707ee9c7e41aa5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bcc21bbe32ae0fe6707ee9c7e41aa5a">&#9670;&nbsp;</a></span>set_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> str get_last_error </td>
+          <td class="memname"> None set_value </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Optional[str]&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Wrapper to <a class="el" href="a00092.html#ga47f4413870b3b50523ba02405860dda9" title="Get the detailed description of the last error occurred on the current thread for a device.">CAEN_FELib_GetLastError()</a> </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#a773932634d1145aa71c5943a5ff10129" title="Get last error.">last_error</a> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>last error description (a string) </dd></dl>
+<p>Binding of <a class="el" href="a00101.html#gafb0504a48713f8fb9e4f6602eeacf99c" title="Set the value of a writable node.">CAEN_FELib_SetValue()</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00130.html#ab641d2363302f9d39887ef556a621b7a" title="Current value.">value</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>value to set (a string) </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a00126.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00215">215</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00320">320</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab3e42e4f90f4ab300c74adb950cfa477_cgraph.svg" width="474" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a4bcc21bbe32ae0fe6707ee9c7e41aa5a_cgraph.svg" width="383" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab3e42e4f90f4ab300c74adb950cfa477_icgraph.svg" width="344" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a4bcc21bbe32ae0fe6707ee9c7e41aa5a_icgraph.svg" width="574" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a22e9bd4746ccfb2f993ae33be877c7ad" name="a22e9bd4746ccfb2f993ae33be877c7ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22e9bd4746ccfb2f993ae33be877c7ad">&#9670;&nbsp;</a></span>info()</h2>
+<a id="a128f277b4a4bd234dfd3aa99269ac36f" name="a128f277b4a4bd234dfd3aa99269ac36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128f277b4a4bd234dfd3aa99269ac36f">&#9670;&nbsp;</a></span>get_user_register()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> Dict info </td>
+          <td class="memname"> int get_user_register </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga8c8cbd9a7580636a7e947dbf5fabe53c" title="Get the value of a user register.">CAEN_FELib_GetUserRegister()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>user register address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>value of the register (a int) </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00331">331</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a128f277b4a4bd234dfd3aa99269ac36f_cgraph.svg" width="534" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a128f277b4a4bd234dfd3aa99269ac36f_icgraph.svg" width="203" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a175895cb1546a39f1c64ade946a7f277" name="a175895cb1546a39f1c64ade946a7f277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175895cb1546a39f1c64ade946a7f277">&#9670;&nbsp;</a></span>set_user_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None set_user_register </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga6c46799bef8df672599585cabedf6810" title="Set the value of a user register.">CAEN_FELib_SetUserRegister()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>user register address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>value of the register </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00343">343</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a175895cb1546a39f1c64ade946a7f277_cgraph.svg" width="534" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a175895cb1546a39f1c64ade946a7f277_icgraph.svg" width="203" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a7b766e4d985df8ecf7b35c7287710dd4" name="a7b766e4d985df8ecf7b35c7287710dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b766e4d985df8ecf7b35c7287710dd4">&#9670;&nbsp;</a></span>send_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None send_command </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[str] &#160;</td>
+          <td class="paramname"><em>path</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga21ec1b970adad5267b722e50c058c8c5" title="Send a command specified by a node.">CAEN_FELib_SendCommand()</a> </p>
+<dl class="section see"><dt>See also</dt><dd><b>call</b> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>relative path of a node (either a string or <code>None</code> that is interpreted as an empty string) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00353">353</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a7b766e4d985df8ecf7b35c7287710dd4_cgraph.svg" width="444" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a7b766e4d985df8ecf7b35c7287710dd4_icgraph.svg" width="604" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8094882d3456d624ea2d8ec103480c8e" name="a8094882d3456d624ea2d8ec103480c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8094882d3456d624ea2d8ec103480c8e">&#9670;&nbsp;</a></span>set_read_data_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> tuple[<a class="el" href="a00122.html">Data</a>, ...] set_read_data_format </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Sequence[Union[Mapping[str, Any]]]&#160;</td>
+          <td class="paramname"><em>fmt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#gaf8d7562389a677f080d566da093cf062" title="Set the format for the ReadData function to a endpoint node.">CAEN_FELib_SetReadDataFormat()</a> </p>
+<p >In addition to what happens in C library, it also allocate data. Size of fields with <code>dim &gt; 0</code> must be specified by a <code>"shape"</code> entry in the field description, that is a vector passed to the <code>shape</code> argument of <code>np.empty</code> constructor. On fields with <code>dim == 0</code> the shape can be omitted, and is set to <code>[]</code> by default. Fields can be accessed on data attribute of this class, that is a list of <a class="el" href="a00122.html" title="Class representing data set by Node.set_read_data_format().">Data</a> inizialized with the field descriptions, in the same order of <code>format</code>.</p>
+<p >Example: </p><div class="fragment"><div class="line">nch = dig.par.numch.value</div>
+<div class="line">reclen = dig.par.recordlengths.value</div>
+<div class="line">format = [</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&#39;name&#39;</span>: <span class="stringliteral">&#39;WAVEFORM&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span>: <span class="stringliteral">&#39;U16&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;dim&#39;</span>: 2,</div>
+<div class="line">        <span class="stringliteral">&#39;shape&#39;</span>: [nch, reclen],</div>
+<div class="line">    },</div>
+<div class="line">]</div>
+<div class="line">data = ep_node.set_read_data_format(format)</div>
+<div class="line">print(data[0])</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>JSON representation of the format, in compliance with the endpoint "format" property (a list of dictionaries) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Tuple of <a class="el" href="a00122.html" title="Class representing data set by Node.set_read_data_format().">Data</a> with allocated buffers of specified dim and shape, to be passed as second argument of <a class="el" href="a00130.html#a6bb0f2403d58a5d29ac3be8e7e7d282d" title="Binding of CAEN_FELib_ReadData()">read_data()</a> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00363">363</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a8094882d3456d624ea2d8ec103480c8e_cgraph.svg" width="844" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a8094882d3456d624ea2d8ec103480c8e_icgraph.svg" width="394" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a6bb0f2403d58a5d29ac3be8e7e7d282d" name="a6bb0f2403d58a5d29ac3be8e7e7d282d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb0f2403d58a5d29ac3be8e7e7d282d">&#9670;&nbsp;</a></span>read_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None read_data </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Sequence[<a class="el" href="a00122.html">Data</a>]&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga3513d9316bfabd58fd9680f76c07985c" title="Read the data provided by an endpoint node.">CAEN_FELib_ReadData()</a> </p>
+<p >Unlike what happens in C library, variadic arguments are added automatically according to what has been specified by <a class="el" href="a00130.html#a8094882d3456d624ea2d8ec103480c8e" title="Binding of CAEN_FELib_SetReadDataFormat()">set_read_data_format()</a>. <a class="el" href="a00122.html" title="Class representing data set by Node.set_read_data_format().">Data</a> can be retrieved using the data attribute of this class.</p>
+<p >Example: </p><div class="fragment"><div class="line"><span class="comment"># Start acquisition</span></div>
+<div class="line">dig.cmd.armacquisition()</div>
+<div class="line">dig.cmd.swstartacquisition()</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
+<div class="line">    <span class="keywordflow">try</span>:</div>
+<div class="line">        ep_node.read_data(100, data)</div>
+<div class="line">    <span class="keywordflow">except</span> error.Error <span class="keyword">as</span> ex:</div>
+<div class="line">        <span class="keywordflow">if</span> ex.code <span class="keywordflow">is</span> error.ErrorCode.TIMEOUT:</div>
+<div class="line">            <span class="keywordflow">continue</span></div>
+<div class="line">        <span class="keywordflow">elif</span> ex.code <span class="keywordflow">is</span> error.ErrorCode.STOP:</div>
+<div class="line">            <span class="keywordflow">break</span></div>
+<div class="line">        <span class="keywordflow">else</span>:</div>
+<div class="line">            <span class="keywordflow">raise</span> ex</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment"># Do stuff with data</span></div>
+<div class="line">    <span class="keywordflow">for</span> field <span class="keywordflow">in</span> data:</div>
+<div class="line">        print(field.value)</div>
+<div class="line"> </div>
+<div class="line">dig.cmd.disarmacquisition()</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout of the function in milliseconds; if this value is -1 the function is blocking with infinite timeout </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>The object returned by <a class="el" href="a00130.html#a8094882d3456d624ea2d8ec103480c8e" title="Binding of CAEN_FELib_SetReadDataFormat()">set_read_data_format()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00408">408</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a6bb0f2403d58a5d29ac3be8e7e7d282d_cgraph.svg" width="744" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a6bb0f2403d58a5d29ac3be8e7e7d282d_icgraph.svg" width="394" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aaf9fc47798df8b680b4a7d6ac9fe970e" name="aaf9fc47798df8b680b4a7d6ac9fe970e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9fc47798df8b680b4a7d6ac9fe970e">&#9670;&nbsp;</a></span>has_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None has_data </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binding of <a class="el" href="a00101.html#ga1b02c21c94c3206194ff5741e85eb6ef" title="Check if an endpoint node has data to be read with a subsequent call to CAEN_FELib_ReadData().">CAEN_FELib_HasData()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout of the function in milliseconds; if this value is -1 the function is blocking with infinite timeout </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00166.html" title="Raised when a wrapped C API function returns negative values.">error.Error</a></td><td>in case of error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00447">447</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_aaf9fc47798df8b680b4a7d6ac9fe970e_cgraph.svg" width="975" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_aaf9fc47798df8b680b4a7d6ac9fe970e_icgraph.svg" width="114" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a3cc5beb95fb74f4be44c04f84ed66a82" name="a3cc5beb95fb74f4be44c04f84ed66a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc5beb95fb74f4be44c04f84ed66a82">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str name </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -447,32 +1269,32 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get library info. </p>
+<p><a class="el" href="a00130.html" title="Class representing a node.">Node</a> name. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00230">230</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00465">465</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a22e9bd4746ccfb2f993ae33be877c7ad_cgraph.svg" width="544" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a3cc5beb95fb74f4be44c04f84ed66a82_cgraph.svg" width="688" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a22e9bd4746ccfb2f993ae33be877c7ad_icgraph.svg" width="74" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a3cc5beb95fb74f4be44c04f84ed66a82_icgraph.svg" width="415" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a1e436b61f937ea687fa3897d286899cf" name="a1e436b61f937ea687fa3897d286899cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e436b61f937ea687fa3897d286899cf">&#9670;&nbsp;</a></span>version()</h2>
+<a id="ab640bd6bd3ecc06e6a89e62ac1961696" name="ab640bd6bd3ecc06e6a89e62ac1961696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab640bd6bd3ecc06e6a89e62ac1961696">&#9670;&nbsp;</a></span>type()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> str version </td>
+          <td class="memname"> <a class="el" href="a00126.html">NodeType</a> type </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -481,32 +1303,32 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get library version. </p>
+<p><a class="el" href="a00130.html" title="Class representing a node.">Node</a> type. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00235">235</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00470">470</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a1e436b61f937ea687fa3897d286899cf_cgraph.svg" width="634" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab640bd6bd3ecc06e6a89e62ac1961696_cgraph.svg" width="688" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a1e436b61f937ea687fa3897d286899cf_icgraph.svg" width="103" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab640bd6bd3ecc06e6a89e62ac1961696_icgraph.svg" width="224" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a773932634d1145aa71c5943a5ff10129" name="a773932634d1145aa71c5943a5ff10129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a773932634d1145aa71c5943a5ff10129">&#9670;&nbsp;</a></span>last_error()</h2>
+<a id="ab73e6efc52ce7a21b22cbf9f3465df91" name="ab73e6efc52ce7a21b22cbf9f3465df91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73e6efc52ce7a21b22cbf9f3465df91">&#9670;&nbsp;</a></span>path()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> str last_error </td>
+          <td class="memname"> str path </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -515,27 +1337,171 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get last error. </p>
+<p><a class="el" href="a00130.html" title="Class representing a node.">Node</a> absolute path. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00240">240</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00475">475</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a773932634d1145aa71c5943a5ff10129_cgraph.svg" width="1104" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab73e6efc52ce7a21b22cbf9f3465df91_cgraph.svg" width="475" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a773932634d1145aa71c5943a5ff10129_icgraph.svg" width="134" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab73e6efc52ce7a21b22cbf9f3465df91_icgraph.svg" width="403" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a6d10ab1e9b6a00bb00122421cd922b7c" name="a6d10ab1e9b6a00bb00122421cd922b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d10ab1e9b6a00bb00122421cd922b7c">&#9670;&nbsp;</a></span>parent_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self parent_node </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parent node. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00480">480</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a6d10ab1e9b6a00bb00122421cd922b7c_cgraph.svg" width="694" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a6d10ab1e9b6a00bb00122421cd922b7c_icgraph.svg" width="143" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a115a035b01242507c03c95139f16f6ed" name="a115a035b01242507c03c95139f16f6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115a035b01242507c03c95139f16f6ed">&#9670;&nbsp;</a></span>child_nodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> tuple[Self, ...] child_nodes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>list of child nodes </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00485">485</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a115a035b01242507c03c95139f16f6ed_cgraph.svg" width="694" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a115a035b01242507c03c95139f16f6ed_icgraph.svg" width="594" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab641d2363302f9d39887ef556a621b7a" name="ab641d2363302f9d39887ef556a621b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab641d2363302f9d39887ef556a621b7a">&#9670;&nbsp;</a></span>value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current value. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00490">490</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab641d2363302f9d39887ef556a621b7a_cgraph.svg" width="503" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_ab641d2363302f9d39887ef556a621b7a_icgraph.svg" width="419" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a44c1c6b558a3bb1e5f628f5999b0ba46" name="a44c1c6b558a3bb1e5f628f5999b0ba46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c1c6b558a3bb1e5f628f5999b0ba46">&#9670;&nbsp;</a></span>value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00495">495</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a44c1c6b558a3bb1e5f628f5999b0ba46_cgraph.svg" width="895" height="488"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00130_a44c1c6b558a3bb1e5f628f5999b0ba46_icgraph.svg" width="414" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a29e9feb3c43f689a578959453e3699fd" name="a29e9feb3c43f689a578959453e3699fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29e9feb3c43f689a578959453e3699fd">&#9670;&nbsp;</a></span>TypeAlias</h2>
+<a id="af6a258d8f3ee5206d682d799316314b1" name="af6a258d8f3ee5206d682d799316314b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a258d8f3ee5206d682d799316314b1">&#9670;&nbsp;</a></span>bool</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,7 +1510,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TypeAlias</td>
+          <td class="memname">bool</td>
         </tr>
       </table>
   </td>
@@ -554,326 +1520,111 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00029">29</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p>Handle representing the node on the C library. </p>
+<p >Root node, set to None on root node (stored to prevent g.c.) </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00145">145</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="ab74e6bf80237ddc4109968cedc58c151" name="ab74e6bf80237ddc4109968cedc58c151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab74e6bf80237ddc4109968cedc58c151">&#9670;&nbsp;</a></span>name</h2>
+<a id="a978c1602c1c480e86c09f3c3a1b8cc98" name="a978c1602c1c480e86c09f3c3a1b8cc98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978c1602c1c480e86c09f3c3a1b8cc98">&#9670;&nbsp;</a></span>init</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">init</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00145">145</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+
+</div>
+</div>
+<a id="a36cde68b055f3f2ee671020af4ccf4e2" name="a36cde68b055f3f2ee671020af4ccf4e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36cde68b055f3f2ee671020af4ccf4e2">&#9670;&nbsp;</a></span>False</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00145">145</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+
+</div>
+</div>
+<a id="a914bcf2a712c706cb7d3cff9e6604761" name="a914bcf2a712c706cb7d3cff9e6604761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914bcf2a712c706cb7d3cff9e6604761">&#9670;&nbsp;</a></span>repr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">repr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00145">145</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+
+</div>
+</div>
+<a id="a643699f14a4a669b38e41baeb9bb28dc" name="a643699f14a4a669b38e41baeb9bb28dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643699f14a4a669b38e41baeb9bb28dc">&#9670;&nbsp;</a></span>handle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">name</td>
+          <td class="memname">handle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00052">52</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="aa28dc103258589d9cb421197fe2de90b" name="aa28dc103258589d9cb421197fe2de90b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa28dc103258589d9cb421197fe2de90b">&#9670;&nbsp;</a></span>path</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">path</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Library path on the filesystem. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00084">84</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="aa8ef7bba54ee37a8beab56f5091c552f" name="aa8ef7bba54ee37a8beab56f5091c552f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8ef7bba54ee37a8beab56f5091c552f">&#9670;&nbsp;</a></span>open</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">open</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00100">100</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="a12e1f53c847d07ce9e58df470087c0fa" name="a12e1f53c847d07ce9e58df470087c0fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12e1f53c847d07ce9e58df470087c0fa">&#9670;&nbsp;</a></span>close</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">close</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00101">101</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="af4230bcc678c79b1a80bfd4d1e467ce1" name="af4230bcc678c79b1a80bfd4d1e467ce1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4230bcc678c79b1a80bfd4d1e467ce1">&#9670;&nbsp;</a></span>get_impl_lib_version</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_impl_lib_version</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00102">102</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="a5daa0f68383696cc750dfbed6ab5a69b" name="a5daa0f68383696cc750dfbed6ab5a69b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5daa0f68383696cc750dfbed6ab5a69b">&#9670;&nbsp;</a></span>get_device_tree</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_device_tree</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00103">103</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="ad8860c3da2622018f1d1a94abdb1e280" name="ad8860c3da2622018f1d1a94abdb1e280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8860c3da2622018f1d1a94abdb1e280">&#9670;&nbsp;</a></span>get_child_handles</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_child_handles</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00104">104</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="aec2b246ec023da74413c45840a52776f" name="aec2b246ec023da74413c45840a52776f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec2b246ec023da74413c45840a52776f">&#9670;&nbsp;</a></span>get_parent_handle</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_parent_handle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00105">105</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="ab390dbe0dd8c4afe80bae731708001df" name="ab390dbe0dd8c4afe80bae731708001df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab390dbe0dd8c4afe80bae731708001df">&#9670;&nbsp;</a></span>get_handle</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_handle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00106">106</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="a59bc7fe1ba58a5ee993a400549878e70" name="a59bc7fe1ba58a5ee993a400549878e70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59bc7fe1ba58a5ee993a400549878e70">&#9670;&nbsp;</a></span>get_path</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_path</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00107">107</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="aef74ce79dbf8eea217d48ac1896d0ace" name="aef74ce79dbf8eea217d48ac1896d0ace"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef74ce79dbf8eea217d48ac1896d0ace">&#9670;&nbsp;</a></span>get_node_properties</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_node_properties</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00108">108</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="a779abe7c7a754cd03837f28d7fcd02e6" name="a779abe7c7a754cd03837f28d7fcd02e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a779abe7c7a754cd03837f28d7fcd02e6">&#9670;&nbsp;</a></span>get_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_value</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00109">109</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="ad2fb6353a9e8c8705649b1aa70182641" name="ad2fb6353a9e8c8705649b1aa70182641"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2fb6353a9e8c8705649b1aa70182641">&#9670;&nbsp;</a></span>set_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">set_value</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00110">110</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="aa6664d56dea1a53aaaf62ccb17d3c81d" name="aa6664d56dea1a53aaaf62ccb17d3c81d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6664d56dea1a53aaaf62ccb17d3c81d">&#9670;&nbsp;</a></span>get_user_register</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_user_register</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00111">111</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="ac3287ec0a5ada14613d9762a79ce2d37" name="ac3287ec0a5ada14613d9762a79ce2d37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3287ec0a5ada14613d9762a79ce2d37">&#9670;&nbsp;</a></span>set_user_register</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">set_user_register</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00112">112</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="a4d920b12b71b772592c906904cf8efcb" name="a4d920b12b71b772592c906904cf8efcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d920b12b71b772592c906904cf8efcb">&#9670;&nbsp;</a></span>send_command</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">send_command</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00113">113</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="ae0da00addc7053435098d498efac760b" name="ae0da00addc7053435098d498efac760b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0da00addc7053435098d498efac760b">&#9670;&nbsp;</a></span>set_read_data_format</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">set_read_data_format</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00114">114</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="afda5ab4784a991370d2b3bc9dbc6d9d0" name="afda5ab4784a991370d2b3bc9dbc6d9d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afda5ab4784a991370d2b3bc9dbc6d9d0">&#9670;&nbsp;</a></span>has_data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">has_data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00115">115</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
-
-</div>
-</div>
-<a id="a97205d1bc1fb4f98316c51a6269ea44e" name="a97205d1bc1fb4f98316c51a6269ea44e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97205d1bc1fb4f98316c51a6269ea44e">&#9670;&nbsp;</a></span>read_data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">read_data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00080_source.html#l00130">130</a> of file <a class="el" href="a00080_source.html">lib.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00525">525</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00080_source.html">lib.py</a></li>
+<li><a class="el" href="a00083_source.html">device.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00094.html">caen_felib</a></li><li class="navelem"><a class="el" href="a00098.html">lib</a></li><li class="navelem"><a class="el" href="a00130.html">_Lib</a></li>
-    <li class="footer">Generated on Wed Jun 12 2024 09:31:11 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="a00103.html">caen_felib</a></li><li class="navelem"><a class="el" href="a00106.html">device</a></li><li class="navelem"><a class="el" href="a00130.html">Node</a></li>
+    <li class="footer">Generated on Mon May 5 2025 09:55:00 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

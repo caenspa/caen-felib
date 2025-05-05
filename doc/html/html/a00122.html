@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CAEN FE Library: ErrorCode Class Reference</title>
+<title>CAEN FE Library: Data Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="caen_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.1</span>
+   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.2</span>
    </div>
    <div id="projectbrief">SDK for new generation digitizers</div>
   </td>
@@ -86,68 +86,133 @@ $(document).ready(function(){initNavTree('a00122.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a>  </div>
-  <div class="headertitle"><div class="title">ErrorCode Class Reference</div></div>
+  <div class="headertitle"><div class="title">Data Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper to <a class="el" href="a00091.html#gaf6fd99dc08cad57510b19e7c35db289b" title="Error codes.">CAEN_FELib_ErrorCode</a>.  
+<p>Class representing data set by <a class="el" href="a00130.html#a8094882d3456d624ea2d8ec103480c8e" title="Binding of CAEN_FELib_SetReadDataFormat()">Node.set_read_data_format()</a>.  
  <a href="a00122.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for ErrorCode:</div>
+Collaboration diagram for Data:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00121.svg" width="243" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div class="dynheader">
-Collaboration diagram for ErrorCode:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00120.svg" width="243" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00120.svg" width="203" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad0919f0f0a9c71cee3799cec3daadab6"><td class="memItemLeft" align="right" valign="top">np.ndarray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ad0919f0f0a9c71cee3799cec3daadab6">value</a> (self)</td></tr>
+<tr class="memdesc:ad0919f0f0a9c71cee3799cec3daadab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of <code>numpy.ndarray</code> that holds data.  <a href="a00122.html#ad0919f0f0a9c71cee3799cec3daadab6">More...</a><br /></td></tr>
+<tr class="separator:ad0919f0f0a9c71cee3799cec3daadab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d17bccc3fcffb16d4d73169dfb4287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00122.html#a3a4f14844a0306bc786bdd90224db862">Any</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a11d17bccc3fcffb16d4d73169dfb4287">arg</a> (self)</td></tr>
+<tr class="memdesc:a11d17bccc3fcffb16d4d73169dfb4287"><td class="mdescLeft">&#160;</td><td class="mdescRight">ctypes pointer to <a class="el" href="a00122.html#ad0919f0f0a9c71cee3799cec3daadab6" title="Instance of numpy.ndarray that holds data.">Data.value</a> that is used within <a class="el" href="a00130.html#a6bb0f2403d58a5d29ac3be8e7e7d282d" title="Binding of CAEN_FELib_ReadData()">Node.read_data</a>  <a href="a00122.html#a11d17bccc3fcffb16d4d73169dfb4287">More...</a><br /></td></tr>
+<tr class="separator:a11d17bccc3fcffb16d4d73169dfb4287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aa8c597b681569696addf7b2ff1d6392c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aa8c597b681569696addf7b2ff1d6392c">SUCCESS</a> = 0</td></tr>
-<tr class="separator:aa8c597b681569696addf7b2ff1d6392c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1243bff380c18cb10df9143736f6cfc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ab1243bff380c18cb10df9143736f6cfc">GENERIC_ERROR</a> = -1</td></tr>
-<tr class="separator:ab1243bff380c18cb10df9143736f6cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab42444cf50063f9d2eab60ab161ccb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aab42444cf50063f9d2eab60ab161ccb4">INVALID_PARAM</a> = -2</td></tr>
-<tr class="separator:aab42444cf50063f9d2eab60ab161ccb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add6bdb672a4379c0c3b3c599d810705e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#add6bdb672a4379c0c3b3c599d810705e">DEVICE_ALREADY_OPEN</a> = -3</td></tr>
-<tr class="separator:add6bdb672a4379c0c3b3c599d810705e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace6635ccf78c292f80fae3a9eb03ae5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aace6635ccf78c292f80fae3a9eb03ae5">DEVICE_NOT_FOUND</a> = -4</td></tr>
-<tr class="separator:aace6635ccf78c292f80fae3a9eb03ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49225012d229c1df90fa804d9e471d51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a49225012d229c1df90fa804d9e471d51">MAX_DEVICES_ERROR</a> = -5</td></tr>
-<tr class="separator:a49225012d229c1df90fa804d9e471d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02b3552f22966b69731df9acddf94c22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a02b3552f22966b69731df9acddf94c22">COMMAND_ERROR</a> = -6</td></tr>
-<tr class="separator:a02b3552f22966b69731df9acddf94c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6346e633fda37c1503450b5a6d2ff2ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a6346e633fda37c1503450b5a6d2ff2ed">INTERNAL_ERROR</a> = -7</td></tr>
-<tr class="separator:a6346e633fda37c1503450b5a6d2ff2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e53c49669fd57751feaca0730e1314"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ad4e53c49669fd57751feaca0730e1314">NOT_IMPLEMENTED</a> = -8</td></tr>
-<tr class="separator:ad4e53c49669fd57751feaca0730e1314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d2f176f2adcc0d2428876264b3d04c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a21d2f176f2adcc0d2428876264b3d04c">INVALID_HANDLE</a> = -9</td></tr>
-<tr class="separator:a21d2f176f2adcc0d2428876264b3d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5188066b07f07e1fab81786b07e9e6a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a5188066b07f07e1fab81786b07e9e6a5">DEVICE_LIBRARY_NOT_AVAILABLE</a> = -10</td></tr>
-<tr class="separator:a5188066b07f07e1fab81786b07e9e6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb1703e795b348cfb0d1efae78314f83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#acb1703e795b348cfb0d1efae78314f83">TIMEOUT</a> = -11</td></tr>
-<tr class="separator:acb1703e795b348cfb0d1efae78314f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cd8eb3f406d3006eb6e54de792a3728"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a8cd8eb3f406d3006eb6e54de792a3728">STOP</a> = -12</td></tr>
-<tr class="separator:a8cd8eb3f406d3006eb6e54de792a3728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a511a02294152ca837e677530984a07ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a511a02294152ca837e677530984a07ff">DISABLED</a> = -13</td></tr>
-<tr class="separator:a511a02294152ca837e677530984a07ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af59fc228d24f9b70905db4420a4317b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#af59fc228d24f9b70905db4420a4317b3">BAD_LIBRARY_VERSION</a> = -14</td></tr>
-<tr class="separator:af59fc228d24f9b70905db4420a4317b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ad2efeb64b4ba345119ae7ae5f0d03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a13ad2efeb64b4ba345119ae7ae5f0d03">COMMUNICATION_ERROR</a> = -15</td></tr>
-<tr class="separator:a13ad2efeb64b4ba345119ae7ae5f0d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61569f2965b7a369eb10b6d75d410d11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td></tr>
+<tr class="memdesc:a61569f2965b7a369eb10b6d75d410d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field name.  <a href="a00122.html#a61569f2965b7a369eb10b6d75d410d11">More...</a><br /></td></tr>
+<tr class="separator:a61569f2965b7a369eb10b6d75d410d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb1327b18bf08a379d19eef89cf1ed1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#affb1327b18bf08a379d19eef89cf1ed1">default</a></td></tr>
+<tr class="separator:affb1327b18bf08a379d19eef89cf1ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914bcf2a712c706cb7d3cff9e6604761"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a914bcf2a712c706cb7d3cff9e6604761">repr</a></td></tr>
+<tr class="separator:a914bcf2a712c706cb7d3cff9e6604761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44e8607df17617696a0a70c1c55871d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ac44e8607df17617696a0a70c1c55871d">default_factory</a></td></tr>
+<tr class="memdesc:ac44e8607df17617696a0a70c1c55871d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field dimension.  <a href="a00122.html#ac44e8607df17617696a0a70c1c55871d">More...</a><br /></td></tr>
+<tr class="separator:ac44e8607df17617696a0a70c1c55871d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbb80367a84ef6bc36dcf82df1fea55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a6bbb80367a84ef6bc36dcf82df1fea55">list</a></td></tr>
+<tr class="separator:a6bbb80367a84ef6bc36dcf82df1fea55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4c82e7573d516a6dffe895cc98f613"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a7c4c82e7573d516a6dffe895cc98f613">ndarray</a></td></tr>
+<tr class="memdesc:a7c4c82e7573d516a6dffe895cc98f613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field shape.  <a href="a00122.html#a7c4c82e7573d516a6dffe895cc98f613">More...</a><br /></td></tr>
+<tr class="separator:a7c4c82e7573d516a6dffe895cc98f613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978c1602c1c480e86c09f3c3a1b8cc98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a978c1602c1c480e86c09f3c3a1b8cc98">init</a></td></tr>
+<tr class="separator:a978c1602c1c480e86c09f3c3a1b8cc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cde68b055f3f2ee671020af4ccf4e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a></td></tr>
+<tr class="separator:a36cde68b055f3f2ee671020af4ccf4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7485dcc8d256a6f197ed7802687f252"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ac7485dcc8d256a6f197ed7802687f252">None</a></td></tr>
+<tr class="separator:ac7485dcc8d256a6f197ed7802687f252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4f14844a0306bc786bdd90224db862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a3a4f14844a0306bc786bdd90224db862">Any</a></td></tr>
+<tr class="separator:a3a4f14844a0306bc786bdd90224db862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Wrapper to <a class="el" href="a00091.html#gaf6fd99dc08cad57510b19e7c35db289b" title="Error codes.">CAEN_FELib_ErrorCode</a>. </p>
+<div class="textblock"><p >Class representing data set by <a class="el" href="a00130.html#a8094882d3456d624ea2d8ec103480c8e" title="Binding of CAEN_FELib_SetReadDataFormat()">Node.set_read_data_format()</a>. </p>
+<p >It holds a <code>numpy.ndarray</code> in value allocated with shape specified in the data format. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00013">13</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="aa8c597b681569696addf7b2ff1d6392c" name="aa8c597b681569696addf7b2ff1d6392c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8c597b681569696addf7b2ff1d6392c">&#9670;&nbsp;</a></span>SUCCESS</h2>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00049">49</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad0919f0f0a9c71cee3799cec3daadab6" name="ad0919f0f0a9c71cee3799cec3daadab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0919f0f0a9c71cee3799cec3daadab6">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.ndarray value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instance of <code>numpy.ndarray</code> that holds data. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00080">80</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00122_ad0919f0f0a9c71cee3799cec3daadab6_cgraph.svg" width="83" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00122_ad0919f0f0a9c71cee3799cec3daadab6_icgraph.svg" width="183" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a11d17bccc3fcffb16d4d73169dfb4287" name="a11d17bccc3fcffb16d4d73169dfb4287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d17bccc3fcffb16d4d73169dfb4287">&#9670;&nbsp;</a></span>arg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="a00122.html#a3a4f14844a0306bc786bdd90224db862">Any</a> arg </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ctypes pointer to <a class="el" href="a00122.html#ad0919f0f0a9c71cee3799cec3daadab6" title="Instance of numpy.ndarray that holds data.">Data.value</a> that is used within <a class="el" href="a00130.html#a6bb0f2403d58a5d29ac3be8e7e7d282d" title="Binding of CAEN_FELib_ReadData()">Node.read_data</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00085">85</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00122_a11d17bccc3fcffb16d4d73169dfb4287_cgraph.svg" width="1111" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00122_a11d17bccc3fcffb16d4d73169dfb4287_icgraph.svg" width="63" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a61569f2965b7a369eb10b6d75d410d11" name="a61569f2965b7a369eb10b6d75d410d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61569f2965b7a369eb10b6d75d410d11">&#9670;&nbsp;</a></span>int</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +221,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SUCCESS = 0</td>
+          <td class="memname">int</td>
         </tr>
       </table>
   </td>
@@ -166,12 +231,15 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00017">17</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p>Field name. </p>
+<p >Field type </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00059">59</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="ab1243bff380c18cb10df9143736f6cfc" name="ab1243bff380c18cb10df9143736f6cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1243bff380c18cb10df9143736f6cfc">&#9670;&nbsp;</a></span>GENERIC_ERROR</h2>
+<a id="affb1327b18bf08a379d19eef89cf1ed1" name="affb1327b18bf08a379d19eef89cf1ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb1327b18bf08a379d19eef89cf1ed1">&#9670;&nbsp;</a></span>default</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +248,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GENERIC_ERROR = -1</td>
+          <td class="memname">default</td>
         </tr>
       </table>
   </td>
@@ -190,12 +258,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00018">18</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00059">59</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="aab42444cf50063f9d2eab60ab161ccb4" name="aab42444cf50063f9d2eab60ab161ccb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab42444cf50063f9d2eab60ab161ccb4">&#9670;&nbsp;</a></span>INVALID_PARAM</h2>
+<a id="a914bcf2a712c706cb7d3cff9e6604761" name="a914bcf2a712c706cb7d3cff9e6604761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914bcf2a712c706cb7d3cff9e6604761">&#9670;&nbsp;</a></span>repr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +272,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int INVALID_PARAM = -2</td>
+          <td class="memname">repr</td>
         </tr>
       </table>
   </td>
@@ -214,12 +282,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00019">19</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00059">59</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="add6bdb672a4379c0c3b3c599d810705e" name="add6bdb672a4379c0c3b3c599d810705e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add6bdb672a4379c0c3b3c599d810705e">&#9670;&nbsp;</a></span>DEVICE_ALREADY_OPEN</h2>
+<a id="ac44e8607df17617696a0a70c1c55871d" name="ac44e8607df17617696a0a70c1c55871d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44e8607df17617696a0a70c1c55871d">&#9670;&nbsp;</a></span>default_factory</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +296,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DEVICE_ALREADY_OPEN = -3</td>
+          <td class="memname">default_factory</td>
         </tr>
       </table>
   </td>
@@ -238,12 +306,14 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00020">20</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p>Field dimension. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00060">60</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="aace6635ccf78c292f80fae3a9eb03ae5" name="aace6635ccf78c292f80fae3a9eb03ae5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace6635ccf78c292f80fae3a9eb03ae5">&#9670;&nbsp;</a></span>DEVICE_NOT_FOUND</h2>
+<a id="a6bbb80367a84ef6bc36dcf82df1fea55" name="a6bbb80367a84ef6bc36dcf82df1fea55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbb80367a84ef6bc36dcf82df1fea55">&#9670;&nbsp;</a></span>list</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +322,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DEVICE_NOT_FOUND = -4</td>
+          <td class="memname">list</td>
         </tr>
       </table>
   </td>
@@ -262,12 +332,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00021">21</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00060">60</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="a49225012d229c1df90fa804d9e471d51" name="a49225012d229c1df90fa804d9e471d51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49225012d229c1df90fa804d9e471d51">&#9670;&nbsp;</a></span>MAX_DEVICES_ERROR</h2>
+<a id="a7c4c82e7573d516a6dffe895cc98f613" name="a7c4c82e7573d516a6dffe895cc98f613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4c82e7573d516a6dffe895cc98f613">&#9670;&nbsp;</a></span>ndarray</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +346,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int MAX_DEVICES_ERROR = -5</td>
+          <td class="memname">ndarray</td>
         </tr>
       </table>
   </td>
@@ -286,12 +356,14 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00022">22</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p>Field shape. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00063">63</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="a02b3552f22966b69731df9acddf94c22" name="a02b3552f22966b69731df9acddf94c22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02b3552f22966b69731df9acddf94c22">&#9670;&nbsp;</a></span>COMMAND_ERROR</h2>
+<a id="a978c1602c1c480e86c09f3c3a1b8cc98" name="a978c1602c1c480e86c09f3c3a1b8cc98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978c1602c1c480e86c09f3c3a1b8cc98">&#9670;&nbsp;</a></span>init</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,7 +372,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int COMMAND_ERROR = -6</td>
+          <td class="memname">init</td>
         </tr>
       </table>
   </td>
@@ -310,12 +382,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00023">23</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00063">63</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="a6346e633fda37c1503450b5a6d2ff2ed" name="a6346e633fda37c1503450b5a6d2ff2ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6346e633fda37c1503450b5a6d2ff2ed">&#9670;&nbsp;</a></span>INTERNAL_ERROR</h2>
+<a id="a36cde68b055f3f2ee671020af4ccf4e2" name="a36cde68b055f3f2ee671020af4ccf4e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36cde68b055f3f2ee671020af4ccf4e2">&#9670;&nbsp;</a></span>False</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +396,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int INTERNAL_ERROR = -7</td>
+          <td class="memname">False</td>
         </tr>
       </table>
   </td>
@@ -334,12 +406,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00024">24</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00063">63</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="ad4e53c49669fd57751feaca0730e1314" name="ad4e53c49669fd57751feaca0730e1314"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4e53c49669fd57751feaca0730e1314">&#9670;&nbsp;</a></span>NOT_IMPLEMENTED</h2>
+<a id="ac7485dcc8d256a6f197ed7802687f252" name="ac7485dcc8d256a6f197ed7802687f252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7485dcc8d256a6f197ed7802687f252">&#9670;&nbsp;</a></span>None</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +420,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int NOT_IMPLEMENTED = -8</td>
+          <td class="memname">None</td>
         </tr>
       </table>
   </td>
@@ -358,12 +430,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00025">25</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00064">64</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
-<a id="a21d2f176f2adcc0d2428876264b3d04c" name="a21d2f176f2adcc0d2428876264b3d04c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d2f176f2adcc0d2428876264b3d04c">&#9670;&nbsp;</a></span>INVALID_HANDLE</h2>
+<a id="a3a4f14844a0306bc786bdd90224db862" name="a3a4f14844a0306bc786bdd90224db862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4f14844a0306bc786bdd90224db862">&#9670;&nbsp;</a></span>Any</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,7 +444,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int INVALID_HANDLE = -9</td>
+          <td class="memname">Any</td>
         </tr>
       </table>
   </td>
@@ -382,164 +454,20 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00026">26</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
-
-</div>
-</div>
-<a id="a5188066b07f07e1fab81786b07e9e6a5" name="a5188066b07f07e1fab81786b07e9e6a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5188066b07f07e1fab81786b07e9e6a5">&#9670;&nbsp;</a></span>DEVICE_LIBRARY_NOT_AVAILABLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int DEVICE_LIBRARY_NOT_AVAILABLE = -10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00027">27</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
-
-</div>
-</div>
-<a id="acb1703e795b348cfb0d1efae78314f83" name="acb1703e795b348cfb0d1efae78314f83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb1703e795b348cfb0d1efae78314f83">&#9670;&nbsp;</a></span>TIMEOUT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TIMEOUT = -11</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00028">28</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
-
-</div>
-</div>
-<a id="a8cd8eb3f406d3006eb6e54de792a3728" name="a8cd8eb3f406d3006eb6e54de792a3728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cd8eb3f406d3006eb6e54de792a3728">&#9670;&nbsp;</a></span>STOP</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int STOP = -12</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00029">29</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
-
-</div>
-</div>
-<a id="a511a02294152ca837e677530984a07ff" name="a511a02294152ca837e677530984a07ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a511a02294152ca837e677530984a07ff">&#9670;&nbsp;</a></span>DISABLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int DISABLED = -13</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00030">30</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
-
-</div>
-</div>
-<a id="af59fc228d24f9b70905db4420a4317b3" name="af59fc228d24f9b70905db4420a4317b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af59fc228d24f9b70905db4420a4317b3">&#9670;&nbsp;</a></span>BAD_LIBRARY_VERSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int BAD_LIBRARY_VERSION = -14</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00031">31</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
-
-</div>
-</div>
-<a id="a13ad2efeb64b4ba345119ae7ae5f0d03" name="a13ad2efeb64b4ba345119ae7ae5f0d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13ad2efeb64b4ba345119ae7ae5f0d03">&#9670;&nbsp;</a></span>COMMUNICATION_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int COMMUNICATION_ERROR = -15</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00074_source.html#l00032">32</a> of file <a class="el" href="a00074_source.html">error.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00083_source.html#l00065">65</a> of file <a class="el" href="a00083_source.html">device.py</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00074_source.html">error.py</a></li>
+<li><a class="el" href="a00083_source.html">device.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00094.html">caen_felib</a></li><li class="navelem"><a class="el" href="a00097.html">error</a></li><li class="navelem"><a class="el" href="a00122.html">ErrorCode</a></li>
-    <li class="footer">Generated on Wed Jun 12 2024 09:31:11 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="a00103.html">caen_felib</a></li><li class="navelem"><a class="el" href="a00106.html">device</a></li><li class="navelem"><a class="el" href="a00122.html">Data</a></li>
+    <li class="footer">Generated on Mon May 5 2025 09:55:00 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -308,7 +308,7 @@ struct hturi {
 	char* fragment;
 };
 
-static struct hturi _scanURI(char* const name) {
+static struct hturi _scanURI(char* name) {
 	char* p;
 	char* afterScheme = name;
 	struct hturi parts = {
@@ -626,7 +626,7 @@ static int _getError(CAEN_FELib_ErrorCode errorCode, char error[32], char descri
 	case CAEN_FELib_MaxDevicesError:
 		GET_ERROR_CASE(
 			"TOO MANY DEVICES OPENED",
-			"This library supports up to 256 simultaneous connections but seems tgat all the rooms are full. Please close a connection before open a new one"
+			"This library supports up to "CAEN_FELIB_STR(MAX_NUM_CONNECTION)" simultaneous connections but seems that all the rooms are full. Please close a connection before open a new one"
 		);
 		break;
 	case CAEN_FELib_CommandError:
@@ -722,7 +722,7 @@ int CAEN_FELIB_API CAEN_FELib_DevicesDiscovery(char* jsonString, size_t size, in
 	}
 	DIR* dir = opendir(buff);
 	if (dir == NULL) {
-		_setLastLocalError("opendir failed : %s", strerror(errno));
+		_setLastLocalError("opendir failed: %s", strerror(errno));
 		return CAEN_FELib_GenericError;
 	}
 	char* p = jsonString;
@@ -780,7 +780,7 @@ int CAEN_FELIB_API CAEN_FELib_Open(const char* url, uint64_t* handle) {
 
 	char* const urlCopy = strdup(url);
 	if (urlCopy == NULL) {
-		_setLastLocalError("_duplicateString failed");
+		_setLastLocalError("strdup failed");
 		return CAEN_FELib_GenericError;
 	}
 
@@ -1208,7 +1208,7 @@ static void deinit_library(void) {
 			_resetConnectionDescr(i);
 		}
 	}
-	// at this poing libDescr has already been cleared.
+	// at this point libDescr has already been cleared.
 }
 
 #ifdef _WIN32

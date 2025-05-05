@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['open_0',['open',['../a00118.html#a853b133d25d1831475affb10fb494c24',1,'caen_felib::device::Node']]]
+  ['name_0',['name',['../a00118.html#a3cc5beb95fb74f4be44c04f84ed66a82',1,'caen_felib._utils.Lib.name()'],['../a00130.html#a3cc5beb95fb74f4be44c04f84ed66a82',1,'caen_felib.device.Node.name()']]]
 ];

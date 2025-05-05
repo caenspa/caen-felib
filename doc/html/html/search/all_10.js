@@ -1,11 +1,20 @@
 var searchData=
 [
-  ['send_5fcommand_0',['send_command',['../a00130.html#a4d920b12b71b772592c906904cf8efcb',1,'caen_felib.lib._Lib.send_command()'],['../a00118.html#a7b766e4d985df8ecf7b35c7287710dd4',1,'caen_felib.device.Node.send_command()']]],
-  ['set_5fread_5fdata_5fformat_1',['set_read_data_format',['../a00130.html#ae0da00addc7053435098d498efac760b',1,'caen_felib.lib._Lib.set_read_data_format()'],['../a00118.html#af55ef34727e8bd2d6d4b41e8c0a32ebe',1,'caen_felib.device.Node.set_read_data_format()']]],
-  ['set_5fuser_5fregister_2',['set_user_register',['../a00130.html#ac3287ec0a5ada14613d9762a79ce2d37',1,'caen_felib.lib._Lib.set_user_register()'],['../a00118.html#a175895cb1546a39f1c64ade946a7f277',1,'caen_felib.device.Node.set_user_register()']]],
-  ['set_5fvalue_3',['set_value',['../a00130.html#ad2fb6353a9e8c8705649b1aa70182641',1,'caen_felib.lib._Lib.set_value()'],['../a00118.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a',1,'caen_felib.device.Node.set_value()']]],
-  ['shape_4',['shape',['../a00106.html#a45cde9abb508c62d67c3bb2b9bf566a5',1,'caen_felib::device::_Data']]],
-  ['software_20development_5',['Software development',['../a00272.html',1,'']]],
-  ['stop_6',['STOP',['../a00122.html#a8cd8eb3f406d3006eb6e54de792a3728',1,'caen_felib::error::ErrorCode']]],
-  ['success_7',['SUCCESS',['../a00122.html#aa8c597b681569696addf7b2ff1d6392c',1,'caen_felib::error::ErrorCode']]]
+  ['satrej_0',['SATREJ',['../a00138.html#a0217fc1f0161254f640bd05a0c394cb5',1,'caen_felib::dig1_types::DppFlags']]],
+  ['sca_5fselected_1',['SCA_SELECTED',['../a00150.html#ae599e9acfa5f7d0540c5807dc287279e',1,'caen_felib.dig2_types.HighPriorityFlagsPha.SCA_SELECTED()'],['../a00154.html#ae599e9acfa5f7d0540c5807dc287279e',1,'caen_felib.dig2_types.HighPriorityFlagsPsd.SCA_SELECTED()']]],
+  ['self_5ftrigger_2',['SELF_TRIGGER',['../a00158.html#a7a3eae1c2adfab29850bc051d542037b',1,'caen_felib::dig2_types::LowPriorityFlags']]],
+  ['send_5fcommand_3',['send_command',['../a00170.html#a4d920b12b71b772592c906904cf8efcb',1,'caen_felib.lib._Lib.send_command()'],['../a00130.html#a7b766e4d985df8ecf7b35c7287710dd4',1,'caen_felib.device.Node.send_command()']]],
+  ['set_5fread_5fdata_5fformat_4',['set_read_data_format',['../a00170.html#ae0da00addc7053435098d498efac760b',1,'caen_felib.lib._Lib.set_read_data_format()'],['../a00130.html#a8094882d3456d624ea2d8ec103480c8e',1,'caen_felib.device.Node.set_read_data_format()']]],
+  ['set_5fuser_5fregister_5',['set_user_register',['../a00170.html#ac3287ec0a5ada14613d9762a79ce2d37',1,'caen_felib.lib._Lib.set_user_register()'],['../a00130.html#a175895cb1546a39f1c64ade946a7f277',1,'caen_felib.device.Node.set_user_register(self, int address, int value)']]],
+  ['set_5fvalue_6',['set_value',['../a00130.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a',1,'caen_felib.device.Node.set_value()'],['../a00170.html#ad2fb6353a9e8c8705649b1aa70182641',1,'caen_felib.lib._Lib.set_value()']]],
+  ['short_5fgate_7',['SHORT_GATE',['../a00146.html#a104b9712d888f6a864c9128075949f58',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['shutdown_8',['SHUTDOWN',['../a00138.html#a2ba75f540cb0141317788e8ab4caae75',1,'caen_felib::dig1_types::DppFlags']]],
+  ['signal_5finhibit_9',['SIGNAL_INHIBIT',['../a00146.html#a214da43e1c1754374b7273bb230af353',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['slow_5ftriang_10',['SLOW_TRIANG',['../a00134.html#a73e9c705b5bbe1bf1ec243dbd08495b0',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['smoothinput_11',['SMOOTHINPUT',['../a00134.html#a68e33ef1895bf3132fc419f6f40272d4',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['software_20development_12',['Software development',['../a00304.html',1,'']]],
+  ['software_5ftrigger_13',['SOFTWARE_TRIGGER',['../a00158.html#ab90a5af9c3a842067b3bb20a85676bfa',1,'caen_felib::dig2_types::LowPriorityFlags']]],
+  ['stop_14',['STOP',['../a00162.html#a8cd8eb3f406d3006eb6e54de792a3728',1,'caen_felib::error::ErrorCode']]],
+  ['stopcond_15',['STOPCOND',['../a00138.html#adde072a399ca9cf93fffd637734b3b40',1,'caen_felib::dig1_types::DppFlags']]],
+  ['success_16',['SUCCESS',['../a00162.html#aa8c597b681569696addf7b2ff1d6392c',1,'caen_felib::error::ErrorCode']]]
 ];

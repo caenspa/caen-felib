@@ -1,20 +1,34 @@
 var annotated_dup =
 [
-    [ "caen_felib", "a00094.html", [
-      [ "_utils", "a00095.html", [
-        [ "CacheManager", "a00102.html", "a00102" ]
+    [ "caen_felib", "a00103.html", [
+      [ "_cache", "a00104.html", [
+        [ "Manager", "a00114.html", "a00114" ]
       ] ],
-      [ "device", "a00096.html", [
-        [ "_Data", "a00106.html", "a00106" ],
-        [ "Node", "a00118.html", "a00118" ],
-        [ "NodeType", "a00114.html", null ]
+      [ "_utils", "a00105.html", [
+        [ "Lib", "a00118.html", "a00118" ]
       ] ],
-      [ "error", "a00097.html", [
-        [ "Error", "a00126.html", "a00126" ],
-        [ "ErrorCode", "a00122.html", null ]
+      [ "device", "a00106.html", [
+        [ "Data", "a00122.html", "a00122" ],
+        [ "Node", "a00130.html", "a00130" ],
+        [ "NodeType", "a00126.html", null ]
       ] ],
-      [ "lib", "a00098.html", [
-        [ "_Lib", "a00130.html", "a00130" ]
+      [ "dig1_types", "a00107.html", [
+        [ "DppFlags", "a00138.html", null ],
+        [ "DppProbeType", "a00134.html", null ]
+      ] ],
+      [ "dig2_types", "a00108.html", [
+        [ "DppAnalogProbeType", "a00142.html", null ],
+        [ "DppDigitalProbeType", "a00146.html", null ],
+        [ "HighPriorityFlagsPha", "a00150.html", null ],
+        [ "HighPriorityFlagsPsd", "a00154.html", null ],
+        [ "LowPriorityFlags", "a00158.html", null ]
+      ] ],
+      [ "error", "a00109.html", [
+        [ "Error", "a00166.html", "a00166" ],
+        [ "ErrorCode", "a00162.html", null ]
+      ] ],
+      [ "lib", "a00110.html", [
+        [ "_Lib", "a00170.html", "a00170" ]
       ] ]
     ] ]
 ];

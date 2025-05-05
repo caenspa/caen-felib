@@ -1,0 +1,6 @@
+<map id="CAEN_FELib_GetPath" name="CAEN_FELib_GetPath">
+<area shape="rect" id="node1" title="Get the absolute path of a node." alt="" coords="1045,37,1248,63"/>
+<area shape="rect" id="node2" href="$a00130.html#aa71a67fa5e66158c8d03b25aa9dec9e6" title="Binding of CAEN_FELib_GetPath()" alt="" coords="665,37,997,63"/>
+<area shape="rect" id="node3" href="$a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91" title="Node absolute path." alt="" coords="325,37,617,63"/>
+<area shape="rect" id="node4" href="$a00118.html#a65ddcf05a86535530abb7519860d6fd3" title="ctypes object to shared library (for variadic functions)" alt="" coords="5,29,277,71"/>
+</map>

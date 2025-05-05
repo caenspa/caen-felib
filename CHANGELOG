@@ -11,11 +11,24 @@
 -----------------------------------------------------------------------------
 
 
+v1.3.2 (05/05/2025)
+-------------------
+
+New features:
+- Python sumbodule documentation aligned to v1.3.0.
+- Windows build environment updated: MSVC2019 16.11.44.
+- Add build tests for Clang 19 and 20.
+
+Fixes:
+- Fix components handling for Windows installer.
+- Fix typo on CAEN_FELib_GetErrorDescription message for CAEN_FELib_MaxDevicesError
+
+
 v1.3.1 (10/06/2024)
 -------------------
 
 New features:
-- Add LabView wrapper.
+- Add LabVIEW wrapper.
 - Windows build environment updated: MSVC2019 16.11.35.
 - Add build tests for GCC 14 and Clang 18.
 

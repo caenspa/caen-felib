@@ -1,6 +1,24 @@
 var searchData=
 [
-  ['timeout_0',['TIMEOUT',['../a00122.html#acb1703e795b348cfb0d1efae78314f83',1,'caen_felib::error::ErrorCode']]],
-  ['type_1',['type',['../a00106.html#a7aead736a07eaf25623ad7bfa1f0ee2d',1,'caen_felib::device::_Data']]],
-  ['typealias_2',['TypeAlias',['../a00130.html#a29e9feb3c43f689a578959453e3699fd',1,'caen_felib::lib::_Lib']]]
+  ['test_5fwave_0',['TEST_WAVE',['../a00134.html#a4fdb9f6eb866fd907cef8a941922cc20',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['threshold_1',['THRESHOLD',['../a00134.html#adceb947873623dd2a87f7f69e81fbd38',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['time_5ffilter_2',['TIME_FILTER',['../a00142.html#a65ba7fe3653de6facd63a23f8d5bee7d',1,'caen_felib::dig2_types::DppAnalogProbeType']]],
+  ['time_5ffilter_5farmed_3',['TIME_FILTER_ARMED',['../a00146.html#a9dc19ed52133b75da2d677bdd82373d4',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['timeout_4',['TIMEOUT',['../a00162.html#acb1703e795b348cfb0d1efae78314f83',1,'caen_felib::error::ErrorCode']]],
+  ['timevalue_5',['TIMEVALUE',['../a00138.html#a525c3061735b2f7680c5ff3f492c3ef8',1,'caen_felib::dig1_types::DppFlags']]],
+  ['trapbaseline_6',['TRAPBASELINE',['../a00134.html#a1d20b7618d9c2b94032aa63e98ab4108',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trapcorrected_7',['TRAPCORRECTED',['../a00134.html#a2b0b38130bf56f35e088b088868d4841',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trapezoid_8',['TRAPEZOID',['../a00134.html#a025883a8fc17c5d02abd19363d1f3811',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trapezoid_5fsaturation_9',['TRAPEZOID_SATURATION',['../a00150.html#ab6331367fd35668f07f8a8ed2f658458',1,'caen_felib::dig2_types::HighPriorityFlagsPha']]],
+  ['trgholdoff_10',['TRGHOLDOFF',['../a00134.html#a49533b5f0e94be727b70ccaaa2ba3df5',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trglost_11',['TRGLOST',['../a00138.html#a7114e9cba88a559d50fd7bfe6c6b315c',1,'caen_felib::dig1_types::DppFlags']]],
+  ['trgout_12',['TRGOUT',['../a00134.html#a7f125d943042a84653a1fa77c9ee613e',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trgval_13',['TRGVAL',['../a00134.html#a979c978d5947f9dccfa038e3629fa86b',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trgvalwin_14',['TRGVALWIN',['../a00134.html#a8f79fe17915a16b0c5f048099e11087a',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trgwin_15',['TRGWIN',['../a00134.html#a8752b1925304dd08fcbbc0725c3b0f74',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['trigger_16',['TRIGGER',['../a00134.html#a7e4b08b55fa07bfe78d3f62918df74df',1,'caen_felib.dig1_types.DppProbeType.TRIGGER()'],['../a00146.html#a7e4b08b55fa07bfe78d3f62918df74df',1,'caen_felib.dig2_types.DppDigitalProbeType.TRIGGER()']]],
+  ['trigger_5faccept_17',['TRIGGER_ACCEPT',['../a00134.html#a3f6e16f6d8a42cda41ea171e4361d345',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['ttreset_18',['TTRESET',['../a00138.html#aa4b195869df29129beb74617722c3aca',1,'caen_felib::dig1_types::DppFlags']]],
+  ['ttrollover_19',['TTROLLOVER',['../a00138.html#a63799ecd33fcf105937a043ee4f5e435',1,'caen_felib::dig1_types::DppFlags']]],
+  ['typealias_20',['TypeAlias',['../a00170.html#a29e9feb3c43f689a578959453e3699fd',1,'caen_felib::lib::_Lib']]]
 ];

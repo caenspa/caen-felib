@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CAEN FE Library: Utility macros</title>
+<title>CAEN FE Library: lib.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="caen_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.1</span>
+   <div id="projectname">CAEN FE Library<span id="projectnumber">&#160;v1.3.2</span>
    </div>
    <div id="projectbrief">SDK for new generation digitizers</div>
   </td>
@@ -86,176 +86,34 @@ $(document).ready(function(){initNavTree('a00089.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
-  <div class="headertitle"><div class="title">Utility macros</div></div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">lib.py File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Generic macros.  
-<a href="#details">More...</a></p>
+<p><a href="a00089_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga28b768098080ffae59879e976055cc66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ga28b768098080ffae59879e976055cc66">CAEN_FELIB_STR_HELPER_</a>(S)&#160;&#160;&#160;#S</td></tr>
-<tr class="separator:ga28b768098080ffae59879e976055cc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e157be8181b2a4bec2af20c92c69b38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ga9e157be8181b2a4bec2af20c92c69b38">CAEN_FELIB_STR</a>(S)&#160;&#160;&#160;<a class="el" href="a00089.html#ga28b768098080ffae59879e976055cc66">CAEN_FELIB_STR_HELPER_</a>(S)</td></tr>
-<tr class="separator:ga9e157be8181b2a4bec2af20c92c69b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1b7ad3d7e246ac8d3ed70809e367c5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#gac1b7ad3d7e246ac8d3ed70809e367c5d">CAEN_FELIB_DEPRECATED_MSG</a>(V,  R)&#160;&#160;&#160;&quot;Deprecated since &quot; #V &quot;. Use &quot; #R</td></tr>
-<tr class="separator:gac1b7ad3d7e246ac8d3ed70809e367c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e397537958b31d69ac1f5d5799f87a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ga5e397537958b31d69ac1f5d5799f87a3">CAEN_FELIB_API</a></td></tr>
-<tr class="separator:ga5e397537958b31d69ac1f5d5799f87a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1160ac928194b45a67ae41fa3423f637"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ga1160ac928194b45a67ae41fa3423f637">CAEN_FELIB_DLLAPI</a>&#160;&#160;&#160;__attribute__((visibility(&quot;default&quot;)))</td></tr>
-<tr class="separator:ga1160ac928194b45a67ae41fa3423f637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c28550e7511409b9545ced6662dbba7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#ga0c28550e7511409b9545ced6662dbba7">CAEN_FELIB_DEPRECATED</a>(V,  R, ...)&#160;&#160;&#160;__VA_ARGS__ __attribute__((deprecated(<a class="el" href="a00089.html#gac1b7ad3d7e246ac8d3ed70809e367c5d">CAEN_FELIB_DEPRECATED_MSG</a>(V, R))))</td></tr>
-<tr class="separator:ga0c28550e7511409b9545ced6662dbba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00170.html">_Lib</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class loads the CAEN_FELib shared library and exposes its functions on its public attributes using ctypes.  <a href="a00170.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00103"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html">caen_felib</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00110"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html">caen_felib.lib</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p >Generic macros. </p>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga28b768098080ffae59879e976055cc66" name="ga28b768098080ffae59879e976055cc66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28b768098080ffae59879e976055cc66">&#9670;&nbsp;</a></span>CAEN_FELIB_STR_HELPER_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CAEN_FELIB_STR_HELPER_</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">S</td><td>)</td>
-          <td>&#160;&#160;&#160;#S</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00048">48</a> of file <a class="el" href="a00041_source.html">CAEN_FELib.h</a>.</p>
-
-</div>
-</div>
-<a id="ga9e157be8181b2a4bec2af20c92c69b38" name="ga9e157be8181b2a4bec2af20c92c69b38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9e157be8181b2a4bec2af20c92c69b38">&#9670;&nbsp;</a></span>CAEN_FELIB_STR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CAEN_FELIB_STR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">S</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="a00089.html#ga28b768098080ffae59879e976055cc66">CAEN_FELIB_STR_HELPER_</a>(S)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00049">49</a> of file <a class="el" href="a00041_source.html">CAEN_FELib.h</a>.</p>
-
-</div>
-</div>
-<a id="gac1b7ad3d7e246ac8d3ed70809e367c5d" name="gac1b7ad3d7e246ac8d3ed70809e367c5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac1b7ad3d7e246ac8d3ed70809e367c5d">&#9670;&nbsp;</a></span>CAEN_FELIB_DEPRECATED_MSG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CAEN_FELIB_DEPRECATED_MSG</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">V, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">R&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;&quot;Deprecated since &quot; #V &quot;. Use &quot; #R</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00050">50</a> of file <a class="el" href="a00041_source.html">CAEN_FELib.h</a>.</p>
-
-</div>
-</div>
-<a id="ga5e397537958b31d69ac1f5d5799f87a3" name="ga5e397537958b31d69ac1f5d5799f87a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e397537958b31d69ac1f5d5799f87a3">&#9670;&nbsp;</a></span>CAEN_FELIB_API</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CAEN_FELIB_API</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00056">56</a> of file <a class="el" href="a00041_source.html">CAEN_FELib.h</a>.</p>
-
-</div>
-</div>
-<a id="ga1160ac928194b45a67ae41fa3423f637" name="ga1160ac928194b45a67ae41fa3423f637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1160ac928194b45a67ae41fa3423f637">&#9670;&nbsp;</a></span>CAEN_FELIB_DLLAPI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CAEN_FELIB_DLLAPI&#160;&#160;&#160;__attribute__((visibility(&quot;default&quot;)))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00057">57</a> of file <a class="el" href="a00041_source.html">CAEN_FELib.h</a>.</p>
-
-</div>
-</div>
-<a id="ga0c28550e7511409b9545ced6662dbba7" name="ga0c28550e7511409b9545ced6662dbba7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c28550e7511409b9545ced6662dbba7">&#9670;&nbsp;</a></span>CAEN_FELIB_DEPRECATED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CAEN_FELIB_DEPRECATED</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">V, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">R, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;__VA_ARGS__ __attribute__((deprecated(<a class="el" href="a00089.html#gac1b7ad3d7e246ac8d3ed70809e367c5d">CAEN_FELIB_DEPRECATED_MSG</a>(V, R))))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="a00041_source.html#l00058">58</a> of file <a class="el" href="a00041_source.html">CAEN_FELib.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 12 2024 09:31:11 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_7837fde3ab9c1fb2fc5be7b717af8d79.html">python</a></li><li class="navelem"><a class="el" href="dir_f5914bd29df15049ae416e8a0eac21ca.html">src</a></li><li class="navelem"><a class="el" href="dir_1f04b0c7dbcbdfa0d557cad2fafc7927.html">caen_felib</a></li><li class="navelem"><a class="el" href="a00089.html">lib.py</a></li>
+    <li class="footer">Generated on Mon May 5 2025 09:55:00 for CAEN FE Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

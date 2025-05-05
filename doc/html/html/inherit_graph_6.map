@@ -1,5 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,97,57"/>
-<area shape="rect" id="node2" href="$a00114.html" title="Wrapper to CAEN_FELib_NodeType_t." alt="" coords="150,5,253,32"/>
-<area shape="rect" id="node3" href="$a00122.html" title="Wrapper to CAEN_FELib_ErrorCode." alt="" coords="145,56,257,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,97,133"/>
+<area shape="rect" id="node2" href="$a00126.html" title="Binding of CAEN_FELib_NodeType_t." alt="" coords="200,5,303,32"/>
+<area shape="rect" id="node3" href="$a00134.html" title="Probe types for Dig1 DPP events." alt="" coords="180,56,323,83"/>
+<area shape="rect" id="node4" href="$a00142.html" title="Analog probe types for Dig2 DPP&#45;PSD and DPP&#45;PHA events." alt="" coords="150,107,353,133"/>
+<area shape="rect" id="node5" href="$a00146.html" title="Digital probe types for Dig2 DPP&#45;PSD and DPP&#45;PHA events." alt="" coords="145,157,357,184"/>
+<area shape="rect" id="node6" href="$a00162.html" title="Binding of CAEN_FELib_ErrorCode." alt="" coords="195,208,307,235"/>
 </map>
