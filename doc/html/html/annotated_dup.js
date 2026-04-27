@@ -8,27 +8,28 @@ var annotated_dup =
         [ "Lib", "a00118.html", "a00118" ]
       ] ],
       [ "device", "a00106.html", [
-        [ "Data", "a00122.html", "a00122" ],
-        [ "Node", "a00130.html", "a00130" ],
-        [ "NodeType", "a00126.html", null ]
+        [ "Data", "a00126.html", "a00126" ],
+        [ "DataType", "a00122.html", null ],
+        [ "Node", "a00134.html", "a00134" ],
+        [ "NodeType", "a00130.html", null ]
       ] ],
       [ "dig1_types", "a00107.html", [
-        [ "DppFlags", "a00138.html", null ],
-        [ "DppProbeType", "a00134.html", null ]
+        [ "DppFlags", "a00142.html", null ],
+        [ "DppProbeType", "a00138.html", null ]
       ] ],
       [ "dig2_types", "a00108.html", [
-        [ "DppAnalogProbeType", "a00142.html", null ],
-        [ "DppDigitalProbeType", "a00146.html", null ],
-        [ "HighPriorityFlagsPha", "a00150.html", null ],
-        [ "HighPriorityFlagsPsd", "a00154.html", null ],
-        [ "LowPriorityFlags", "a00158.html", null ]
+        [ "DppAnalogProbeType", "a00146.html", null ],
+        [ "DppDigitalProbeType", "a00150.html", null ],
+        [ "HighPriorityFlagsPha", "a00154.html", null ],
+        [ "HighPriorityFlagsPsd", "a00158.html", null ],
+        [ "LowPriorityFlags", "a00162.html", null ]
       ] ],
       [ "error", "a00109.html", [
-        [ "Error", "a00166.html", "a00166" ],
-        [ "ErrorCode", "a00162.html", null ]
+        [ "Error", "a00170.html", "a00170" ],
+        [ "ErrorCode", "a00166.html", null ]
       ] ],
       [ "lib", "a00110.html", [
-        [ "_Lib", "a00170.html", "a00170" ]
+        [ "_Lib", "a00174.html", "a00174" ]
       ] ]
     ] ]
 ];

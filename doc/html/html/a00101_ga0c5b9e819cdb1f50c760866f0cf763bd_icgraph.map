@@ -1,8 +1,0 @@
-<map id="CAEN_FELib_GetNodeProperties" name="CAEN_FELib_GetNodeProperties">
-<area shape="rect" id="node1" title="Get the name and type of a node." alt="" coords="1056,67,1359,93"/>
-<area shape="rect" id="node2" href="$a00130.html#ac66c129d35ca5141d65af51b78df2c1f" title="Binding of CAEN_FELib_GetNodeProperties()" alt="" coords="725,59,1008,101"/>
-<area shape="rect" id="node3" href="$a00130.html#a3cc5beb95fb74f4be44c04f84ed66a82" title="Node name." alt="" coords="385,29,677,56"/>
-<area shape="rect" id="node5" href="$a00130.html#ab640bd6bd3ecc06e6a89e62ac1961696" title="Node type." alt="" coords="385,104,677,131"/>
-<area shape="rect" id="node4" href="$a00122.html#a11d17bccc3fcffb16d4d73169dfb4287" title="ctypes pointer to Data.value that is used within Node.read_data" alt="" coords="30,29,313,56"/>
-<area shape="rect" id="node6" href="$a00130.html#aaf9fc47798df8b680b4a7d6ac9fe970e" title="Binding of CAEN_FELib_HasData()" alt="" coords="5,104,337,131"/>
-</map>

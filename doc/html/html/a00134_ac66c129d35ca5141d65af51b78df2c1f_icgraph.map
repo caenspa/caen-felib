@@ -1,0 +1,11 @@
+<map id="get_node_properties" name="get_node_properties">
+<area shape="rect" id="Node000001" title="Binding of CAEN_FELib_GetNodeProperties()" alt="" coords="334,32,482,60"/>
+<area shape="rect" id="Node000002" href="$a00134.html#a3cc5beb95fb74f4be44c04f84ed66a82" title="Node name." alt="" coords="231,5,286,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="318,32,286,27,287,21,319,27"/>
+<area shape="rect" id="Node000004" href="$a00134.html#ab640bd6bd3ecc06e6a89e62ac1961696" title="Node type." alt="" coords="235,57,282,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="319,64,283,70,282,65,318,58"/>
+<area shape="rect" id="Node000003" href="$a00126.html#a11d17bccc3fcffb16d4d73169dfb4287" title="ctypes pointer to Data.value that is used within Node.read_data" alt="" coords="5,5,183,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,22,183,22,183,16,215,16"/>
+<area shape="rect" id="Node000005" href="$a00134.html#aaf9fc47798df8b680b4a7d6ac9fe970e" title="Binding of CAEN_FELib_HasData()" alt="" coords="56,57,132,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="219,74,132,74,132,68,219,68"/>
+</map>

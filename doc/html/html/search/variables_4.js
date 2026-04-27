@@ -1,20 +1,15 @@
 var searchData=
 [
-  ['endpoint_0',['ENDPOINT',['../a00126.html#a35763118ed6d727204bcfd2ced45abbb',1,'caen_felib::device::NodeType']]],
-  ['energy_5ffilter_1',['ENERGY_FILTER',['../a00142.html#aa548ae6c416300535a45ba17481ce1f1',1,'caen_felib::dig2_types::DppAnalogProbeType']]],
-  ['energy_5ffilter_5fbaseline_2',['ENERGY_FILTER_BASELINE',['../a00142.html#a0e3a0be32d86b1040a0fab5caa9d8284',1,'caen_felib::dig2_types::DppAnalogProbeType']]],
-  ['energy_5ffilter_5fbaseline_5ffreeze_3',['ENERGY_FILTER_BASELINE_FREEZE',['../a00146.html#a3776a3eb8ebdf27a3db32f6f0dd34328',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
-  ['energy_5ffilter_5fminus_5fbaseline_4',['ENERGY_FILTER_MINUS_BASELINE',['../a00142.html#a44c8d6f6c10db6d0c7b6d08c3d3c637f',1,'caen_felib::dig2_types::DppAnalogProbeType']]],
-  ['energy_5ffilter_5fpeak_5fready_5',['ENERGY_FILTER_PEAK_READY',['../a00146.html#aa923515b84256a4d8a2b549133506c6d',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
-  ['energy_5ffilter_5fpeaking_6',['ENERGY_FILTER_PEAKING',['../a00146.html#a207d548b853440cfd21942ea176b2199',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
-  ['energy_5ffilter_5fpile_5fup_5fguard_7',['ENERGY_FILTER_PILE_UP_GUARD',['../a00146.html#a6e8b88385924ef124af12a2c0fef2c9f',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
-  ['energy_5ffilter_5fsaturation_8',['ENERGY_FILTER_SATURATION',['../a00146.html#a6e6156abd79c6621c27665b3724ac2e8',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
-  ['energy_5fskim_9',['ENERGY_SKIM',['../a00138.html#a2acc07a4bf6c607c1db62fdd97e5f98a',1,'caen_felib::dig1_types::DppFlags']]],
-  ['energysat_10',['ENERGYSAT',['../a00134.html#aec2efb07638e1c42ac0a2c891c7bdd11',1,'caen_felib::dig1_types::DppProbeType']]],
-  ['eor_11',['EOR',['../a00138.html#aed94e589fba7545c69e0d44c91370911',1,'caen_felib::dig1_types::DppFlags']]],
-  ['event_5fpile_5fup_12',['EVENT_PILE_UP',['../a00146.html#a90650a06ee654949273cf4c3ea288b8c',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
-  ['event_5fsaturation_13',['EVENT_SATURATION',['../a00150.html#a0795f68b86171538265a835a7b0e2a8b',1,'caen_felib.dig2_types.HighPriorityFlagsPha.EVENT_SATURATION()'],['../a00154.html#a0795f68b86171538265a835a7b0e2a8b',1,'caen_felib.dig2_types.HighPriorityFlagsPsd.EVENT_SATURATION()']]],
-  ['evtfake_14',['EVTFAKE',['../a00138.html#ac19d813974f77d92b7f0e680f8ce8cba',1,'caen_felib::dig1_types::DppFlags']]],
-  ['external_5ftrigger_15',['EXTERNAL_TRIGGER',['../a00158.html#aefe2a832c6dc878062697bed341f7a9c',1,'caen_felib::dig2_types::LowPriorityFlags']]],
-  ['exttrg_16',['EXTTRG',['../a00134.html#a7cefb669e0eb5e6b74a9e9e512152c3a',1,'caen_felib::dig1_types::DppProbeType']]]
+  ['dataclass_5fslots_0',['dataclass_slots',['../a00105.html#a95684981a9b02ffd68c7b95c6c187a54',1,'caen_felib::_utils']]],
+  ['dataclass_5fslots_5fweakref_1',['dataclass_slots_weakref',['../a00105.html#af6c4b30c39033dc53728856d4ee9aabc',1,'caen_felib::_utils']]],
+  ['deadtime_2',['DEADTIME',['../a00142.html#ad770c3b669df4735e800d04d8c3dad6e',1,'caen_felib::dig1_types::DppFlags']]],
+  ['delta_3',['DELTA',['../a00138.html#a4dc1dc65750ded2342bb4aef5a4b9326',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['delta2_4',['DELTA2',['../a00138.html#a49ad9c789b333a23e88b859022e5b8b2',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['device_5falready_5fopen_5',['DEVICE_ALREADY_OPEN',['../a00166.html#add6bdb672a4379c0c3b3c599d810705e',1,'caen_felib::error::ErrorCode']]],
+  ['device_5flibrary_5fnot_5favailable_6',['DEVICE_LIBRARY_NOT_AVAILABLE',['../a00166.html#a5188066b07f07e1fab81786b07e9e6a5',1,'caen_felib::error::ErrorCode']]],
+  ['device_5fnot_5ffound_7',['DEVICE_NOT_FOUND',['../a00166.html#aace6635ccf78c292f80fae3a9eb03ae5',1,'caen_felib::error::ErrorCode']]],
+  ['digitizer_8',['DIGITIZER',['../a00130.html#ae11a637cac5d4b646200b576cf65ebc0',1,'caen_felib::device::NodeType']]],
+  ['dim_9',['dim',['../a00126.html#a70b5e28b5bc3d1b63a7435c5fe50b837',1,'caen_felib::device::Data']]],
+  ['disabled_10',['DISABLED',['../a00166.html#a511a02294152ca837e677530984a07ff',1,'caen_felib::error::ErrorCode']]],
+  ['double_11',['DOUBLE',['../a00122.html#a39ea624eafac9a6ab0ee0b43b83a9862',1,'caen_felib::device::DataType']]]
 ];

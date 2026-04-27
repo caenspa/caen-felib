@@ -1,5 +1,7 @@
 <map id="Manager" name="Manager">
-<area shape="rect" id="node1" title="A simple list of functions returned by @lru_cache decorator." alt="" coords="39,131,191,208"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,68,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="93,5,295,83"/>
+<area shape="rect" id="Node000001" title="A simple list of functions returned by @lru_cache decorator." alt="" coords="30,126,113,198"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,34,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,88,59,125,54,127,38,90"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="58,5,190,78"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,92,89,127,85,125,100,90"/>
 </map>

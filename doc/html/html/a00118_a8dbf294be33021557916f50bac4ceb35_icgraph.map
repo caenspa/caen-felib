@@ -1,4 +1,5 @@
 <map id="path" name="path">
-<area shape="rect" id="node1" title="Path of the shared library." alt="" coords="196,29,259,56"/>
-<area shape="rect" id="node2" href="$a00118.html#a65ddcf05a86535530abb7519860d6fd3" title="ctypes object to shared library (for variadic functions)" alt="" coords="5,29,148,56"/>
+<area shape="rect" id="Node000001" title="Path of the shared library." alt="" coords="95,5,144,33"/>
+<area shape="rect" id="Node000002" href="$a00118.html#a52cab795ef5b9b101608fd9d1482261e" title="Get function by name." alt="" coords="5,5,47,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,22,47,22,47,16,79,16"/>
 </map>

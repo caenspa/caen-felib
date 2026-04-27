@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['bad_5flibrary_5fversion_0',['BAD_LIBRARY_VERSION',['../a00162.html#af59fc228d24f9b70905db4420a4317b3',1,'caen_felib::error::ErrorCode']]],
-  ['baseline_1',['BASELINE',['../a00134.html#a777c7eda37acaf42855a75898d216f7f',1,'caen_felib.dig1_types.DppProbeType.BASELINE()'],['../a00142.html#a777c7eda37acaf42855a75898d216f7f',1,'caen_felib.dig2_types.DppAnalogProbeType.BASELINE()']]],
-  ['bfmveto_2',['BFMVETO',['../a00134.html#a6bd328d19247372f29fe7b7d608180cb',1,'caen_felib::dig1_types::DppProbeType']]],
-  ['blholdoff_3',['BLHOLDOFF',['../a00134.html#a274d0466e11b698aeb41c741dcb16f84',1,'caen_felib::dig1_types::DppProbeType']]],
-  ['bool_4',['bool',['../a00130.html#af6a258d8f3ee5206d682d799316314b1',1,'caen_felib::device::Node']]],
-  ['bsl_5ffreeze_5',['BSL_FREEZE',['../a00134.html#ae1a6442fb88558cda1648920fc42596d',1,'caen_felib::dig1_types::DppProbeType']]],
-  ['busy_6',['BUSY',['../a00134.html#ac43e46bfd2bf80e7bab4a50c0e442582',1,'caen_felib::dig1_types::DppProbeType']]]
+  ['acqveto_0',['ACQVETO',['../a00138.html#a1f89d27ad3cc8586e58a62f2e9c162b2',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['adc_5finput_1',['ADC_INPUT',['../a00146.html#af0b98076d90c75127c434ab380d674c7',1,'caen_felib::dig2_types::DppAnalogProbeType']]],
+  ['adc_5fsaturation_2',['ADC_SATURATION',['../a00150.html#adea8cc320d9fcadde2eb78837a6a719a',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['adc_5fsaturation_5fprotection_3',['ADC_SATURATION_PROTECTION',['../a00150.html#ae16f90377a44303682c8809b90313e76',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['adcsat_4',['ADCSAT',['../a00138.html#a7548c2cda914984e4748be1ab385da09',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['adcsat_5fprotect_5',['ADCSAT_PROTECT',['../a00138.html#a0e915d9bae886ff6c41435930e37102e',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['apitype_6',['APIType',['../a00174.html#a91518b7a1c89aead37a2f39347ce218e',1,'caen_felib::lib::_Lib']]],
+  ['armed_7',['ARMED',['../a00138.html#a783b6a7f5dae44cb3055266a3f2b7ea3',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['armed_5fst_8',['ARMED_ST',['../a00138.html#a9f1016ffa6ce8e635881361376d5ac56',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['attribute_9',['ATTRIBUTE',['../a00130.html#a6ee15e53f0a8a07a1dac99fafaba74f8',1,'caen_felib::device::NodeType']]]
 ];

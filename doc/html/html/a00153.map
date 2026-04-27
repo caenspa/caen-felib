@@ -1,4 +1,5 @@
-<map id="HighPriorityFlagsPsd" name="HighPriorityFlagsPsd">
-<area shape="rect" id="node1" title="High priority flags on Dig2 DPP&#45;PSD events." alt="" coords="5,131,228,281"/>
-<area shape="rect" id="node2" title=" " alt="" coords="71,5,163,83"/>
+<map id="HighPriorityFlagsPha" name="HighPriorityFlagsPha">
+<area shape="rect" id="Node000001" title="High priority flags on Dig2 DPP&#45;PHA events." alt="" coords="5,126,202,310"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="76,5,131,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,93,106,126,101,126,101,93"/>
 </map>

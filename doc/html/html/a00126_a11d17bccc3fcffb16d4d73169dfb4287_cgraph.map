@@ -1,0 +1,11 @@
+<map id="arg" name="arg">
+<area shape="rect" id="Node000001" title="ctypes pointer to Data.value that is used within Node.read_data" alt="" coords="5,57,47,85"/>
+<area shape="rect" id="Node000002" href="$a00118.html#a3cc5beb95fb74f4be44c04f84ed66a82" title="Name of the shared library." alt="" coords="105,5,281,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,61,94,43,121,35,122,40,96,48,48,66"/>
+<area shape="rect" id="Node000003" href="$a00134.html#a3cc5beb95fb74f4be44c04f84ed66a82" title="Node name." alt="" coords="95,57,291,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="47,68,79,68,79,74,47,74"/>
+<area shape="rect" id="Node000005" href="$a00126.html#ad0919f0f0a9c71cee3799cec3daadab6" title="Instance of numpy.ndarray that holds data." alt="" coords="167,109,219,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="48,77,95,94,152,111,151,116,94,99,46,82"/>
+<area shape="rect" id="Node000004" href="$a00134.html#ac66c129d35ca5141d65af51b78df2c1f" title="Binding of CAEN_FELib_GetNodeProperties()" alt="" coords="339,49,521,94"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="292,68,323,68,323,74,292,74"/>
+</map>

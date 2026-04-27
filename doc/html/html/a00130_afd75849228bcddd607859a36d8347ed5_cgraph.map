@@ -1,5 +1,0 @@
-<map id="get_node" name="get_node">
-<area shape="rect" id="node1" title="Binding of CAEN_FELib_GetHandle()" alt="" coords="5,31,108,57"/>
-<area shape="rect" id="node2" href="$a00130.html#" title=" " alt="" coords="176,5,359,32"/>
-<area shape="rect" id="node3" href="$a00101.html#gaa6f146f6a1e6f98416ee35fba5edfffc" title="Get the handle of a node." alt="" coords="156,56,379,83"/>
-</map>

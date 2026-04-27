@@ -16,8 +16,8 @@ Prerequisites
 
 - A compiler supporting C99 or C11/C17.
   The following compiler versions have been tested on x86_64:
-  - GCC >= 4.9 (up to version 14)
-  - clang >= 3.0 (up to version 20)
+  - GCC >= 7 (up to version 14)
+  - clang >= 5 (up to version 20)
 
 
 Install

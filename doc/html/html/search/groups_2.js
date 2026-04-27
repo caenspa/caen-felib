@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['python_0',['Python',['../a00102.html',1,'']]]
+  ['macros_0',['macros',['../a00098.html',1,'Utility macros'],['../a00099.html',1,'Version macros']]]
 ];

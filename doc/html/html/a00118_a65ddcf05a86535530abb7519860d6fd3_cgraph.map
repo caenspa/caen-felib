@@ -1,7 +1,0 @@
-<map id="lib_variadic" name="lib_variadic">
-<area shape="rect" id="node1" title="ctypes object to shared library (for variadic functions)" alt="" coords="5,67,148,93"/>
-<area shape="rect" id="node2" href="$a00118.html#a8dbf294be33021557916f50bac4ceb35" title="Path of the shared library." alt="" coords="311,29,373,56"/>
-<area shape="rect" id="node3" href="$a00130.html#ab73e6efc52ce7a21b22cbf9f3465df91" title="Node absolute path." alt="" coords="196,104,488,131"/>
-<area shape="rect" id="node4" href="$a00130.html#aa71a67fa5e66158c8d03b25aa9dec9e6" title="Binding of CAEN_FELib_GetPath()" alt="" coords="536,104,868,131"/>
-<area shape="rect" id="node5" href="$a00101.html#gacf9d43143f79079c83ff5c37c27cd1a3" title="Get the absolute path of a node." alt="" coords="916,104,1119,131"/>
-</map>

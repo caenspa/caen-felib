@@ -1,6 +1,6 @@
 var a00080 =
 [
     [ "Manager", "a00114.html", "a00114" ],
-    [ "cached", "a00080.html#ad74fa41e6b4bbea4e3c7e5ba88ffccf9", null ],
-    [ "clear", "a00080.html#a25c607b4bb0e9b466f127c0668b02a1b", null ]
+    [ "caen_felib._cache.cached", "a00104.html#ae7d61d69dc8e1573ae943448107f9130", null ],
+    [ "caen_felib._cache.clear", "a00104.html#a51442a35bf497b2bd69d0db060b10ab1", null ]
 ];

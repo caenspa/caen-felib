@@ -1,0 +1,5 @@
+<map id="value" name="value">
+<area shape="rect" id="Node000001" title="Instance of numpy.ndarray that holds data." alt="" coords="95,5,147,33"/>
+<area shape="rect" id="Node000002" href="$a00126.html#a11d17bccc3fcffb16d4d73169dfb4287" title="ctypes pointer to Data.value that is used within Node.read_data" alt="" coords="5,5,47,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,22,47,22,47,16,79,16"/>
+</map>

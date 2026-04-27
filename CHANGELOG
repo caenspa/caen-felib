@@ -11,6 +11,19 @@
 -----------------------------------------------------------------------------
 
 
+v1.3.4 (27/04/2026)
+-------------------
+
+New features:
+- Python sumbodule documentation aligned to v1.4.0.
+
+Fixes:
+- Add patch to support Linux distributions with no C11 thread support, like
+    Ubuntu 18.04.
+- Fixed a rare memory leak that occurred when an error was encountered while
+    opening a device.
+
+
 v1.3.3 (11/06/2025)
 -------------------
 

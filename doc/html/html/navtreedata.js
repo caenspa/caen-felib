@@ -25,72 +25,68 @@
 var NAVTREE =
 [
   [ "CAEN FE Library", "index.html", [
-    [ "Introduction", "index.html", [
-      [ "Description", "index.html#autotoc_md25", [
-        [ "Architecture", "index.html#autotoc_md26", null ]
-      ] ],
-      [ "Website", "index.html#autotoc_md27", null ],
-      [ "Language", "index.html#autotoc_md28", null ],
-      [ "Copyright notice", "index.html#autotoc_md29", null ],
-      [ "Credits", "index.html#credits", null ],
-      [ "Disclaimer", "index.html#autotoc_md30", null ]
-    ] ],
-    [ "Changelog", "a00303.html", null ],
-    [ "Software development", "a00304.html", [
-      [ "Compile your project", "a00304.html#autotoc_md0", [
-        [ "Header", "a00304.html#autotoc_md1", null ],
-        [ "Shared library", "a00304.html#autotoc_md2", [
-          [ "Windows", "a00304.html#autotoc_md3", null ],
-          [ "Linux", "a00304.html#autotoc_md4", null ]
+    [ "Introduction", "index.html", "index" ],
+    [ "Changelog", "a00203.html", null ],
+    [ "Software development", "a00204.html", [
+      [ "Compile your project", "a00204.html#autotoc_md0", [
+        [ "Header", "a00204.html#autotoc_md1", null ],
+        [ "Shared library", "a00204.html#autotoc_md2", [
+          [ "Windows", "a00204.html#autotoc_md3", null ],
+          [ "Linux", "a00204.html#autotoc_md4", null ]
         ] ]
       ] ],
-      [ "Develop your software", "a00304.html#autotoc_md5", [
-        [ "Connect to device", "a00304.html#connect", [
-          [ "Implementation specific settings", "a00304.html#autotoc_md6", [
-            [ "Dig2", "a00304.html#autotoc_md7", null ],
-            [ "Dig1", "a00304.html#autotoc_md9", null ]
+      [ "Develop your software", "a00204.html#autotoc_md5", [
+        [ "Connect to device", "a00204.html#connect", [
+          [ "Implementation specific settings", "a00204.html#autotoc_md6", [
+            [ "Dig2", "a00204.html#autotoc_md7", [
+              [ "Monitor clients", "a00204.html#autotoc_md8", null ],
+              [ "Log", "a00204.html#dig2log", null ]
+            ] ],
+            [ "Dig1", "a00204.html#autotoc_md9", [
+              [ "Log", "a00204.html#dig1log", null ]
+            ] ]
           ] ]
         ] ],
-        [ "Handles", "a00304.html#autotoc_md10", [
-          [ "Relative paths", "a00304.html#autotoc_md11", null ],
-          [ "Parent handle", "a00304.html#autotoc_md12", null ],
-          [ "Node properties", "a00304.html#autotoc_md13", null ]
+        [ "Handles", "a00204.html#autotoc_md10", [
+          [ "Relative paths", "a00204.html#autotoc_md11", null ],
+          [ "Parent handle", "a00204.html#autotoc_md12", null ],
+          [ "Node properties", "a00204.html#autotoc_md13", null ]
         ] ],
-        [ "Interact with a device", "a00304.html#autotoc_md14", [
-          [ "Configure", "a00304.html#autotoc_md15", null ],
-          [ "Run control", "a00304.html#autotoc_md16", null ],
-          [ "Data acquisition", "a00304.html#autotoc_md17", [
-            [ "Data format", "a00304.html#autotoc_md18", null ],
-            [ "Read data", "a00304.html#autotoc_md19", null ],
-            [ "Read data loop", "a00304.html#autotoc_md20", null ],
-            [ "Data conversion", "a00304.html#autotoc_md21", null ]
+        [ "Interact with a device", "a00204.html#autotoc_md14", [
+          [ "Configure", "a00204.html#autotoc_md15", null ],
+          [ "Run control", "a00204.html#autotoc_md16", null ],
+          [ "Data acquisition", "a00204.html#autotoc_md17", [
+            [ "Data format", "a00204.html#autotoc_md18", null ],
+            [ "Read data", "a00204.html#autotoc_md19", null ],
+            [ "Read data loop", "a00204.html#autotoc_md20", null ],
+            [ "Data conversion", "a00204.html#autotoc_md21", null ]
           ] ]
         ] ],
-        [ "Check last error", "a00304.html#autotoc_md22", null ]
+        [ "Check last error", "a00204.html#autotoc_md22", null ]
       ] ]
     ] ],
-    [ "Installation", "a00305.html", [
-      [ "Windows", "a00305.html#autotoc_md23", null ],
-      [ "Linux", "a00305.html#autotoc_md24", null ]
+    [ "Installation", "a00205.html", [
+      [ "Windows", "a00205.html#autotoc_md23", null ],
+      [ "Linux", "a00205.html#autotoc_md24", null ]
     ] ],
-    [ "LabVIEW", "a00306.html", [
-      [ "Description", "a00306.html#autotoc_md31", null ],
-      [ "Requirements", "a00306.html#autotoc_md32", null ],
-      [ "Installer", "a00306.html#autotoc_md33", null ],
-      [ "CAEN FELib VIs", "a00306.html#autotoc_md34", [
-        [ "LabVIEW Cluster", "a00306.html#autotoc_md35", null ],
-        [ "Pointer to Pointer in LabVIEW", "a00306.html#autotoc_md36", null ]
+    [ "Python", "a00206.html", [
+      [ "Description", "a00206.html#autotoc_md31", null ],
+      [ "Installation", "a00206.html#autotoc_md32", null ],
+      [ "Development", "a00206.html#autotoc_md33", null ],
+      [ "Language", "a00206.html#autotoc_md34", null ],
+      [ "Changelog", "a00206.html#autotoc_md35", null ],
+      [ "Copyright notice", "a00206.html#autotoc_md36", null ]
+    ] ],
+    [ "LabVIEW", "a00207.html", [
+      [ "Description", "a00207.html#autotoc_md37", null ],
+      [ "Requirements", "a00207.html#autotoc_md38", null ],
+      [ "Installer", "a00207.html#autotoc_md39", null ],
+      [ "CAEN FELib VIs", "a00207.html#autotoc_md40", [
+        [ "LabVIEW Cluster", "a00207.html#autotoc_md41", null ],
+        [ "Pointer to Pointer in LabVIEW", "a00207.html#autotoc_md42", null ]
       ] ]
     ] ],
-    [ "Python", "a00307.html", [
-      [ "Description", "a00307.html#autotoc_md37", null ],
-      [ "Installation", "a00307.html#autotoc_md38", null ],
-      [ "Development", "a00307.html#autotoc_md39", null ],
-      [ "Language", "a00307.html#autotoc_md40", null ],
-      [ "Changelog", "a00307.html#autotoc_md41", null ],
-      [ "Copyright notice", "a00307.html#autotoc_md42", null ]
-    ] ],
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -106,7 +102,7 @@ var NAVTREE =
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -125,8 +121,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00041.html",
-"a00170.html#a97205d1bc1fb4f98316c51a6269ea44e"
+"a00174.html#a773932634d1145aa71c5943a5ff10129"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';

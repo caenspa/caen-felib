@@ -1,4 +1,7 @@
 <map id="Lib" name="Lib">
-<area shape="rect" id="node1" title="This class loads the shared library and exposes its functions on its public attributes using ctypes." alt="" coords="50,5,233,127"/>
-<area shape="rect" id="node2" href="$a00170.html" title="This class loads the CAEN_FELib shared library and exposes its functions on its public attributes usi..." alt="" coords="5,175,277,516"/>
+<area shape="rect" id="Node000001" title="This class loads the shared library and exposes its functions on its public attributes using ctypes." alt="" coords="34,126,139,287"/>
+<area shape="rect" id="Node000003" href="$a00174.html" title="This class loads the CAEN_FELib shared library and exposes its functions on its public attributes usi..." alt="" coords="5,335,168,832"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,302,90,336,84,336,84,302"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="69,5,105,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,93,90,126,84,126,84,93"/>
 </map>

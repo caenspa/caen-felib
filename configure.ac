@@ -37,20 +37,12 @@ AM_PROG_AR
 # Requires constructor to be invoked at startup, cannot be used as static
 LT_INIT([disable-static])
 
-# Set langage to C
-# Note:
-#   -std=gnu99 is set only if default compiler does not support it by default.
-#   For example, if -std=gnu17 is the compiler default, it should also support
-#   C99 features and then no flag is appended.
+# Set language to C
 AC_PROG_CC
-AC_PROG_CC_C99
+AX_CHECK_COMPILE_FLAG([-std=gnu11], [AX_APPEND_FLAG([-std=gnu11])], [AC_MSG_ERROR([C11 support required.])])
 
 # Checks for other programs
 AC_PROG_INSTALL
-
-# Checks for compiler support
-AM_CONDITIONAL([NO_C99_SUPPORT], [test x"$ac_cv_prog_cc_c99" = x"no"])
-AM_COND_IF([NO_C99_SUPPORT], AC_MSG_FAILURE([C99 support required.]))
 
 # If available, use -fvisibility=hidden to hide internal names
 AX_APPEND_COMPILE_FLAGS([-fvisibility=hidden])
@@ -98,8 +90,8 @@ AC_SUBST([BUG67791_LDFLAGS])
 # Add support for --disable-assert
 AC_HEADER_ASSERT
 
-# Check for __thread
-AC_COMPILE_IFELSE([AC_LANG_SOURCE([__thread int foo;])], [], [AC_MSG_ERROR(__thread support required.)])
+# Check for C11 support
+AX_CHECK_COMPILE_FLAG([-std=gnu11], [], [AC_MSG_ERROR(C11 support required.)])
 
 # Check for dlopen and define LIBADD_DLOPEN (usually to -ldl)
 LT_LIB_DLLOAD

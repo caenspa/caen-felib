@@ -1,4 +1,5 @@
-<map id="ErrorCode" name="ErrorCode">
-<area shape="rect" id="node1" title="Binding of CAEN_FELib_ErrorCode." alt="" coords="5,131,237,355"/>
-<area shape="rect" id="node2" title=" " alt="" coords="75,5,167,83"/>
+<map id="LowPriorityFlags" name="LowPriorityFlags">
+<area shape="rect" id="Node000001" title="Low priority flags on Dig2 DPP&#45;PHA and DPP&#45;PSD events." alt="" coords="5,126,204,421"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="78,5,132,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,93,108,126,102,126,102,93"/>
 </map>

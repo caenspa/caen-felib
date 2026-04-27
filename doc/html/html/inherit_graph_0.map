@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$a00122.html" title="Class representing data set by Node.set_read_data_format()." alt="" coords="5,5,68,32"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,148,33"/>
+<area shape="rect" id="Node000001" href="$a00114.html" title="A simple list of functions returned by @lru_cache decorator." alt="" coords="196,32,270,60"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="163,31,196,37,195,42,162,37"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="57,57,96,85"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="111,63,195,49,196,54,112,68"/>
 </map>

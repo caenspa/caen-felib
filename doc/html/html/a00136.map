@@ -1,4 +1,5 @@
-<map id="DppFlags" name="DppFlags">
-<area shape="rect" id="node1" title="Flags on Dig1 DPP events." alt="" coords="5,131,168,355"/>
-<area shape="rect" id="node2" title=" " alt="" coords="41,5,133,83"/>
+<map id="DppProbeType" name="DppProbeType">
+<area shape="rect" id="Node000001" title="Probe types for Dig1 DPP events." alt="" coords="5,126,138,421"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="40,5,103,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,93,74,126,69,126,69,93"/>
 </map>

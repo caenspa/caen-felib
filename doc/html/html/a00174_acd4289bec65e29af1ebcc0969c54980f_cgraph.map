@@ -1,0 +1,5 @@
+<map id="sw_release" name="sw_release">
+<area shape="rect" id="Node000001" title="Same of get_lib_version(), for compatibility with caen_libs." alt="" coords="5,5,93,33"/>
+<area shape="rect" id="Node000002" href="$a00174.html#ac4b444d707c39df22a09750d9c04b584" title="Binding of CAEN_FELib_GetLibVersion()" alt="" coords="141,5,254,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,16,125,16,125,22,93,22"/>
+</map>

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['oldsort_0',['OLDSORT',['../a00138.html#a92b89954800ec20bd39d64f3905734b5',1,'caen_felib::dig1_types::DppFlags']]],
-  ['open_1',['open',['../a00170.html#aa8ef7bba54ee37a8beab56f5091c552f',1,'caen_felib::lib::_Lib']]],
-  ['over_5fthreshold_2',['OVER_THRESHOLD',['../a00146.html#a82d3a71de96d198c2c5d4b7ff7ee0f55',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
-  ['overrng_3',['OVERRNG',['../a00138.html#acade5cbe0b09611def5bddc77efa18d9',1,'caen_felib::dig1_types::DppFlags']]],
-  ['overtemp_4',['OVERTEMP',['../a00138.html#a97ec6a832f99fb4a06cae21dfc1fa1a4',1,'caen_felib::dig1_types::DppFlags']]],
-  ['overthreshold_5',['OVERTHRESHOLD',['../a00134.html#ab370f33645a9d6e12109879b6a9c05f2',1,'caen_felib::dig1_types::DppProbeType']]]
+  ['neg_5foverthr_0',['NEG_OVERTHR',['../a00138.html#a6736bb3cb0ba4d2dd09e5174cb609b07',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['negative_5fover_5fthreshold_1',['NEGATIVE_OVER_THRESHOLD',['../a00150.html#aaf98a8343b912353f02016cdc4419202',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['none_2',['NONE',['../a00138.html#a8da3a66cae7ac2c40966de471684f3fb',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['not_5fimplemented_3',['NOT_IMPLEMENTED',['../a00166.html#ad4e53c49669fd57751feaca0730e1314',1,'caen_felib::error::ErrorCode']]],
+  ['ntrglost_4',['NTRGLOST',['../a00142.html#a0cd3fa201ef5cb2c5bf8a18edf38e0ec',1,'caen_felib::dig1_types::DppFlags']]],
+  ['ntrgtot_5',['NTRGTOT',['../a00142.html#a500acce01bf7cd8dbfd298b8796e0d58',1,'caen_felib::dig1_types::DppFlags']]]
 ];

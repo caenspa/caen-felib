@@ -1,4 +1,0 @@
-<map id="set_read_data_format" name="set_read_data_format">
-<area shape="rect" id="node1" title="Binding of CAEN_FELib_SetReadDataFormat()" alt="" coords="165,29,388,56"/>
-<area shape="rect" id="node2" href="$a00130.html#a6bb0f2403d58a5d29ac3be8e7e7d282d" title="Binding of CAEN_FELib_ReadData()" alt="" coords="5,29,117,56"/>
-</map>

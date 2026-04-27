@@ -45,6 +45,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Support for C11 is mandatory, but some old Linux systems do not support threads.h
+// Also, IntelliSense incorrectly defines __STDC_NO_THREADS__
+#if !defined(__STDC_NO_THREADS__) || defined(__INTELLISENSE__)
+#include <threads.h>
+#define THREAD_LOCAL				thread_local
+#else
+#define THREAD_LOCAL				__thread
+#endif
+
 #ifdef _WIN32
 #include <direct.h> // getcwd
 #include <Windows.h> // DisableThreadLibraryCalls (not working including libloaderapi.h before Windows.h)
@@ -61,44 +70,24 @@
 #define MAX_NUM_LIBRARY				8		// max number of libraries (internal use, no specific size requirements)
 #define HANDLE_PREFIX				UINT64_C(0xcae0)
 
-// _Thread_local is C11 with thread support
-#if (__STDC_VERSION__ >= 201112L) && !defined(__STDC_NO_THREADS__)
-#define THREAD_LOCAL				_Thread_local
-#elif defined(_WIN32)
-#define THREAD_LOCAL				__declspec(thread)
-#elif defined(__GNUC__)
-#define THREAD_LOCAL				__thread
-#else
-#error unsupported compiler
-#endif
-
-// _Static_assert is C11
-#if (__STDC_VERSION__ >= 201112L)
-#define STATIC_ASSERT(COND, MSG)	_Static_assert(COND, CAEN_FELIB_STR(MSG))
-#else
-#define STATIC_ASSERT(COND, MSG)	typedef char _static_assertion_##MSG[(COND) ? 1 : -1]
-#endif
-
 #define ARRAY_SIZE(x)				(sizeof(x)/sizeof((x)[0]))
 
 static struct connection_descr* connectionDescr[MAX_NUM_CONNECTION];
 static struct library_descr* libDescr[MAX_NUM_LIBRARY];
 static THREAD_LOCAL char lastError[1024];
 
-STATIC_ASSERT(ARRAY_SIZE(connectionDescr) <= UINT16_MAX, invalid_connection_size);		// connection index must be stored in 16 bits
-STATIC_ASSERT(ARRAY_SIZE(connectionDescr) < UINT_FAST16_MAX, invalid_connection_type);	// UINT_FAST16_MAX index is reserved for invalid connection handle
-STATIC_ASSERT(ARRAY_SIZE(libDescr) < UINT_FAST8_MAX, invalid_lib_type);					// UINT_FAST8_MAX index is reserved for invalid library handle
-STATIC_ASSERT(ARRAY_SIZE(libDescr) <= ARRAY_SIZE(connectionDescr), invalid_descr_size);	// at most there can be a library for each connection
-STATIC_ASSERT(ARRAY_SIZE(CAEN_FELIB_VERSION_STRING) <= 16, invalid_version_size);		// required by CAEN_FELib_GetLibVersion
+static_assert(ARRAY_SIZE(connectionDescr) <= UINT16_MAX, "invalid connection size");		// connection index must be stored in 16 bits
+static_assert(ARRAY_SIZE(connectionDescr) < UINT_FAST16_MAX, "invalid connection type");	// UINT_FAST16_MAX index is reserved for invalid connection handle
+static_assert(ARRAY_SIZE(libDescr) < UINT_FAST8_MAX, "invalid lib type");					// UINT_FAST8_MAX index is reserved for invalid library handle
+static_assert(ARRAY_SIZE(libDescr) <= ARRAY_SIZE(connectionDescr), "invalid descr size");	// at most there can be a library for each connection
+static_assert(ARRAY_SIZE(CAEN_FELIB_VERSION_STRING) <= 16, "invalid version size");			// required by CAEN_FELib_GetLibVersion
+static_assert(sizeof(CAEN_FELib_ErrorCode) == sizeof(int), "invalid error code size");		// required by bindings to correctly define function ABI
+static_assert(sizeof(CAEN_FELib_NodeType_t) == sizeof(int), "invalid node type size");		// required by bindings to correctly define function ABI
 
 // The format of loaded library filenames depends on the filesystem
 #if defined(_WIN32)
 #define CAEN_IMPL_DLL_PREFIX		"CAEN_"
-#ifdef _DEBUG
-#define CAEN_IMPL_DLL_SUFFIX		"LibD.dll"
-#else
 #define CAEN_IMPL_DLL_SUFFIX		"Lib.dll"
-#endif
 #elif defined(__APPLE__)
 #define CAEN_IMPL_DLL_PREFIX		"libCAEN_"
 #define CAEN_IMPL_DLL_SUFFIX		".dylib"
@@ -530,8 +519,8 @@ static int _loadAPIv1(struct library_descr* descr) {
 }
 
 static void _getLastLocalError(char description[1024]) {
-	strncpy(description, lastError, 1024);
-	description[1024 - 1] = '\0';
+	strncpy(description, lastError, ARRAY_SIZE(lastError));
+	description[ARRAY_SIZE(lastError) - 1] = '\0';
 }
 
 static void _resetLastLocalError(void) {
@@ -587,7 +576,7 @@ static void _errorStrcpy(char* destError, const char* srcError, size_t srcErrorS
 do { \
 	const char _err[] = ERROR_LITERAL; \
 	const char _descr[] = DESCRIPTION_LITERAL; \
-	STATIC_ASSERT(ARRAY_SIZE(_err) <= 32 && ARRAY_SIZE(_descr) <= 256, invalid_err_size); \
+	static_assert(ARRAY_SIZE(_err) <= 32 && ARRAY_SIZE(_descr) <= 256, "invalid err size"); \
 	_errorStrcpy(error, _err, ARRAY_SIZE(_err), description, _descr, ARRAY_SIZE(_descr)); \
 } while (0)
 
@@ -916,8 +905,16 @@ int CAEN_FELIB_API CAEN_FELib_Open(const char* url, uint64_t* handle) {
 	}
 
 	if (!_allocateConnectionDescr(ch)) {
+		const int closeErr = lib_descr->Close(rh);
+		char closeDescr[ARRAY_SIZE(lastError)];
+		closeDescr[0] = '\0';
+		if (closeErr != CAEN_FELib_Success)
+			lib_descr->GetLastError(closeDescr);
 		_closeLibraryAndResetDevDescrIfLast(lh);
-		_setLastLocalError("_allocateConnectionDescr failed");
+		if (closeErr == CAEN_FELib_Success)
+			_setLastLocalError("_allocateConnectionDescr failed");
+		else
+			_setLastLocalError("_allocateConnectionDescr failed after open; cleanup close failed: %s", closeDescr);
 		return CAEN_FELib_InternalError;
 	}
 
@@ -1243,20 +1240,18 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved) {
 		break;
 	case DLL_PROCESS_DETACH:
 		if (lpReserved != NULL) {
-			 /*
-			  * If lpReserved is not NULL it means that the process is terminating: weird things
-			  * may happen here if there were running threads. We set a global flag that can be
-			  * useful on class destructors to perform some consistency checks.
-			  *
-			  * DllMain documentation suggests that:
-			  * > In this case, it is not safe for the DLL to clean up the resources.
-			  * > Instead, the DLL should allow the operating system to reclaim the memory.
-			  *
-			  * To avoid problems, we do not invoke deinit_library().
-			  *
-			  * See:
-			  * - https://docs.microsoft.com/en-us/windows/win32/dlls/dllmain
-			  */
+			/*
+			 * If lpReserved is not NULL it means that the process is terminating: weird things
+			 * may happen here if there were running threads. In this C library simply we do not
+			 * do anything, allowing the OS to reclaim the memory.
+			 *
+			 * DllMain documentation suggests that:
+			 * > In this case, it is not safe for the DLL to clean up the resources.
+			 * > Instead, the DLL should allow the operating system to reclaim the memory.
+			 *
+			 * See:
+			 * - https://docs.microsoft.com/en-us/windows/win32/dlls/dllmain
+			 */
 			return TRUE;
 		}
 		deinit_library();

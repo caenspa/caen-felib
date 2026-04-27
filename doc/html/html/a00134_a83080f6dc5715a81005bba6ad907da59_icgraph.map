@@ -1,0 +1,5 @@
+<map id="get_value" name="get_value">
+<area shape="rect" id="Node000001" title="Binding of CAEN_FELib_GetValue()" alt="" coords="106,5,185,33"/>
+<area shape="rect" id="Node000002" href="$a00134.html#ab641d2363302f9d39887ef556a621b7a" title="Get current value." alt="" coords="5,5,58,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,22,58,22,58,16,90,16"/>
+</map>

@@ -1,4 +1,5 @@
-<map id="_Lib" name="_Lib">
-<area shape="rect" id="node1" title="This class loads the CAEN_FELib shared library and exposes its functions on its public attributes usi..." alt="" coords="5,175,277,516"/>
-<area shape="rect" id="node2" href="$a00118.html" title="This class loads the shared library and exposes its functions on its public attributes using ctypes." alt="" coords="50,5,233,127"/>
+<map id="Error" name="Error">
+<area shape="rect" id="Node000001" title="Raised when a wrapped C API function returns negative values." alt="" coords="25,126,78,220"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,97,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,92,54,126,48,126,48,92"/>
 </map>

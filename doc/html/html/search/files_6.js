@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['introduction_2emd_0',['INTRODUCTION.md',['../a00312.html',1,'']]],
-  ['pychangelog_1',['PYCHANGELOG',['../a00092.html',1,'']]]
+  ['pychangelog_0',['PYCHANGELOG',['../a00092.html',1,'']]],
+  ['python_2fdoc_2fintroduction_2emd_1',['INTRODUCTION.md',['../a00212.html',1,'']]]
 ];

@@ -1,4 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$a00118.html" title="This class loads the shared library and exposes its functions on its public attributes using ctypes." alt="" coords="5,5,57,32"/>
-<area shape="rect" id="node2" href="$a00170.html" title="This class loads the CAEN_FELib shared library and exposes its functions on its public attributes usi..." alt="" coords="105,5,168,32"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,109,79,137"/>
+<area shape="rect" id="Node000001" href="$a00130.html" title="Binding of CAEN_FELib_NodeType_t." alt="" coords="162,5,246,33"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="64,96,92,69,125,44,161,28,163,33,128,48,95,73,68,99"/>
+<area shape="rect" id="Node000002" href="$a00138.html" title="Probe types for Dig1 DPP events." alt="" coords="148,57,260,85"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="93,104,158,83,159,88,94,109"/>
+<area shape="rect" id="Node000003" href="$a00146.html" title="Analog probe types for Dig2 DPP&#45;PSD and DPP&#45;PHA events." alt="" coords="127,109,281,137"/>
+<area shape="poly" id="edge7_Node000000_Node000003" title=" " alt="" coords="94,120,127,120,127,126,94,126"/>
+<area shape="rect" id="Node000004" href="$a00150.html" title="Digital probe types for Dig2 DPP&#45;PSD and DPP&#45;PHA events." alt="" coords="129,161,279,189"/>
+<area shape="poly" id="edge8_Node000000_Node000004" title=" " alt="" coords="94,137,159,158,158,163,93,142"/>
+<area shape="rect" id="Node000005" href="$a00166.html" title="Binding of CAEN_FELib_ErrorCode." alt="" coords="162,213,246,241"/>
+<area shape="poly" id="edge9_Node000000_Node000005" title=" " alt="" coords="68,147,95,174,128,198,162,214,160,219,125,203,92,178,64,151"/>
 </map>

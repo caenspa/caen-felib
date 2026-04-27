@@ -1,0 +1,5 @@
+<map id="version" name="version">
+<area shape="rect" id="Node000001" title="Get library version." alt="" coords="5,5,70,33"/>
+<area shape="rect" id="Node000002" href="$a00174.html#ac4b444d707c39df22a09750d9c04b584" title="Binding of CAEN_FELib_GetLibVersion()" alt="" coords="118,5,231,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,16,102,16,102,22,70,22"/>
+</map>

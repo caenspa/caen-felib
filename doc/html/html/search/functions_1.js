@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cached_0',['cached',['../a00104.html#ad74fa41e6b4bbea4e3c7e5ba88ffccf9',1,'caen_felib::_cache']]],
+  ['cached_0',['cached',['../a00104.html#ae7d61d69dc8e1573ae943448107f9130',1,'caen_felib::_cache']]],
   ['caen_5ffelib_5fclose_1',['CAEN_FELib_Close',['../a00101.html#ga920585fb5cbd9faf8c83e80be736f7c6',1,'CAEN_FELib.h']]],
   ['caen_5ffelib_5fdevicesdiscovery_2',['CAEN_FELib_DevicesDiscovery',['../a00101.html#ga0c585706da77d62f42e938a08ee67244',1,'CAEN_FELib.h']]],
   ['caen_5ffelib_5fgetchildhandles_3',['CAEN_FELib_GetChildHandles',['../a00101.html#ga1d99692257fe29f36cca78b6b58dc28c',1,'CAEN_FELib.h']]],
@@ -25,9 +25,9 @@ var searchData=
   ['caen_5ffelib_5fsetreaddataformat_22',['CAEN_FELib_SetReadDataFormat',['../a00101.html#gaf8d7562389a677f080d566da093cf062',1,'CAEN_FELib.h']]],
   ['caen_5ffelib_5fsetuserregister_23',['CAEN_FELib_SetUserRegister',['../a00101.html#ga6c46799bef8df672599585cabedf6810',1,'CAEN_FELib.h']]],
   ['caen_5ffelib_5fsetvalue_24',['CAEN_FELib_SetValue',['../a00101.html#gafb0504a48713f8fb9e4f6602eeacf99c',1,'CAEN_FELib.h']]],
-  ['child_5fnodes_25',['child_nodes',['../a00130.html#a115a035b01242507c03c95139f16f6ed',1,'caen_felib::device::Node']]],
-  ['clear_26',['clear',['../a00104.html#a25c607b4bb0e9b466f127c0668b02a1b',1,'caen_felib::_cache']]],
+  ['child_5fnodes_25',['child_nodes',['../a00134.html#a115a035b01242507c03c95139f16f6ed',1,'caen_felib::device::Node']]],
+  ['clear_26',['clear',['../a00104.html#a51442a35bf497b2bd69d0db060b10ab1',1,'caen_felib::_cache']]],
   ['clear_5fall_27',['clear_all',['../a00114.html#a40518fd90d13751de8c4e783b115d9bc',1,'caen_felib::_cache::Manager']]],
-  ['close_28',['close',['../a00130.html#a0931e4315d67c08986a0c4a9bfc43ca9',1,'caen_felib::device::Node']]],
-  ['connect_29',['connect',['../a00106.html#ab693e09013cedfe39a10f370449d9925',1,'caen_felib::device']]]
+  ['close_28',['close',['../a00134.html#a0931e4315d67c08986a0c4a9bfc43ca9',1,'caen_felib::device::Node']]],
+  ['connect_29',['connect',['../a00106.html#ae009c684027df9726ef036fe0ca5ccaa',1,'caen_felib::device']]]
 ];

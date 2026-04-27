@@ -1,15 +1,20 @@
 var searchData=
 [
-  ['dataclass_5fslots_0',['dataclass_slots',['../a00105.html#a4313dd57de34b08c5677cffb6001b479',1,'caen_felib::_utils']]],
-  ['dataclass_5fslots_5fweakref_1',['dataclass_slots_weakref',['../a00105.html#a5ed1673b2ecdf23727eb5e44dd8c6f48',1,'caen_felib::_utils']]],
-  ['deadtime_2',['DEADTIME',['../a00138.html#ad770c3b669df4735e800d04d8c3dad6e',1,'caen_felib::dig1_types::DppFlags']]],
-  ['default_3',['default',['../a00122.html#affb1327b18bf08a379d19eef89cf1ed1',1,'caen_felib::device::Data']]],
-  ['default_5ffactory_4',['default_factory',['../a00122.html#ac44e8607df17617696a0a70c1c55871d',1,'caen_felib::device::Data']]],
-  ['delta_5',['DELTA',['../a00134.html#a4dc1dc65750ded2342bb4aef5a4b9326',1,'caen_felib::dig1_types::DppProbeType']]],
-  ['delta2_6',['DELTA2',['../a00134.html#a49ad9c789b333a23e88b859022e5b8b2',1,'caen_felib::dig1_types::DppProbeType']]],
-  ['device_5falready_5fopen_7',['DEVICE_ALREADY_OPEN',['../a00162.html#add6bdb672a4379c0c3b3c599d810705e',1,'caen_felib::error::ErrorCode']]],
-  ['device_5flibrary_5fnot_5favailable_8',['DEVICE_LIBRARY_NOT_AVAILABLE',['../a00162.html#a5188066b07f07e1fab81786b07e9e6a5',1,'caen_felib::error::ErrorCode']]],
-  ['device_5fnot_5ffound_9',['DEVICE_NOT_FOUND',['../a00162.html#aace6635ccf78c292f80fae3a9eb03ae5',1,'caen_felib::error::ErrorCode']]],
-  ['digitizer_10',['DIGITIZER',['../a00126.html#ae11a637cac5d4b646200b576cf65ebc0',1,'caen_felib::device::NodeType']]],
-  ['disabled_11',['DISABLED',['../a00162.html#a511a02294152ca837e677530984a07ff',1,'caen_felib::error::ErrorCode']]]
+  ['cfd_0',['CFD',['../a00138.html#a5cc15d5eba0c37c548dde2d6034b91c7',1,'caen_felib.dig1_types.DppProbeType.CFD'],['../a00146.html#a5cc15d5eba0c37c548dde2d6034b91c7',1,'caen_felib.dig2_types.DppAnalogProbeType.CFD']]],
+  ['ch64_5ftrigger_1',['CH64_TRIGGER',['../a00162.html#aab6b09bdfaa746dead1481e023a83182',1,'caen_felib::dig2_types::LowPriorityFlags']]],
+  ['channel_2',['CHANNEL',['../a00130.html#a8a18e6402181829ffed16ab949887027',1,'caen_felib::device::NodeType']]],
+  ['char_3',['CHAR',['../a00122.html#aae35808bec76c732240bba756d5520b2',1,'caen_felib::device::DataType']]],
+  ['charge_5fover_5frange_4',['CHARGE_OVER_RANGE',['../a00150.html#a22787d75596ea8196fff73bf2513dcb0',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['charge_5foverflow_5',['CHARGE_OVERFLOW',['../a00158.html#ada3a59b45e180eb49f6ad6304cd7a5e8',1,'caen_felib::dig2_types::HighPriorityFlagsPsd']]],
+  ['charge_5fready_6',['CHARGE_READY',['../a00150.html#a191bd7c55ad57d0bb1f4928d0f9d61a2',1,'caen_felib::dig2_types::DppDigitalProbeType']]],
+  ['chargesat_7',['CHARGESAT',['../a00138.html#a51c67cdf02ff2218add5f55b64e286c7',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['child_5fnodes_8',['child_nodes',['../a00134.html#a70f6d3d5aa6187cebc73105715e27957',1,'caen_felib::device::Node']]],
+  ['close_9',['close',['../a00174.html#a22237eeebd9a83459913378ab1e1e147',1,'caen_felib::lib::_Lib']]],
+  ['code_10',['code',['../a00170.html#afb9ed1b8a27eb20854efe6e23e297683',1,'caen_felib::error::Error']]],
+  ['coincidence_11',['COINCIDENCE',['../a00138.html#a1db785ef4d1a71cdc6f789fb69c254c9',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['coincwin_12',['COINCWIN',['../a00138.html#ad41cfa185d10d50956ac21e336380378',1,'caen_felib::dig1_types::DppProbeType']]],
+  ['command_13',['COMMAND',['../a00130.html#ac668d6774244f156e4f254e59d4843e2',1,'caen_felib::device::NodeType']]],
+  ['command_5ferror_14',['COMMAND_ERROR',['../a00166.html#a02b3552f22966b69731df9acddf94c22',1,'caen_felib::error::ErrorCode']]],
+  ['communication_5ferror_15',['COMMUNICATION_ERROR',['../a00166.html#a13ad2efeb64b4ba345119ae7ae5f0d03',1,'caen_felib::error::ErrorCode']]],
+  ['crg_5fready_16',['CRG_READY',['../a00138.html#aa1b6f229861efe0ec93a36e02f06da2d',1,'caen_felib::dig1_types::DppProbeType']]]
 ];
