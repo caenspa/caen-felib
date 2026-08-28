@@ -74,7 +74,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="a00134.html#ac66c129d35ca5141d65af51b78df2c1f" target="_top" xlink:title="Binding of CAEN_FELib_GetNodeProperties()">
+<g id="a_Node000004"><a xlink:href="a00134.html#ac66c129d35ca5141d65af51b78df2c1f" target="_top" xlink:title="Binding of CAEN_FELib_GetNodeProperties().">
 <polygon fill="white" stroke="#666666" points="387,-66.12 250.25,-66.12 250.25,-32.62 387,-32.62 387,-66.12"/>
 <text text-anchor="start" x="258.25" y="-52.62" font-family="Helvetica,sans-Serif" font-size="10.00">caen_felib.device.Node.get</text>
 <text text-anchor="middle" x="318.62" y="-39.88" font-family="Helvetica,sans-Serif" font-size="10.00">_node_properties</text>

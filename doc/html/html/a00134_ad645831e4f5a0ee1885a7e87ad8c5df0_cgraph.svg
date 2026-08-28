@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Binding of CAEN_FELib_GetChildHandles()">
+<g id="a_Node000001"><a xlink:title="Binding of CAEN_FELib_GetChildHandles().">
 <polygon fill="#999999" stroke="#666666" points="91,-20.75 0,-20.75 0,0 91,0 91,-20.75"/>
 <text text-anchor="middle" x="45.5" y="-7.25" font-family="Helvetica,sans-Serif" font-size="10.00">get_child_nodes</text>
 </a>

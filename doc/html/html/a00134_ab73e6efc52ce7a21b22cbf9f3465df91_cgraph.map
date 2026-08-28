@@ -1,5 +1,5 @@
 <map id="path" name="path">
 <area shape="rect" id="Node000001" title="Node absolute path." alt="" coords="5,5,55,33"/>
-<area shape="rect" id="Node000002" href="$a00134.html#aa71a67fa5e66158c8d03b25aa9dec9e6" title="Binding of CAEN_FELib_GetPath()" alt="" coords="103,5,179,33"/>
+<area shape="rect" id="Node000002" href="$a00134.html#aa71a67fa5e66158c8d03b25aa9dec9e6" title="Binding of CAEN_FELib_GetPath()." alt="" coords="103,5,179,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,16,87,16,87,22,55,22"/>
 </map>

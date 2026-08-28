@@ -1,5 +1,5 @@
 <map id="type" name="type">
 <area shape="rect" id="Node000001" title="Node type." alt="" coords="130,5,177,33"/>
-<area shape="rect" id="Node000002" href="$a00134.html#aaf9fc47798df8b680b4a7d6ac9fe970e" title="Binding of CAEN_FELib_HasData()" alt="" coords="5,5,82,33"/>
+<area shape="rect" id="Node000002" href="$a00134.html#aaf9fc47798df8b680b4a7d6ac9fe970e" title="Binding of CAEN_FELib_HasData()." alt="" coords="5,5,82,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,22,82,22,82,16,114,16"/>
 </map>

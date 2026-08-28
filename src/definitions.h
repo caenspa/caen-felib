@@ -68,6 +68,8 @@ typedef int (CAEN_FELIB_API* fpSetUserRegister_t)(uint32_t handle, uint32_t addr
 typedef int (CAEN_FELIB_API* fpSetReadDataFormat_t)(uint32_t handle, const char* jsonString);
 typedef int (CAEN_FELIB_API* fpReadDataV_t)(uint32_t handle, int timeout, va_list args);
 typedef int (CAEN_FELIB_API* fpHasData_t)(uint32_t handle, int timeout);
+typedef int (CAEN_FELIB_API* fpSetValues_t)(uint32_t handle, const char* const* paths, const char* const* values, size_t count, int* results);
+typedef int (CAEN_FELIB_API* fpGetValues_t)(uint32_t handle, const char* const* paths, char* const* values, size_t count, int* results);
 
 #ifdef _WIN32
 typedef HMODULE						dlHandle_t;
@@ -86,6 +88,7 @@ enum library_api {
 	LibraryAPIUnknown,
 	LibraryAPIv0,
 	LibraryAPIv1,
+	LibraryAPIv2,
 };
 
 struct library_descr {
@@ -115,6 +118,9 @@ struct library_descr {
 	fpReadDataV_t					ReadDataV;
 	// API v1
 	fpHasData_t						HasData;
+	// API v2
+	fpSetValues_t					SetValues;
+	fpGetValues_t					GetValues;
 };
 
 #endif /* CAEN_INCLUDE_DEFINITIONS_H_ */

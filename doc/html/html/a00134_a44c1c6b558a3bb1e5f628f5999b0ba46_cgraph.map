@@ -2,13 +2,13 @@
 <area shape="rect" id="Node000001" title="Set value." alt="" coords="5,81,58,109"/>
 <area shape="rect" id="Node000002" href="$a00134.html#" title=" " alt="" coords="272,31,368,58"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,79,65,45,83,28,105,15,148,4,192,4,235,11,272,22,271,27,234,17,192,10,148,10,107,20,86,33,68,49,43,82"/>
-<area shape="rect" id="Node000003" href="$a00134.html#a0931e4315d67c08986a0c4a9bfc43ca9" title="Binding of CAEN_FELib_Close()" alt="" coords="139,29,191,57"/>
+<area shape="rect" id="Node000003" href="$a00134.html#a0931e4315d67c08986a0c4a9bfc43ca9" title="Binding of CAEN_FELib_Close()." alt="" coords="139,29,191,57"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="57,83,123,56,125,61,59,87"/>
-<area shape="rect" id="Node000004" href="$a00134.html#afd75849228bcddd607859a36d8347ed5" title="Binding of CAEN_FELib_GetHandle()" alt="" coords="125,81,204,109"/>
+<area shape="rect" id="Node000004" href="$a00134.html#afd75849228bcddd607859a36d8347ed5" title="Binding of CAEN_FELib_GetHandle()." alt="" coords="125,81,204,109"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="58,92,110,92,110,98,58,98"/>
-<area shape="rect" id="Node000005" href="$a00134.html#a7b766e4d985df8ecf7b35c7287710dd4" title="Binding of CAEN_FELib_SendCommand()" alt="" coords="106,133,224,161"/>
+<area shape="rect" id="Node000005" href="$a00134.html#a7b766e4d985df8ecf7b35c7287710dd4" title="Binding of CAEN_FELib_SendCommand()." alt="" coords="106,133,224,161"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="59,103,114,125,113,130,57,108"/>
-<area shape="rect" id="Node000006" href="$a00134.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a" title="Binding of CAEN_FELib_SetValue()" alt="" coords="126,185,204,213"/>
+<area shape="rect" id="Node000006" href="$a00134.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a" title="Binding of CAEN_FELib_SetValue()." alt="" coords="126,185,204,213"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="45,107,72,138,107,170,115,176,112,180,104,174,68,142,41,111"/>
 <area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="204,80,261,61,263,66,206,85"/>
 </map>

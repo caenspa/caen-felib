@@ -26,64 +26,64 @@ var NAVTREE =
 [
   [ "CAEN FE Library", "index.html", [
     [ "Introduction", "index.html", "index" ],
-    [ "Changelog", "a00203.html", null ],
-    [ "Software development", "a00204.html", [
-      [ "Compile your project", "a00204.html#autotoc_md0", [
-        [ "Header", "a00204.html#autotoc_md1", null ],
-        [ "Shared library", "a00204.html#autotoc_md2", [
-          [ "Windows", "a00204.html#autotoc_md3", null ],
-          [ "Linux", "a00204.html#autotoc_md4", null ]
+    [ "Changelog", "a00199.html", null ],
+    [ "Software development", "a00200.html", [
+      [ "Compile your project", "a00200.html#autotoc_md0", [
+        [ "Header", "a00200.html#autotoc_md1", null ],
+        [ "Shared library", "a00200.html#autotoc_md2", [
+          [ "Windows", "a00200.html#autotoc_md3", null ],
+          [ "Linux", "a00200.html#autotoc_md4", null ]
         ] ]
       ] ],
-      [ "Develop your software", "a00204.html#autotoc_md5", [
-        [ "Connect to device", "a00204.html#connect", [
-          [ "Implementation specific settings", "a00204.html#autotoc_md6", [
-            [ "Dig2", "a00204.html#autotoc_md7", [
-              [ "Monitor clients", "a00204.html#autotoc_md8", null ],
-              [ "Log", "a00204.html#dig2log", null ]
+      [ "Develop your software", "a00200.html#autotoc_md5", [
+        [ "Connect to device", "a00200.html#connect", [
+          [ "Implementation specific settings", "a00200.html#autotoc_md6", [
+            [ "Dig2", "a00200.html#autotoc_md7", [
+              [ "Monitor clients", "a00200.html#autotoc_md8", null ],
+              [ "Log", "a00200.html#dig2log", null ]
             ] ],
-            [ "Dig1", "a00204.html#autotoc_md9", [
-              [ "Log", "a00204.html#dig1log", null ]
+            [ "Dig1", "a00200.html#autotoc_md9", [
+              [ "Log", "a00200.html#dig1log", null ]
             ] ]
           ] ]
         ] ],
-        [ "Handles", "a00204.html#autotoc_md10", [
-          [ "Relative paths", "a00204.html#autotoc_md11", null ],
-          [ "Parent handle", "a00204.html#autotoc_md12", null ],
-          [ "Node properties", "a00204.html#autotoc_md13", null ]
+        [ "Handles", "a00200.html#autotoc_md10", [
+          [ "Relative paths", "a00200.html#autotoc_md11", null ],
+          [ "Parent handle", "a00200.html#autotoc_md12", null ],
+          [ "Node properties", "a00200.html#autotoc_md13", null ]
         ] ],
-        [ "Interact with a device", "a00204.html#autotoc_md14", [
-          [ "Configure", "a00204.html#autotoc_md15", null ],
-          [ "Run control", "a00204.html#autotoc_md16", null ],
-          [ "Data acquisition", "a00204.html#autotoc_md17", [
-            [ "Data format", "a00204.html#autotoc_md18", null ],
-            [ "Read data", "a00204.html#autotoc_md19", null ],
-            [ "Read data loop", "a00204.html#autotoc_md20", null ],
-            [ "Data conversion", "a00204.html#autotoc_md21", null ]
+        [ "Interact with a device", "a00200.html#autotoc_md14", [
+          [ "Configure", "a00200.html#autotoc_md15", null ],
+          [ "Run control", "a00200.html#autotoc_md16", null ],
+          [ "Data acquisition", "a00200.html#autotoc_md17", [
+            [ "Data format", "a00200.html#autotoc_md18", null ],
+            [ "Read data", "a00200.html#autotoc_md19", null ],
+            [ "Read data loop", "a00200.html#autotoc_md20", null ],
+            [ "Data conversion", "a00200.html#autotoc_md21", null ]
           ] ]
         ] ],
-        [ "Check last error", "a00204.html#autotoc_md22", null ]
+        [ "Check last error", "a00200.html#autotoc_md22", null ]
       ] ]
     ] ],
-    [ "Installation", "a00205.html", [
-      [ "Windows", "a00205.html#autotoc_md23", null ],
-      [ "Linux", "a00205.html#autotoc_md24", null ]
+    [ "Installation", "a00201.html", [
+      [ "Windows", "a00201.html#autotoc_md23", null ],
+      [ "Linux", "a00201.html#autotoc_md24", null ]
     ] ],
-    [ "Python", "a00206.html", [
-      [ "Description", "a00206.html#autotoc_md31", null ],
-      [ "Installation", "a00206.html#autotoc_md32", null ],
-      [ "Development", "a00206.html#autotoc_md33", null ],
-      [ "Language", "a00206.html#autotoc_md34", null ],
-      [ "Changelog", "a00206.html#autotoc_md35", null ],
-      [ "Copyright notice", "a00206.html#autotoc_md36", null ]
+    [ "Python", "a00202.html", [
+      [ "Description", "a00202.html#autotoc_md31", null ],
+      [ "Installation", "a00202.html#autotoc_md32", null ],
+      [ "Development", "a00202.html#autotoc_md33", null ],
+      [ "Language", "a00202.html#autotoc_md34", null ],
+      [ "Changelog", "a00202.html#autotoc_md35", null ],
+      [ "Copyright notice", "a00202.html#autotoc_md36", null ]
     ] ],
-    [ "LabVIEW", "a00207.html", [
-      [ "Description", "a00207.html#autotoc_md37", null ],
-      [ "Requirements", "a00207.html#autotoc_md38", null ],
-      [ "Installer", "a00207.html#autotoc_md39", null ],
-      [ "CAEN FELib VIs", "a00207.html#autotoc_md40", [
-        [ "LabVIEW Cluster", "a00207.html#autotoc_md41", null ],
-        [ "Pointer to Pointer in LabVIEW", "a00207.html#autotoc_md42", null ]
+    [ "LabVIEW", "a00203.html", [
+      [ "Description", "a00203.html#autotoc_md37", null ],
+      [ "Requirements", "a00203.html#autotoc_md38", null ],
+      [ "Installer", "a00203.html#autotoc_md39", null ],
+      [ "CAEN FELib VIs", "a00203.html#autotoc_md40", [
+        [ "LabVIEW Cluster", "a00203.html#autotoc_md41", null ],
+        [ "Pointer to Pointer in LabVIEW", "a00203.html#autotoc_md42", null ]
       ] ]
     ] ],
     [ "Topics", "topics.html", "topics" ],
@@ -121,8 +121,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00041.html",
-"a00174.html#a773932634d1145aa71c5943a5ff10129"
+"a00174.html#a6964e25707410e6a202bd71f6212b303"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';

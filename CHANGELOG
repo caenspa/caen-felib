@@ -11,6 +11,15 @@
 -----------------------------------------------------------------------------
 
 
+v1.4.0 (27/08/2026)
+-------------------
+
+New features:
+- Add CAEN_FELib_SetValues and CAEN_FELib_GetValues through the optional
+    LibraryAPIv2 tier, allowing batched parameter accesses in a single
+    round-trip when supported by the implementation library.
+
+
 v1.3.4 (27/04/2026)
 -------------------
 

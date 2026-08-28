@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="a00174.html#aff7482d745c3bace0492304e3537d88f" target="_top" xlink:title="Binding of CAEN_FELib_GetLibInfo()">
+<g id="a_Node000002"><a xlink:href="a00174.html#aff7482d745c3bace0492304e3537d88f" target="_top" xlink:title="Binding of CAEN_FELib_GetLibInfo().">
 <polygon fill="white" stroke="#666666" points="140.75,-20.75 70,-20.75 70,0 140.75,0 140.75,-20.75"/>
 <text text-anchor="middle" x="105.38" y="-7.25" font-family="Helvetica,sans-Serif" font-size="10.00">get_lib_info</text>
 </a>

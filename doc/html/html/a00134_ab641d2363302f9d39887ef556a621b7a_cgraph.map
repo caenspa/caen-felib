@@ -1,5 +1,5 @@
 <map id="value" name="value">
 <area shape="rect" id="Node000001" title="Get current value." alt="" coords="5,5,58,33"/>
-<area shape="rect" id="Node000002" href="$a00134.html#a83080f6dc5715a81005bba6ad907da59" title="Binding of CAEN_FELib_GetValue()" alt="" coords="106,5,185,33"/>
+<area shape="rect" id="Node000002" href="$a00134.html#a83080f6dc5715a81005bba6ad907da59" title="Binding of CAEN_FELib_GetValue()." alt="" coords="106,5,185,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,16,90,16,90,22,58,22"/>
 </map>

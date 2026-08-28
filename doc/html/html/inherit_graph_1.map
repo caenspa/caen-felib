@@ -1,7 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,52,33"/>
-<area shape="rect" id="Node000001" href="$a00118.html" title="This class loads the shared library and exposes its functions on its public attributes using ctypes." alt="" coords="100,5,139,33"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="67,16,99,16,99,22,67,22"/>
-<area shape="rect" id="Node000002" href="$a00174.html" title="This class loads the CAEN_FELib shared library and exposes its functions on its public attributes usi..." alt="" coords="187,5,233,33"/>
-<area shape="poly" id="edge4_Node000001_Node000002" title=" " alt="" coords="155,16,186,16,186,22,155,22"/>
+<area shape="rect" id="Node000000" href="$a00126.html" title="Class representing data set by Node.set_read_data_format()." alt="" coords="5,5,55,33"/>
 </map>

@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="a00134.html#a0931e4315d67c08986a0c4a9bfc43ca9" target="_top" xlink:title="Binding of CAEN_FELib_Close()">
+<g id="a_Node000003"><a xlink:href="a00134.html#a0931e4315d67c08986a0c4a9bfc43ca9" target="_top" xlink:title="Binding of CAEN_FELib_Close().">
 <polygon fill="white" stroke="#666666" points="139.25,-137.75 100,-137.75 100,-117 139.25,-117 139.25,-137.75"/>
 <text text-anchor="middle" x="119.62" y="-124.25" font-family="Helvetica,sans-Serif" font-size="10.00">close</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="a00134.html#afd75849228bcddd607859a36d8347ed5" target="_top" xlink:title="Binding of CAEN_FELib_GetHandle()">
+<g id="a_Node000004"><a xlink:href="a00134.html#afd75849228bcddd607859a36d8347ed5" target="_top" xlink:title="Binding of CAEN_FELib_GetHandle().">
 <polygon fill="white" stroke="#666666" points="149.38,-98.75 89.88,-98.75 89.88,-78 149.38,-78 149.38,-98.75"/>
 <text text-anchor="middle" x="119.62" y="-85.25" font-family="Helvetica,sans-Serif" font-size="10.00">get_node</text>
 </a>
@@ -74,7 +74,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="a00134.html#a7b766e4d985df8ecf7b35c7287710dd4" target="_top" xlink:title="Binding of CAEN_FELib_SendCommand()">
+<g id="a_Node000005"><a xlink:href="a00134.html#a7b766e4d985df8ecf7b35c7287710dd4" target="_top" xlink:title="Binding of CAEN_FELib_SendCommand().">
 <polygon fill="white" stroke="#666666" points="164,-59.75 75.25,-59.75 75.25,-39 164,-39 164,-59.75"/>
 <text text-anchor="middle" x="119.62" y="-46.25" font-family="Helvetica,sans-Serif" font-size="10.00">send_command</text>
 </a>
@@ -92,7 +92,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="a00134.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a" target="_top" xlink:title="Binding of CAEN_FELib_SetValue()">
+<g id="a_Node000006"><a xlink:href="a00134.html#a4bcc21bbe32ae0fe6707ee9c7e41aa5a" target="_top" xlink:title="Binding of CAEN_FELib_SetValue().">
 <polygon fill="white" stroke="#666666" points="148.62,-20.75 90.62,-20.75 90.62,0 148.62,0 148.62,-20.75"/>
 <text text-anchor="middle" x="119.62" y="-7.25" font-family="Helvetica,sans-Serif" font-size="10.00">set_value</text>
 </a>

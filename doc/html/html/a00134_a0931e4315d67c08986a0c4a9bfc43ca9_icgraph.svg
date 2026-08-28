@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Binding of CAEN_FELib_Close()">
+<g id="a_Node000001"><a xlink:title="Binding of CAEN_FELib_Close().">
 <polygon fill="#999999" stroke="#666666" points="114.5,-20.75 75.25,-20.75 75.25,0 114.5,0 114.5,-20.75"/>
 <text text-anchor="middle" x="94.88" y="-7.25" font-family="Helvetica,sans-Serif" font-size="10.00">close</text>
 </a>

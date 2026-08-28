@@ -6,6 +6,6 @@ var searchData=
   ['version_20macros_3',['Version macros',['../a00099.html',1,'']]],
   ['version_5fto_5ftuple_4',['version_to_tuple',['../a00105.html#af8f19660e2addf68a6e687b6d3964cfe',1,'caen_felib::_utils']]],
   ['vga_5',['VGA',['../a00130.html#adb538cae0159af4c8842b879bb860b02',1,'caen_felib::device::NodeType']]],
-  ['vis_6',['CAEN FELib VIs',['../a00207.html#autotoc_md40',1,'']]],
+  ['vis_6',['CAEN FELib VIs',['../a00203.html#autotoc_md40',1,'']]],
   ['vtrace_7',['VTRACE',['../a00130.html#a0b3038533cdad7f2631426bf36202bd6',1,'caen_felib::device::NodeType']]]
 ];

@@ -1,5 +1,5 @@
 <map id="get_node" name="get_node">
-<area shape="rect" id="Node000001" title="Binding of CAEN_FELib_GetHandle()" alt="" coords="5,5,85,33"/>
+<area shape="rect" id="Node000001" title="Binding of CAEN_FELib_GetHandle()." alt="" coords="5,5,85,33"/>
 <area shape="rect" id="Node000002" href="$a00134.html#" title=" " alt="" coords="133,5,258,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,16,117,16,117,22,85,22"/>
 </map>

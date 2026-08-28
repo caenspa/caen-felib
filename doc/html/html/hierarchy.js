@@ -1,8 +1,5 @@
 var hierarchy =
 [
-    [ "_lru_cache_wrapper", null, [
-      [ "Manager", "a00114.html", null ]
-    ] ],
     [ "ABC", null, [
       [ "Lib", "a00118.html", [
         [ "_Lib", "a00174.html", null ]

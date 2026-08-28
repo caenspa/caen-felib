@@ -14,7 +14,7 @@ var searchData=
   ['enumerations_11',['Enumerations',['../a00100.html',1,'']]],
   ['eor_12',['EOR',['../a00142.html#aed94e589fba7545c69e0d44c91370911',1,'caen_felib::dig1_types::DppFlags']]],
   ['error_13',['Error',['../a00170.html',1,'caen_felib::error']]],
-  ['error_14',['Check last error',['../a00204.html#autotoc_md22',1,'']]],
+  ['error_14',['Check last error',['../a00200.html#autotoc_md22',1,'']]],
   ['error_2epy_15',['error.py',['../a00077.html',1,'']]],
   ['errorcode_16',['ErrorCode',['../a00166.html',1,'caen_felib::error']]],
   ['event_5fpile_5fup_17',['EVENT_PILE_UP',['../a00150.html#a90650a06ee654949273cf4c3ea288b8c',1,'caen_felib::dig2_types::DppDigitalProbeType']]],

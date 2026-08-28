@@ -64,8 +64,8 @@
 * @brief Macros to define the library version.
 * @{ */
 #define CAEN_FELIB_VERSION_MAJOR			1
-#define CAEN_FELIB_VERSION_MINOR			3
-#define CAEN_FELIB_VERSION_PATCH			4
+#define CAEN_FELIB_VERSION_MINOR			4
+#define CAEN_FELIB_VERSION_PATCH			0
 #define CAEN_FELIB_VERSION					(CAEN_FELIB_VERSION_MAJOR * 10000) + (CAEN_FELIB_VERSION_MINOR * 100) + (CAEN_FELIB_VERSION_PATCH)
 #define CAEN_FELIB_VERSION_STRING			CAEN_FELIB_STR(CAEN_FELIB_VERSION_MAJOR) "." CAEN_FELIB_STR(CAEN_FELIB_VERSION_MINOR) "." CAEN_FELIB_STR(CAEN_FELIB_VERSION_PATCH)
 /*! @} */
@@ -320,6 +320,41 @@ CAEN_FELIB_DLLAPI int CAEN_FELIB_API CAEN_FELib_GetValue(uint64_t handle, const 
  * @ingroup Functions
  */
 CAEN_FELIB_DLLAPI int CAEN_FELIB_API CAEN_FELib_SetValue(uint64_t handle, const char* path, const char* value);
+
+/**
+ * @brief Set the value of several writable nodes in a single request to the device.
+ *
+ * This batches many writes into one round-trip to the device, which is much faster than calling
+ * CAEN_FELib_SetValue() in a loop, especially over high-latency links (e.g. USB RNDIS/CDC).
+ * Every item is attempted (best-effort): a failing item does not prevent the others from being applied.
+ *
+ * @param[in] handle			handle
+ * @param[in] paths				array of @p count relative paths of writable nodes with respect to @p handle (each may use the `0..N` range syntax)
+ * @param[in] values			array of @p count values to set (null-terminated strings), one per path
+ * @param[in] count				number of elements in @p paths and @p values
+ * @param[out] results			array of @p count error codes (#CAEN_FELib_ErrorCode), one per item: ::CAEN_FELib_Success if the item succeeded, a negative code otherwise
+ * @return						::CAEN_FELib_Success (0) if every item succeeded, or a negative error code specified in #CAEN_FELib_ErrorCode (::CAEN_FELib_CommandError if any item failed; a summary of the failures is available with CAEN_FELib_GetLastError())
+ * @note Requires an implementation library that supports this function: returns ::CAEN_FELib_NotImplemented otherwise.
+ * @ingroup Functions
+ */
+CAEN_FELIB_DLLAPI int CAEN_FELIB_API CAEN_FELib_SetValues(uint64_t handle, const char* const* paths, const char* const* values, size_t count, int* results);
+
+/**
+ * @brief Get the value of several readable nodes in a single request to the device.
+ *
+ * This batches many reads into one round-trip to the device. Every item is attempted (best-effort);
+ * the value of each successful item is written to the corresponding entry of @p values.
+ *
+ * @param[in] handle			handle
+ * @param[in] paths				array of @p count relative paths of readable nodes with respect to @p handle
+ * @param[out] values			array of @p count output buffers (each null-terminated, [max size: 256 bytes]) that receive the value of each path
+ * @param[in] count				number of elements in @p paths and @p values
+ * @param[out] results			array of @p count error codes (#CAEN_FELib_ErrorCode), one per item: ::CAEN_FELib_Success if the item succeeded, a negative code otherwise
+ * @return						::CAEN_FELib_Success (0) if every item succeeded, or a negative error code specified in #CAEN_FELib_ErrorCode (::CAEN_FELib_CommandError if any item failed; a summary of the failures is available with CAEN_FELib_GetLastError())
+ * @note Requires an implementation library that supports this function: returns ::CAEN_FELib_NotImplemented otherwise.
+ * @ingroup Functions
+ */
+CAEN_FELIB_DLLAPI int CAEN_FELIB_API CAEN_FELib_GetValues(uint64_t handle, const char* const* paths, char* const* values, size_t count, int* results);
 
 /**
  * @brief Get the value of a user register.

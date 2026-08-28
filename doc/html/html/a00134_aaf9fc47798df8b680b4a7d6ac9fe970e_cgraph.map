@@ -1,7 +1,7 @@
 <map id="has_data" name="has_data">
-<area shape="rect" id="Node000001" title="Binding of CAEN_FELib_HasData()" alt="" coords="5,5,82,33"/>
+<area shape="rect" id="Node000001" title="Binding of CAEN_FELib_HasData()." alt="" coords="5,5,82,33"/>
 <area shape="rect" id="Node000002" href="$a00134.html#ab640bd6bd3ecc06e6a89e62ac1961696" title="Node type." alt="" coords="130,5,177,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,16,114,16,114,22,82,22"/>
-<area shape="rect" id="Node000003" href="$a00134.html#ac66c129d35ca5141d65af51b78df2c1f" title="Binding of CAEN_FELib_GetNodeProperties()" alt="" coords="225,5,373,33"/>
+<area shape="rect" id="Node000003" href="$a00134.html#ac66c129d35ca5141d65af51b78df2c1f" title="Binding of CAEN_FELib_GetNodeProperties()." alt="" coords="225,5,373,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="177,16,210,16,210,22,177,22"/>
 </map>

@@ -64,6 +64,8 @@ var a00041 =
     [ "CAEN_FELib_GetNodeProperties", "a00101.html#ga0c5b9e819cdb1f50c760866f0cf763bd", null ],
     [ "CAEN_FELib_GetValue", "a00101.html#gab185d86b3a52a45fcc23d58f61c2a457", null ],
     [ "CAEN_FELib_SetValue", "a00101.html#gafb0504a48713f8fb9e4f6602eeacf99c", null ],
+    [ "CAEN_FELib_SetValues", "a00101.html#ga9c676c01913cc11e41d356ff1a252361", null ],
+    [ "CAEN_FELib_GetValues", "a00101.html#ga130e9af637da2fcae0da988383b646bd", null ],
     [ "CAEN_FELib_GetUserRegister", "a00101.html#ga8c8cbd9a7580636a7e947dbf5fabe53c", null ],
     [ "CAEN_FELib_SetUserRegister", "a00101.html#ga6c46799bef8df672599585cabedf6810", null ],
     [ "CAEN_FELib_SendCommand", "a00101.html#ga21ec1b970adad5267b722e50c058c8c5", null ],

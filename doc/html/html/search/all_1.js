@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['a_20device_0',['Interact with a device',['../a00204.html#autotoc_md14',1,'']]],
-  ['acquisition_1',['Data acquisition',['../a00204.html#autotoc_md17',1,'']]],
+  ['a_20device_0',['Interact with a device',['../a00200.html#autotoc_md14',1,'']]],
+  ['acquisition_1',['Data acquisition',['../a00200.html#autotoc_md17',1,'']]],
   ['acqveto_2',['ACQVETO',['../a00138.html#a1f89d27ad3cc8586e58a62f2e9c162b2',1,'caen_felib::dig1_types::DppProbeType']]],
   ['adc_5finput_3',['ADC_INPUT',['../a00146.html#af0b98076d90c75127c434ab380d674c7',1,'caen_felib::dig2_types::DppAnalogProbeType']]],
   ['adc_5fsaturation_4',['ADC_SATURATION',['../a00150.html#adea8cc320d9fcadde2eb78837a6a719a',1,'caen_felib::dig2_types::DppDigitalProbeType']]],

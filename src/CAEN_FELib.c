@@ -518,6 +518,31 @@ static int _loadAPIv1(struct library_descr* descr) {
 	return CAEN_FELib_Success;
 }
 
+static int _loadAPIv2(struct library_descr* descr) {
+	char apiName[64];
+	const size_t apiNameSize = ARRAY_SIZE(apiName);
+	const dlHandle_t dlHandle = descr->dlHandle;
+	const char* const name = descr->name;
+
+	assert(descr->APIVersion == LibraryAPIv1);
+
+	snprintf(apiName, apiNameSize, CAEN_IMPL_API_PREFIX"SetValues", name);
+	descr->SetValues = (fpSetValues_t)_getFunction(dlHandle, apiName);
+	if (descr->SetValues == NULL) {
+		return CAEN_FELib_GenericError;
+	}
+
+	snprintf(apiName, apiNameSize, CAEN_IMPL_API_PREFIX"GetValues", name);
+	descr->GetValues = (fpGetValues_t)_getFunction(dlHandle, apiName);
+	if (descr->GetValues == NULL) {
+		return CAEN_FELib_GenericError;
+	}
+
+	descr->APIVersion = LibraryAPIv2;
+
+	return CAEN_FELib_Success;
+}
+
 static void _getLastLocalError(char description[1024]) {
 	strncpy(description, lastError, ARRAY_SIZE(lastError));
 	description[ARRAY_SIZE(lastError) - 1] = '\0';
@@ -884,7 +909,10 @@ int CAEN_FELIB_API CAEN_FELib_Open(const char* url, uint64_t* handle) {
 		}
 
 		// load APIv1 (optional)
-		_loadAPIv1(lib_descr);
+		if (_loadAPIv1(lib_descr) == CAEN_FELib_Success) {
+			// load APIv2 (optional, requires APIv1)
+			_loadAPIv2(lib_descr);
+		}
 
 	} else {
 
@@ -1096,6 +1124,32 @@ int CAEN_FELIB_API CAEN_FELib_SetValue(uint64_t handle, const char* path, const 
 		return _notSupported();
 	const uint32_t rHandle = _rHandle(handle);
 	const int ret = descr->SetValue(rHandle, path, value);
+	if (ret != CAEN_FELib_Success)
+		descr->GetLastError(lastError);
+	return ret;
+}
+
+int CAEN_FELIB_API CAEN_FELib_SetValues(uint64_t handle, const char* const* paths, const char* const* values, size_t count, int* results) {
+	struct library_descr* const descr = _getLibDescr(handle);
+	if (descr == NULL)
+		return _invalidHandle();
+	if (!_checkAPI(descr, LibraryAPIv2))
+		return _notSupported();
+	const uint32_t rHandle = _rHandle(handle);
+	const int ret = descr->SetValues(rHandle, paths, values, count, results);
+	if (ret != CAEN_FELib_Success)
+		descr->GetLastError(lastError);
+	return ret;
+}
+
+int CAEN_FELIB_API CAEN_FELib_GetValues(uint64_t handle, const char* const* paths, char* const* values, size_t count, int* results) {
+	struct library_descr* const descr = _getLibDescr(handle);
+	if (descr == NULL)
+		return _invalidHandle();
+	if (!_checkAPI(descr, LibraryAPIv2))
+		return _notSupported();
+	const uint32_t rHandle = _rHandle(handle);
+	const int ret = descr->GetValues(rHandle, paths, values, count, results);
 	if (ret != CAEN_FELib_Success)
 		descr->GetLastError(lastError);
 	return ret;
